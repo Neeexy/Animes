@@ -1,0 +1,11 @@
+.thumb{
+    max-width: 185px;
+    max-height: 278px;
+    border-radius: 10px;
+    border: rgb(243, 129, 53) solid 2.2px;
+}
+.thumb:hover{
+    transform: scale(1.04);
+    border: red solid 2.3px;
+    transition: ease-in-out 0.5s;
+}

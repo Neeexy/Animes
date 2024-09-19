@@ -1,140 +1,118 @@
-/* style.css */
-
-body {
-    font-family: 'Roboto', sans-serif; /* Fonte moderna e legível */
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4; /* Cor de fundo neutra e suave */
-    color: #333; /* Cor de texto escura para contraste */
+::-webkit-scrollbar {
+    width: 12px;               /* Largura da barra de rolagem */
+    height: 12px;              /* Altura da barra de rolagem (para rolagem horizontal) */
 }
 
-/* Header e Menu */
+::-webkit-scrollbar-track {
+    background: #313131;       /* Cor do fundo da barra de rolagem */
+    border-radius: 3px;       /* Bordas arredondadas */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;    /* Cor da "pegada" (parte que se move) */
+    border-radius: 10px;       /* Bordas arredondadas */
+    border: 1px solid #cacaca; /* Cria espaço ao redor da pegada */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;    /* Cor ao passar o mouse */
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #181818; /* Dark background */
+    color: #f0f0f0; /* Light text */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 header {
-    background-color: #0f0f0f; /* Cor de fundo escura e elegante */
-    color: white;
-    padding:5px 5px 5px 25px;
+    background-color: #282828; /* Darker header */
+    padding: 10px;
+    text-align: center;
+    
+}
+.a:visited{
+    text-decoration: none;
+
+}
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.video-container {
+    width: 80%; /* Adjust as needed */
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+iframe {
+    width: 100%;
+    height: 100%; /* Maintain aspect ratio */
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    max-width: 400px;
+}
+
+button {
+    background-color: #383838; /* Darker button */
+    color: #f0f0f0;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #484848; /* Even darker on hover */
+}
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-    /* Sombra sutil para destacar o header */
 }
 
-h1 {
-    margin: 0;
-    font-size: 1.5rem;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-nav li {
-    margin: 0 1rem; /* Espaçamento horizontal entre os itens do menu */
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500; /* Destaque sutil no texto */
-    transition: color 0.3s ease; /* Efeito de transição suave na cor */
-}
-
-nav a:hover {
-    color: #ffcc00; /* Cor de destaque ao passar o mouse */
-}
-
-/* Busca */
-form {
-    display: flex;
-    align-items: center;
-}
-
-input[type="search"] {
-    padding: 0.5rem;
-    border: none;
-    border-radius: 3px 0 0 3px; /* Borda arredondada à esquerda */
-}
-
-button[type="submit"] {
-    background-color: #ffcc00; /* Cor de destaque para o botão */
-    color: #333;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 0 3px 3px 0; /* Borda arredondada à direita */
-    cursor: pointer;
-    transition: background-color 0.3s ease; /* Efeito de transição suave na cor de fundo */
-}
-
-button[type="submit"]:hover {
-    background-color: #e6b800; /* Cor de destaque mais escura ao passar o mouse */
-}
-
-/* Seções */
-section {
-    padding: 2rem;
-}
-
-h2 {
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
+.logo {
     font-weight: bold;
+    font-size: 1.2em;
 }
 
-.anime-grid, .episode-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Grid responsivo com tamanho mínimo maior */
-    gap: 1.5rem; /* Aumenta o espaçamento entre os cards */
-}
-
-.anime-list {
+.anime-grid {
     display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(185px, 1fr)); /* Até 5 por linha */
+    gap: 25px;
 }
 
-/* Cards de Anime e Episódio */
-.anime-card, .episode-card {
-    background-color: white;
-    border-radius: 8px; /* Borda mais arredondada */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra mais pronunciada */
-    overflow: hidden;
-    transition: transform 0.3s ease; /* Efeito de transição suave na transformação */
+#all-animes-button, #all-animes-button-bottom {
+    /* ... estilos do botão ... */
+    margin-top: 20px; /* Espaçamento na parte inferior */
 }
 
-.anime-card:hover, .episode-card:hover {
-    transform: translateY(-5px); /* Eleva o card ao passar o mouse */
+a, 
+button:hover,
+.logo {
+    color: #f59e0b; /* Laranja suave */
 }
 
-.anime-card img, .episode-card img {
-    width: 100%;
-    height: 250px; /* Altura ligeiramente maior para as imagens */
-    object-fit: cover;
+/* Borda sutil nos botões */
+button {
+    border: 1px solid #f59e0b; /* Borda laranja suave */
 }
 
-.anime-card .info, .episode-card .info {
-    padding: 1.2rem;
-}
-
-.anime-card h3, .episode-card h3 {
-    margin-top: 0;
-    font-size: 1.1rem;
-}
-
-/* Rodapé */
-footer {
-    background-color: #0f0f0f;
-    color: white;
-    text-align: center;
-    padding: 0.2rem;
-    line-height: 10px;
-    font-size: 13px;
-}
-.nexy{
-    font-size: 16px;
-    text-align: left;
-    padding-left:50px;
+/* Hover mais suave */
+button:hover {
+    background-color: #3d3d3d; /* Um pouco mais claro que o fundo */
+    border-color: #f97316; /* Laranja um pouco mais forte no hover */
 }

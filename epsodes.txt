@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexy Animes - [Nome do Anime] - Episódio [Número]</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="style/Nexy-logo.png" type="image/x-icon">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Nexy Animes</div>
+            <a href="index.html">Início</a>
+            <button id="all-animes-button">Todos os Animes</button>
+        </nav>
+    </header>
+
+    <main>
+        <div class="video-player">
+            <video controls>
+                <source src="LINK_DO_VÍDEO" type="video/mp4"> 
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </div>
+
+        <section class="episode-info">
+            <h2>[Nome do Anime] - Episódio [Número]</h2>
+
+            <div class="controls">
+                <button id="prev-episode">&#x25C0; Anterior</button>
+                <button id="episode-list">Lista de Episódios</button>
+                <button id="next-episode">Próximo &#x25B6;</button>
+            </div>
+        </section>
+
+        <section class="recommendations">
+            <h3>Recomendações</h3>
+            <div class="anime-grid">
+                </div>
+        </section>
+    </main>
+
+</body>
+</html>

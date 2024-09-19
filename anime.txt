@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexy Animes - [nome do anime] </title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="shortcut icon" href="style/Nexy-logo.png" type="image/x-icon">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Nexy Animes</div>
+            <a href="index.html">Início</a>
+            <button id="all-animes-button">Todos os Animes</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="anime-details">
+            <div class="anime-image">
+                <img src="caminho/para/imagem-anime.jpg" alt="[Nome do Anime]"> 
+            </div>
+            <div class="anime-info">
+                <h2>[Nome do Anime]</h2>
+                <p class="description">
+                    [Descrição do Anime]
+                </p>
+            </div>
+        </section>
+
+        <section class="seasons-episodes">
+            <h3>Temporadas e Episódios</h3>
+            <div class="season">
+                <h4>Temporada 1</h4>
+                <div class="episodes">
+                    <div class="episode">
+                        <span class="episode-number">Ep. 1</span> 
+                        <span class="episode-title">Episódio 1</span> 
+                        <span class="episode-date">Aug. 08, 2024</span> 
+                    </div>
+                    </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
