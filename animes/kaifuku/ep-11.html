@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexy Animes - Kaifuku Jutsushi no Yarinaoshi </title>
+    <link rel="shortcut icon" href="../../style/Nexy-logo.png" type="image/x-icon"> 
+    <link rel="stylesheet" href="../../style/animes.css"> 
+    <link rel="stylesheet" href="../../style/style-index.css"> 
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Nexy Animes</div>
+            <a href="https://nexyanimes.netlify.app/">Início</a>
+            <button id="all-animes-button">Todos os Animes</button>
+        </nav>
+    </header>
+
+    <main>
+        <div class="video-player">
+            <iframe id="video-iframe" 
+                src="https://rr2---sn-h8po4vgh5upj5cg-gxje.googlevideo.com/videoplayback?expire=1726797411&ei=42XsZrCFI4GtxtYPzezs4Qk&ip=170.78.98.88&id=d03dbf7caaf59345&itag=18&source=blogger&xpc=Egho7Zf3LnoBAQ%3D%3D&mh=XR&mm=31&mn=sn-h8po4vgh5upj5cg-gxje&ms=au&mv=m&mvi=2&pl=24&susc=bl&eaua=7uvJa_zte9Y&mime=video/mp4&vprv=1&rqh=1&dur=1425.124&lmt=1623765666479710&mt=1726768154&txp=1311224&sparams=expire,ei,ip,id,itag,source,xpc,susc,eaua,mime,vprv,rqh,dur,lmt&sig=AJfQdSswRAIgYhCZrArvT8k-HxsdB9baSqcaeddEsInazH995SBZO8ICIDOXnrvE1J8zKNSZjGxJ6_dBC8FcbvK-kPeWMffnKfLx&lsparams=mh,mm,mn,ms,mv,mvi,pl&lsig=ABPmVW0wRgIhAOrr4jMIb9KvD6kzgqOuXHYjd3kqpTBx72cGE7dr-5NDAiEA8Rj34FCZCRKCiChnRyrQFdUnuTCgYQz4QALW9eqBM2k%3D&cpn=LgzM0DNmFmEC3KTV&c=WEB_EMBEDDED_PLAYER&cver=1.20240917.01.00"
+                width="640" 
+                height="360" 
+                frameborder="0"  
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <section class="episode-info">
+            <h2 id="episode-title">Kaifuku Jutsushi no Yarinaoshi - Episódio 11</h2> 
+
+            <div class="controls">
+                <a href="ep-10.html"><button id="prev-episode">&#x25C0; Anterior</button></a>
+                <a href="kaifuku.html"><button id="episode-list">Lista de Episódios</button></a> 
+                <a href="ep-12.html"><button id="next-episode">Próximo &#x25B6;</button></a>
+            </div>
+        </section>
+
+        <section class="episode-list-container"> 
+            <h3>Episódios</h3>
+            <ul id="episode-links">
+            </ul>
+        </section>
+
+    </main>
+
+    <script src="get-ep.js"></script>  
+</body>
+</html>

@@ -27,7 +27,12 @@ main {
     gap: 20px; /* Espaçamento entre a imagem e as informações */
     border-bottom: 1px solid lightgray;  /* Borda inferior */
 }
-
+a{
+    text-decoration: none;
+}
+a:vise{
+    text-decoration: none;
+}
 .anime-image img {
     max-width: 300px; /* Ajusta a largura máxima da imagem */
     height: auto; /* Mantém a proporção da imagem */
@@ -52,13 +57,20 @@ main {
     flex-direction: column; /* Organiza os episódios em coluna */
     
     gap: 10px;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
 }
 
 .episode {
     display: flex;
     align-items: center; /* Alinha os elementos do episódio na mesma linha */
     gap: 10px;
+    padding: 7px;
+    background-color: rgba(46, 45, 45, 0.329);
+}
+.episode:hover{
+    background-color: rgba(99, 98, 98, 0.329);
+    transition: ease-in-out 0.2s;
+
 }
 
 .episode-number {
