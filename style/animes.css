@@ -16,7 +16,6 @@ header {
 }
 
 main {
-    flex: 1;
     padding: 20px;
 }
 
@@ -26,6 +25,7 @@ main {
     align-items: flex-start; /* Alinha os itens no topo */
     gap: 20px; /* Espaçamento entre a imagem e as informações */
     border-bottom: 1px solid lightgray;  /* Borda inferior */
+    color: #afaaaaa6;
 }
 a{
     text-decoration: none;
@@ -34,46 +34,64 @@ a:vise{
     text-decoration: none;
 }
 .anime-image img {
-    max-width: 300px; /* Ajusta a largura máxima da imagem */
-    height: auto; /* Mantém a proporção da imagem */
+    max-width: 230px; /* Ajusta a largura máxima da imagem */
     padding-bottom: 30px;
 }
+.ep-img{
+    max-width: 180px;
+    border-radius: 6px;
 
+}
 .anime-info h2 {
     margin-bottom: 10px;
+    color: #afaaaaa6;
 }
-
+.episode-title{
+    font-size: 12px;
+    color: #555555;
+    margin-top: 4px;
+}
 .seasons-episodes {
     margin-top: 20px;
 }
 
 .season {
-    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .episodes {
-    display: flex;
-    flex-direction: column; /* Organiza os episódios em coluna */
-    
-    gap: 10px;
-    padding-bottom: 5px;
+    padding-bottom: 7px; 
+    max-width: 190px;
+    margin: 5px;
 }
 
 .episode {
     display: flex;
-    align-items: center; /* Alinha os elementos do episódio na mesma linha */
-    gap: 10px;
+    align-items: center; 
+    flex-direction: column;
     padding: 7px;
-    background-color: rgba(46, 45, 45, 0.329);
+    background-color: rgba(5, 5, 5, 0.795);
+    border-radius: 6px;
 }
 .episode:hover{
-    background-color: rgba(99, 98, 98, 0.329);
-    transition: ease-in-out 0.2s;
-
+    background-color: rgba(19, 19, 19, 0.61);
+    scale: 1.1 ;
+    transition: ease-in-out 0.3s;
 }
 
+.line{
+    height: 5px;
+    background-color: #424242a6; /* Ajuste a cor conforme necessário */
+    margin: 10px 0; /* Ajuste os valores conforme necessário */
+    width: 95%; /* Ajuste a largura conforme necessário */
+    border-radius: 2px;
+}
 .episode-number {
     font-weight: bold;
+    font-size: 14px; /* Ajuste o valor conforme necessário */
+    color: #df5505d0;
+  margin-left: 10px; /* Ajuste o valor conforme necessário */
 }
 
 .episode-date {

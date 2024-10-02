@@ -32,15 +32,19 @@
 
         <section class="seasons-episodes">
             <h3>Temporadas e Episódios</h3>
+            <h4>Temporada 1</h4>
             <div class="season">
-                <h4>Temporada 1</h4>
                 <div class="episodes">
-                    <div class="episode">
-                        <span class="episode-number">Ep. 1</span> 
-                        <span class="episode-title">Episódio 1</span> 
-                        <span class="episode-date">Aug. 08, 2024</span> 
-                    </div>
-                    </div>
+                    <a href="">
+                        <div class="episode">
+                            <img class="ep-img" src="[EP-IMG]" alt="">
+                            <span class="line"></span>
+                            <span class="episode-number">Ep. 1</span>
+                            <span class="episode-title">Episódio 1</span>
+                            <span class="episode-date">Aug. 08, 2024</span>
+                        </div>
+                    </a>
+                </div>
             </div>
         </section>
     </main>
