@@ -4,43 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nexy Animes - [Nome do Anime] - Episódio [Número]</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="style/Nexy-logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../../style/Nexy-logo.png" type="image/x-icon"> 
+    <link rel="stylesheet" href="../../style/animes.css"> 
+    <link rel="stylesheet" href="../../style/style-index.css"> 
+    <link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
+    <link href="https://unpkg.com/@videojs/themes@1/dist/city/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="episodes.css">
 
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">Nexy Animes</div>
-            <a href="index.html">Início</a>
-            <button id="all-animes-button">Todos os Animes</button>
+            <button id="back"><a href="index.html">Início</a></button>
         </nav>
     </header>
 
     <main>
-        <div class="video-player">
-            <video controls>
-                <source src="LINK_DO_VÍDEO" type="video/mp4"> 
+
+            <video class="video-js vjs-custom-theme " data-setup="{}"  loop controls>
+                <source src="[ep-link]" type="video/mp4" />
                 Seu navegador não suporta o elemento de vídeo.
-            </video>
-        </div>
+        </video>
+        <script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
 
         <section class="episode-info">
             <h2>[Nome do Anime] - Episódio [Número]</h2>
 
             <div class="controls">
-                <button id="prev-episode">&#x25C0; Anterior</button>
-                <button id="episode-list">Lista de Episódios</button>
-                <button id="next-episode">Próximo &#x25B6;</button>
+                <a href=""><button id="prev-episode">&#x25C0; Anterior</button></a>
+                <a href=""><button id="episode-list">Lista de Episódios</button></a>
+                <a href=""><button id="next-episode">Próximo &#x25B6;</button></a>
             </div>
         </section>
 
-        <section class="recommendations">
-            <h3>Recomendações</h3>
-            <div class="anime-grid">
-                </div>
-        </section>
-    </main>
+
 
 </body>
 </html>
