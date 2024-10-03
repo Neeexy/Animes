@@ -1,3 +1,9 @@
+*,html{
+    padding: 0px;
+    margin: 0px;
+    
+}
+
 /* Estilos gerais (você pode reaproveitar do seu style.css) */
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -7,24 +13,21 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-}
 
-header {
-    background-color: #282828;
-    padding: 20px;
-    text-align: center;
 }
 
 main {
     padding: 20px;
+    background-color: #302d2c34;
+
 }
 
-/* Estilos específicos para a página de detalhes do anime */
+
 .anime-details {
     display: flex; /* Organiza a imagem e as informações lado a lado */
     align-items: flex-start; /* Alinha os itens no topo */
     gap: 20px; /* Espaçamento entre a imagem e as informações */
-    border-bottom: 1px solid lightgray;  /* Borda inferior */
+    border-bottom: 2.5px solid #df5505d0;  /* Borda inferior */
     color: #afaaaaa6;
 }
 a{
@@ -40,11 +43,24 @@ a:vise{
 .ep-img{
     max-width: 180px;
     border-radius: 6px;
-
 }
 .anime-info h2 {
-    margin-bottom: 10px;
+    margin-bottom: 1px;
     color: #afaaaaa6;
+}
+.episode-info{
+    h2{
+        font-family: Arial, Helvetica, sans-serif;
+        color: #afacac;
+        padding-top: 10px;
+    }
+    h3{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        padding-bottom: 10px;
+        padding-left: 3px;
+        color: #afacac;
+    }
 }
 .episode-title{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -55,6 +71,13 @@ a:vise{
 }
 .seasons-episodes {
     margin-top: 20px;
+    color: #afaaaaa6;
+
+}
+
+.poster > img{
+    border: #918f8f solid 2px;
+    border-radius: 6px;
 }
 
 .season {
@@ -110,4 +133,64 @@ a:vise{
     left: 40;
     width: 100%;
     height: 100%;
+}
+.controls{
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    padding-left: 45px;
+}
+@media (max-width: 768px){
+
+    .seasons-episodes{
+        text-align: center;
+    }
+
+    .season {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .ep-img{
+        max-width: 140px;
+        border-radius: 6px;
+    }
+    .anime-info h2{
+        font-size: 18px;
+    }
+    .episode-info{
+        h2{
+            font-family: Arial, Helvetica, sans-serif;
+            color: #afacac;
+            padding-top: 10px;
+            font-size: 17px;
+        }
+        h3{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            padding-bottom: 10px;
+            padding-left: 3px;
+            color: #afacac;
+        }
+    }
+    main{
+        h2{
+            font-size: 17px;
+        }
+    }
+    button{
+        max-width: 80px;
+        max-height: 50px;
+        font-size: 10.6px;
+    }
+    .controls{
+        padding: 0px;
+        padding-left: 10px;
+        padding-top: 5px;
+    }
+    .description{
+        font-size: 13px;
+        max-height: 130px;
+        overflow-y: scroll;
+    }
+
 }

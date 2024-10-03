@@ -13,18 +13,21 @@
     <header>
         <nav>
             <div class="logo">Nexy Animes</div>
-            <a href="index.html">Início</a>
-            <button id="all-animes-button">Todos os Animes</button>
+            <button id="back"><a href="https://nexyanimes.netlify.app/">Início</a></button>
         </nav>
     </header>
 
     <main>
         <section class="anime-details">
             <div class="anime-image">
-                <img src="https://static.anroll.net/images/animes/capas/bleach-sennen-kessen-hen-ketsubetsu-tan.jpg" alt="BLEACH - THOUSAND YEAR BLOOD WAR"> 
+                <picture>
+                    <source media="(min-width: 769px)" srcset="bleach-sennen-kessen-original.jpg" alt="BLEACH - THOUSAND YEAR BLOOD WAR">
+                    <source media="(max-width: 766px)" srcset="bleach-sennen-kessen-150x220.jpg" alt="BLEACH - THOUSAND YEAR BLOOD WAR">
+                    <img class="none" src="" alt="BLEACH - THOUSAND YEAR BLOOD WAR"> 
+                </picture>
             </div>
             <div class="anime-info">
-                <h2>Nexy Animes - BLEACH - THOUSAND YEAR BLOOD WAR</h2>
+                <h2>BLEACH - THOUSAND YEAR BLOOD WAR</h2>
                 <p class="description">
                     Ichigo Kurosaki é um garoto de 15 anos que tem uma estranha capacidade de ver, tocar e falar com espíritos de pessoas mortas. Logo que a shinigami Rukia Kuchiki toma conhecimento dos poderes de Ichigo, vai atrás dele para investigar, e acaba em uma luta com um Hollow que foi atraído pelo forte poder espiritual de Ichigo. Antes de ser derrotada pela criatura, Rukia passa seus poderes a Ichigo, o qual se torna um shinigami, e após derrotar o Hollow ingressa em uma jornada para proteger os humanos e os espíritos da ameaça dos Hollows.
                 </p>
