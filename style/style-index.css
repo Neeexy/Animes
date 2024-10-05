@@ -92,8 +92,8 @@ main {
 
 nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content:space-between;
+    align-items: end;
 }
 .seasons-episodes>h4{
     width: fit-content;
@@ -158,4 +158,18 @@ button:active{
 
 button#back{
     padding: 17px;
+}
+@media (max-width: 768px){
+    .logo img{
+        max-height: 80px;
+    }
+    button#back{
+        padding: 3px 14px 3px 14px;
+        max-height: 35px;
+    }
+    nav {
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+    }
 }
