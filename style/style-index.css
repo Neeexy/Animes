@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*,html{
+    padding: 0px;
+    margin: 0px;
+    
+}
 * {
     -webkit-touch-callout: none; /* iOS Safari */
       -webkit-user-select: none; /* Safari */
@@ -6,6 +12,11 @@
           -ms-user-select: none; /* Internet Explorer/Edge */
               user-select: none; /* Non-prefixed version, currently
                                     supported by Chrome, Edge, Opera and Firefox */
+
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal
   }
 ::-webkit-scrollbar {
     width: 4px;               /* Largura da barra de rolagem */
