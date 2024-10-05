@@ -1,0 +1,1 @@
+link = https://api.anivideo.fun/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/b/bleach-sennen-kessen-hen/01.mp4/index.m3u8

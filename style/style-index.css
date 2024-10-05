@@ -107,7 +107,11 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
-
+.seasons-episodes>h4{
+    width: fit-content;
+    border-bottom: 6.5px solid #df5505d0;  /* Borda inferior */
+    margin-bottom: 15px;
+}
 .logo {
     font-weight: bold;
     font-size: 1.2em;
