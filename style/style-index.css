@@ -156,3 +156,6 @@ button:active{
     transform: translateY(2px);
 }
 
+button#back{
+    padding: 17px;
+}
