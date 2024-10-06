@@ -81,6 +81,9 @@ main {
     padding: 20px;
 }
 
+a, button {
+  -webkit-tap-highlight-color: transparent;
+}
 
 
 
