@@ -157,7 +157,15 @@ button:active{
 }
 
 button#back{
-    padding: 17px;
+    padding: 12px 17px 12px;
+    font-weight: bold;
+    margin-top: 4px;
+}
+.temporada-selector > button{
+    max-width: fit-content;
+    max-height: fit-content;
+    padding: 15px 20px 15px;
+    font-weight: bold;
 }
 @media (max-width: 768px){
     .logo img{
