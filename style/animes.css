@@ -138,8 +138,8 @@ iframe{
 }
 .video-container {
     position: relative;
-    width: 660px;
-    height: 415px;
+    width:90%;
+    height: 600px;
 }
 .poster-episode{
     position: absolute;
@@ -214,8 +214,8 @@ picture.poster > img{
     }
 
     .video-container{
-        width: 360px;
-        height: 215px;
+        width: 95%;
+        height: 310px;
     }
     iframe{
         width: 360px;

@@ -93,7 +93,7 @@ main {
 nav {
     display: flex;
     justify-content:space-between;
-    align-items: end;
+    align-items: start;
 }
 .seasons-episodes>h4{
     width: fit-content;
@@ -142,7 +142,7 @@ padding: 0 32px;
 border-radius: 6px;
 color: #c2c1c1;
 height: 50px;
-font-size: 14px;
+font-size: 17px;
 text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
 border: none;
 }
