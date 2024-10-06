@@ -13,10 +13,10 @@ const atualizarMargemAnimeDetails = () => {
         animeDetails.style.marginTop = '0px';  // Zera a margem quando uma temporada está aberta
     } else {
         const windowWidth = window.innerWidth;
-        if (windowWidth > 769) {
-            animeDetails.style.marginTop = '-60px';  // Margem para resolução maior que 768px
+        if (windowWidth > 768) {
+            animeDetails.style.marginTop = '-150px';  // Margem para resolução maior que 768px
         } else {
-            animeDetails.style.marginTop = '-230px';  // Margem para resolução menor que 768px
+            animeDetails.style.marginTop = '-350px';  // Margem para resolução menor que 768px
         }
     }
 };
