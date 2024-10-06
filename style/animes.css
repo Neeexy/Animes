@@ -205,6 +205,7 @@ picture.poster > img{
         padding: 0px;
         padding-left: 10px;
         padding-top: 5px;
+        gap: 2px;
     }
     .description{
         font-size: 13px;

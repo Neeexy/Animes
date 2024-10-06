@@ -178,5 +178,7 @@ button#back{
         overflow: hidden;          
         text-overflow: ellipsis;   
         white-space: nowrap;
+        max-height: fit-content;
+        
     }
 }
