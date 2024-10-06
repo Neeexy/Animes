@@ -38,13 +38,23 @@
         </section>
 
         <section class="seasons-episodes">
-            <div class="temporada-selector">
-                <h2 style="text-align: center;">Temporadas</h2>
-                <button data-temporada="1">1</button>
-                <button data-temporada="2">2</button>
-                <button data-temporada="3">3</button>
+            <div class="linguagem-selector">
+                <h2 style="text-align: left; margin-bottom: 15px;">Idioma</h2>
+                <button data-linguagem="dublado">Dublado</button>
+                <button data-linguagem="legendado">Legendado</button>
             </div>
-            <div class="temporada" id="temporada-1" style="display: none;">
+
+            <div class="temporada-selector">
+                <h2 style="text-align: left; margin-bottom: 15px;margin-top: 6px;">Temporadas</h2>
+                <button data-temporada="1" data-linguagem="legendado">1 [LEG]</button>
+                <button data-temporada="1" data-linguagem="dublado">1 [DUB]</button>
+                <button data-temporada="2" data-linguagem="legendado">2 [LEG]</button>
+                <button data-temporada="2" data-linguagem="dublado">2 [DUB]</button>
+                <button data-temporada="3" data-linguagem="legendado">3 [LEG]</button>
+                <button data-temporada="3" data-linguagem="dublado">3 [DUB]</button>
+            </div>
+            
+            <div class="temporada" id="temporada-1-legendado" data-linguagem="legendado" style="display: none;">
                 <h4>Temporada 1 - Sennen Kessen-hen Dublado</h4>
                 <div class="season">
                     <div class="episodes">
@@ -179,7 +189,7 @@
                     </div>
                 </div>
             </div>
-            <div class="temporada" id="temporada-2" style="display: none;">
+            <div class="temporada" id="temporada-2-legendado" data-linguagem="legendado" style="display: none;">
                 <h4>Temporada 2 - Ketsubetsu-tan Dublado</h4>
                 <div class="season">
                     <div class="episodes">
@@ -324,7 +334,7 @@
                     </div>
                 </div>
             </div>
-            <div class="temporada" id="temporada-3" style="display: none;">
+            <div class="temporada" id="temporada-3-legendado" data-linguagem="legendado" style="display: none;">
                 <h4>Temporada 3 - Soukoku-tan Legendado</h4>
                 <div class="season">
                     <div class="episodes">
