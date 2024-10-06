@@ -50,14 +50,16 @@ a:vise{
 
 }
 .episode-info{
+    
     h2{
         color: #afacac;
         padding-top: 10px;
         max-width: fit-content;
         border-bottom: 3.5px solid #504945d0;  /* Borda inferior */
-
+        
     }
     h3{
+        max-width: fit-content;
         font-size: 13px;
         padding-bottom: 10px;
         padding-left: 3px;
@@ -155,8 +157,8 @@ picture.poster > img{
 .controls{
     display: flex;
     align-items: center;
+    gap: 10px;
     padding-top: 15px;
-    padding-left: 45px;
 }
 @media (max-width: 768px){
 
@@ -180,14 +182,13 @@ picture.poster > img{
             font-family: Arial, Helvetica, sans-serif;
             color: #afacac;
             padding-top: 10px;
-            font-size: 17px;
+            font-size: 15px;
         }
         h3{
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 13px;
+            font-size: 11px;
             padding-bottom: 10px;
             padding-left: 3px;
-            color: #afacac;
         }
     }
     main{
@@ -196,7 +197,7 @@ picture.poster > img{
         }
     }
     button{
-        max-width: 80px;
+        max-width: fit-content;
         max-height: 50px;
         font-size: 10.6px;
     }

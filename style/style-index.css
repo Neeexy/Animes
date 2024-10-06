@@ -172,4 +172,11 @@ button#back{
         justify-content:space-between;
         align-items: center;
     }
+    button#prev-episode,#next-episode,#episode-list{
+        padding: 5px;
+        font-size: 10px;
+        overflow: hidden;          
+        text-overflow: ellipsis;   
+        white-space: nowrap;
+    }
 }
