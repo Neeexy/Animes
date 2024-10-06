@@ -161,6 +161,12 @@ button#back{
     font-weight: bold;
     margin-top: 4px;
 }
+button#back >a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+}
+
 .temporada-selector > button{
     max-width: fit-content;
     max-height: fit-content;
