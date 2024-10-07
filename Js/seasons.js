@@ -1,3 +1,9 @@
+// Função para recarregar a página e o css funcionar de forma devida
+function feel(){
+    window.location.reload(true);
+}
+
+
 const seasonButtons = document.querySelectorAll('.temporada-selector button');
 const languageButtons = document.querySelectorAll('.linguagem-selector button');
 const seasons = document.querySelectorAll('.temporada');
