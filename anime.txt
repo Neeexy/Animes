@@ -44,13 +44,13 @@
 
         <section class="seasons-episodes">
             <div class="linguagem-selector">
-                <h2 style="text-align: left; margin-bottom: 15px;">Idioma</h2>
+                <h2 style="text-align: left; margin-bottom: 15px;font-weight: 400;">Idioma</h2>
                 <button data-linguagem="dublado">DUB</button>
                 <button data-linguagem="legendado">LEG</button>
             </div>
 
             <div class="temporada-selector">
-                <h2 style="text-align: left; margin-bottom: 15px;margin-top: 6px;">Temporadas</h2>
+                <h2 style="text-align: left; margin-bottom: 15px;margin-top: 6px;font-weight: 400;">Temporadas</h2>
                 <button data-temporada="1" data-linguagem="legendado">1ª</button>
                 <button data-temporada="1" data-linguagem="dublado">1º</button>
             </div>
