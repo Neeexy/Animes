@@ -61,11 +61,10 @@ a:vise{
 
 }
 .sgenders{
-    width: 100%;
     height: 19px;
     padding-bottom: 6px;
     margin-top: 14px;
-    display: inline-block;
+    /* display: inline-block; */
     max-width: fit-content;
     border-top: 0.5px solid #df5505d0;  /* Borda Superior */
     border-bottom: 0.5px solid #df5505d0;  /* Borda inferior */
@@ -79,6 +78,7 @@ a:vise{
     border-left: solid 1px rgba(223, 85, 5, 0.816);
     padding: 0 8px;
     font-weight: 400;
+
 }
 .sgenders a:first-child{
     padding-left: 0;
@@ -279,5 +279,20 @@ picture.poster > img{
     }
     .linguagem-selector{
         text-align: left;
+    }
+    .sgenders{
+        max-width: 420px;
+        overflow: auto;
+    }
+}
+@media (max-width: 745px){
+    .sgenders{
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 500px){
+    .sgenders{
+        max-width: 120px;
+        overflow: auto;
     }
 }
