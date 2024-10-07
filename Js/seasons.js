@@ -1,3 +1,6 @@
+
+
+
 const seasonButtons = document.querySelectorAll('.temporada-selector button');
 const languageButtons = document.querySelectorAll('.linguagem-selector button');
 const seasons = document.querySelectorAll('.temporada');
