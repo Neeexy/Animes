@@ -20,17 +20,16 @@
 
     <main>
         <h2>CLIQUE PARA ASSISTIR</h2>
-        <a href="https://drive.google.com/file/d/1hPtnbDTWjcLaULtp9d5Vdr73de4bu0Xt/view?usp=sharing" target="_blank">
-            <picture class="poster">
-                <source media="(min-width: 769px)" srcset="poster-original.jpg">
-                <source media="(max-width: 766px)" srcset="poster-300px.jpg">
-                <img src="" alt="">
-            </picture>
-        </a>
+        <div class="video-container" >
+            <img id="video-poster" class="poster-episode" src="https://image.tmdb.org/t/p/original/6A2lZYEDBNWloInd9izPciPiq1O.jpg" alt=" Bleach:TYBW 2 - EPISÓDIO 08 - A ESTRELA DESGOVERNADA">
+            <iframe id="video-frame" data-src="https://api.anivideo.fun/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/b/bleach-sennen-kessen-hen-ketsubetsu-tan/08.mp4/inde2.m3u8" ti0te="A ESTRELA DESGOVERNADA" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
 
         <section class="episode-info">
             <h2>Bleach:TYBW - Episódio 08</h2>
-            <h3>A ESTRELA DESGOVERNADA</h3>
+            <h3>A ESTRELA DESGOVERNADA - [DUB]</h3>
 
             <div class="controls">
                 <a href="bleach-tybw-ep7.html"><button id="prev-episode">&#x25C0; Anterior</button></a>
@@ -39,6 +38,7 @@
             </div>
         </section>
     </main>
+    <script src="../../../../Js/poster.js"></script>
 
 </body>
 </html>
