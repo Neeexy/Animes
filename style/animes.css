@@ -38,6 +38,7 @@ a:vise{
     padding-bottom: 30px;
 }
 .ep-img{
+    min-width: 179px;
     max-width: 180px;
     border-radius: 6px;
 }
@@ -80,8 +81,11 @@ a:vise{
 .seasons-episodes {
     margin-top: 20px;
     color: #ffffffa6;
-    max-width: 315px;
+    /* max-width: 315px; */
 
+}
+.seasons-episodes >.temporada-selector {
+    max-width: 312px;
 }
 .seasons-episodes > h4{
     font-size: 23px;
@@ -222,5 +226,8 @@ picture.poster > img{
     iframe{
         width: 360px;
         height: 215px;
+    }
+    .linguagem-selector{
+        text-align: left;
     }
 }
