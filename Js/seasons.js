@@ -1,6 +1,10 @@
 // Função para recarregar a página e o css funcionar de forma devida
+var loaded = true;
 function feel(){
-    window.location.reload(true);
+    if(loaded){
+        window.location.reload(true)
+        loaded = false;
+        };
 }
 
 
