@@ -293,6 +293,6 @@ picture.poster > img{
 @media (max-width: 500px){
     .sgenders{
         max-width: 120px;
-        overflow: auto;
+        overflow: hidden;
     }
 }

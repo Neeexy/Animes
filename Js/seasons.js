@@ -6,6 +6,19 @@ const languageButtons = document.querySelectorAll('.linguagem-selector button');
 const seasons = document.querySelectorAll('.temporada');
 const animeDetails = document.querySelector('.anime-details');
 
+
+// Verifica se a página já foi recarregada nesta sessão.
+// Usamos sessionStorage para armazenar essa informação, pois ela só persiste enquanto a aba do navegador estiver aberta.
+if (sessionStorage.getItem('is_reloaded') === null) { 
+    // Se a variável 'is_reloaded' não existir no sessionStorage, significa que a página ainda não foi recarregada nesta sessão.
+
+    // Define a variável 'is_reloaded' no sessionStorage como true.
+    // Isso garante que a página só seja recarregada uma vez.
+    sessionStorage.setItem('is_reloaded', true); 
+
+    // Recarrega a página.
+    location.reload(); 
+}
 // Função para mostrar/esconder botões de temporada baseados na linguagem
 function filterSeasonButtons(language) {
     seasonButtons.forEach(button => {
