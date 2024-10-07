@@ -13,7 +13,7 @@
               user-select: none; /* Non-prefixed version, currently
                                     supported by Chrome, Edge, Opera and Firefox */
 
-    font-family: "Noto Sans", sans-serif;
+    font-family: "kanit", sans-serif;
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal
@@ -55,7 +55,7 @@ body {
 
 header {
     background-color: #302d2c34;
-    box-shadow: -10px 5px 7px rgb(0, 0, 0);
+    box-shadow:8px 14px 21px rgba(0, 0, 0, 0.836);
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 5px;
@@ -65,6 +65,7 @@ header {
   z-index: 100;
 
 }
+
 a:visited{
     text-decoration: none;
 }

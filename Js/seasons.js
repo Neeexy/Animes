@@ -52,7 +52,7 @@ const atualizarMargemAnimeDetails = () => {
     const windowHeight = window.innerHeight;
 
     if (windowWidth > 1366) {
-        animeDetails.style.marginTop = '-150px'; // Telas grandes (maior que 1366px)
+        animeDetails.style.marginTop = '-60px'; // Telas grandes (maior que 1366px)
     } else if (windowWidth > 768) {
         animeDetails.style.marginTop = '-10px';  // Telas médias (entre 768px e 1366px)
     } else if (windowWidth > 565) {
