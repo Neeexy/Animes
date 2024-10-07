@@ -93,56 +93,56 @@ atualizarMargemAnimeDetails();
 // Também atualiza ao redimensionar a janela
 window.addEventListener('resize', atualizarMargemAnimeDetails);
 
-// // Dragger nas temporadas (deslizar)
-// const SeasonSelector = document.querySelector('.temporada-selector');
-// const SeasonButtons = document.querySelectorAll('.temporada-selector > button'); // Seleciona todos os botões de temporada
-// let isDragging = false; // Variável para controlar se o arrasto está ativo
-// let startX; // Posição inicial do clique no eixo X
-// let scrollLeft; // Posição de rolagem atual
+// Dragger nas temporadas (deslizar)
+const SeasonSelector = document.querySelector('.temporada-selector');
+const SeasonButtons = document.querySelectorAll('.temporada-selector > button'); // Seleciona todos os botões de temporada
+let isDragging = false; // Variável para controlar se o arrasto está ativo
+let startX; // Posição inicial do clique no eixo X
+let scrollLeft; // Posição de rolagem atual
 
-// // Função para mudar o cursor para 'grabbing' nos botões
-// function setGrabbingCursor() {
-//     SeasonButtons.forEach(button => {
-//         button.style.cursor = 'grabbing'; // Aplica o cursor 'grabbing' a todos os botões
-//     });
-// }
+// Função para mudar o cursor para 'grabbing' nos botões
+function setGrabbingCursor() {
+    SeasonButtons.forEach(button => {
+        button.style.cursor = 'grabbing'; // Aplica o cursor 'grabbing' a todos os botões
+    });
+}
 
-// // Função para resetar o cursor para 'grab' nos botões
-// function resetCursor() {
-//     SeasonButtons.forEach(button => {
-//         button.style.cursor = 'grab'; // Volta o cursor para 'grab'
-//     });
-// }
+// Função para resetar o cursor para 'grab' nos botões
+function resetCursor() {
+    SeasonButtons.forEach(button => {
+        button.style.cursor = 'grab'; // Volta o cursor para 'grab'
+    });
+}
 
-// // Evento que inicia o arrasto quando o botão do mouse é pressionado
-// SeasonSelector.addEventListener('mousedown', (e) => {
-//     isDragging = true; // Ativa o modo de arrasto
-//     SeasonSelector.classList.add('dragging'); // Adiciona a classe de estilo de arrasto
-//     startX = e.pageX - SeasonSelector.offsetLeft; // Posição X do clique menos a posição do container
-//     scrollLeft = SeasonSelector.scrollLeft; // Pega a posição atual
-//     setGrabbingCursor(); // Muda o cursor para 'grabbing' nos botões
-// });
+// Evento que inicia o arrasto quando o botão do mouse é pressionado
+SeasonSelector.addEventListener('mousedown', (e) => {
+    isDragging = true; // Ativa o modo de arrasto
+    SeasonSelector.classList.add('dragging'); // Adiciona a classe de estilo de arrasto
+    startX = e.pageX - SeasonSelector.offsetLeft; // Posição X do clique menos a posição do container
+    scrollLeft = SeasonSelector.scrollLeft; // Pega a posição atual
+    setGrabbingCursor(); // Muda o cursor para 'grabbing' nos botões
+});
 
-// // Evento que cancela o arrasto caso o mouse saia da área do container
-// SeasonSelector.addEventListener('mouseleave', () => {
-//     isDragging = false;
-//     SeasonSelector.classList.remove('dragging');
-//     resetCursor(); // Reseta o cursor nos botões para 'grab'
-// });
+// Evento que cancela o arrasto caso o mouse saia da área do container
+SeasonSelector.addEventListener('mouseleave', () => {
+    isDragging = false;
+    SeasonSelector.classList.remove('dragging');
+    resetCursor(); // Reseta o cursor nos botões para 'grab'
+});
 
-// // Evento que cancela o arrasto quando o botão do mouse é solto
-// SeasonSelector.addEventListener('mouseup', () => {
-//     isDragging = false;
-//     SeasonSelector.classList.remove('dragging');
-//     resetCursor(); // Reseta o cursor nos botões para 'grab'
-// });
+// Evento que cancela o arrasto quando o botão do mouse é solto
+SeasonSelector.addEventListener('mouseup', () => {
+    isDragging = false;
+    SeasonSelector.classList.remove('dragging');
+    resetCursor(); // Reseta o cursor nos botões para 'grab'
+});
 
-// // Evento que controla o movimento de arrasto enquanto o mouse é movido
-// SeasonSelector.addEventListener('mousemove', (e) => {
-//     if (!isDragging) return; // Se não estiver arrastando, sai da função
-//     e.preventDefault(); // Evita seleções de texto ou outros efeitos indesejados
-//     const x = e.pageX - SeasonSelector.offsetLeft; // Calcula a nova posição X do mouse
-//     const walk = (x - startX) * 2; // Calcula a distância percorrida (multiplica por 2 para aumentar a velocidade)
-//     SeasonSelector.scrollLeft = scrollLeft - walk; // Atualiza a posição de rolagem com base na distância percorrida
-//     setGrabbingCursor(); // Mantém o cursor como 'grabbing' durante o arrasto
-// });
+// Evento que controla o movimento de arrasto enquanto o mouse é movido
+SeasonSelector.addEventListener('mousemove', (e) => {
+    if (!isDragging) return; // Se não estiver arrastando, sai da função
+    e.preventDefault(); // Evita seleções de texto ou outros efeitos indesejados
+    const x = e.pageX - SeasonSelector.offsetLeft; // Calcula a nova posição X do mouse
+    const walk = (x - startX) * 2; // Calcula a distância percorrida (multiplica por 2 para aumentar a velocidade)
+    SeasonSelector.scrollLeft = scrollLeft - walk; // Atualiza a posição de rolagem com base na distância percorrida
+    setGrabbingCursor(); // Mantém o cursor como 'grabbing' durante o arrasto
+});
