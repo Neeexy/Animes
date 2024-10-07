@@ -80,6 +80,7 @@ a:vise{
 .seasons-episodes {
     margin-top: 20px;
     color: #ffffffa6;
+    max-width: 315px;
 
 }
 .seasons-episodes > h4{

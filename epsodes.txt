@@ -3,42 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexy Animes - [Nome do Anime] - Episódio [Número]</title>
-    <link rel="shortcut icon" href="../../style/Nexy-logo.png" type="image/x-icon"> 
-    <link rel="stylesheet" href="../../style/animes.css"> 
-    <link rel="stylesheet" href="../../style/style-index.css"> 
-    <link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
-    <link href="https://unpkg.com/@videojs/themes@1/dist/city/index.css" rel="stylesheet">
-    <link rel="stylesheet" href="episodes.css">
+    <title>Nexy Animes [ANIME - Episódio ]</title>
+
+    <link rel="stylesheet" href="../../../../style/animes.css"> 
+    <link rel="stylesheet" href="../../../../style/style-index.css"> 
+    <link rel="shortcut icon" href="../../../../style/components/Nexy Animes logo.png" type="image/x-icon">
 
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">Nexy Animes</div>
-            <button id="back"><a href="index.html">Início</a></button>
+            <div class="logo">
+                <img src="../../../style/components/Nexy Animes logo 100px.png"  alt=""></div>
+            <button  id="back"><a href="https://nexyanimes.netlify.app/">Início</a></button>
         </nav>
     </header>
 
     <main>
-
-            <video class="video-js vjs-custom-theme " data-setup="{}"  loop controls>
-                <source src="[ep-link]" type="video/mp4" />
-                Seu navegador não suporta o elemento de vídeo.
-        </video>
-        <script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
+        <h2>⇩⇩CLIQUE PARA ASSISTIR⇩⇩</h2>
+        <div class="video-container" >
+            <img id="video-poster" class="poster-episode" src="[THUMB]" alt="">
+            <iframe id="video-frame" data-src="[LINK]" title="" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        
 
         <section class="episode-info">
-            <h2>[Nome do Anime] - Episódio [Número]</h2>
+            <h2>[ANIME - EP]</h2>
+            <h3> N/A- [LEG]</h3>
 
             <div class="controls">
-                <a href=""><button id="prev-episode">&#x25C0; Anterior</button></a>
-                <a href=""><button id="episode-list">Lista de Episódios</button></a>
-                <a href=""><button id="next-episode">Próximo &#x25B6;</button></a>
+                <a href="opening.html"><button id="prev-episode">&#x25C0; Anterior</button></a>
+                <a href="../../bleach-tybw.html"><button id="episode-list">Lista de Episódios</button></a>
+                <a href="Bleach-Sennen Kessen-hen-2.html"><button id="next-episode">Próximo &#x25B6;</button></a>
             </div>
         </section>
+    </main>
+
+    <script>
+        // Poster Script
+        const poster = document.getElementById('video-poster');
+const iframe = document.getElementById('video-frame');
+
+poster.addEventListener('click',function(){
+    // Esconder o poster
+    poster.style.display = 'none'
+
+    // Recuperar URL do vídeo atribuido pelo "data-src" e adicionar o autoplay
+    const videoSrc = iframe.getAttribute('data-src') + "?autoplay=1";
+    iframe.setAttribute('src',videoSrc);
+
+    // Mostrar iframe com o vídeo
+    iframe.style.display = 'block'
+})
 
 
-
+    </script>
 </body>
 </html>

@@ -100,7 +100,6 @@ nav {
     align-items: start;
 }
 .seasons-episodes>h4{
-    width: fit-content;
     border-bottom: 6.5px solid rgba(223, 85, 5, 0.816);  /* Borda inferior */
     margin-bottom: 15px;
 }
@@ -124,10 +123,6 @@ nav {
     max-width: 150px;
     max-height: 35px;
     overflow-y: scroll;
-}
-#all-animes-button, #all-animes-button-bottom {
-    /* ... estilos do botão ... */
-    margin-top: 20px; /* Espaçamento na parte inferior */
 }
 
 a, 
@@ -170,13 +165,39 @@ button#back >a{
     font-weight: bold;
 
 }
-
+.temporada-selector {
+    display: flex;
+     flex-wrap: nowrap; /* Mantém todos os botões em uma única linha */
+    justify-content: start;
+    gap: 6px;
+    overflow-x: auto;
+    height: 56px;
+    padding: 10px 0;
+    }
+    .temporada-selector::-webkit-scrollbar {
+    height: 5px; /* Altura da barra de rolagem horizontal */
+    overflow: hidden;
+    }
+    
+    .temporada-selector::-webkit-scrollbar-thumb {
+    background-color: #888888; /* Cor da "pegada" (parte que se move) */
+    border-radius: 10px; /* Bordas arredondadas */
+    }
+    
+    .temporada-selector::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Cor ao passar o mouse */
+    }
+    .temporada-selector.dragging {
+        cursor: grabbing;
+        cursor: -webkit-grabbing;
+    }
 .temporada-selector > button{
-    max-width: fit-content;
-    max-height: fit-content;
+    flex: 0 0 auto; /* Impede que os botões se expandam */
     padding: 15px 20px 15px;
     font-weight: bold;
+    cursor: grab;
 }
+
 @media (max-width: 768px){
     .logo img{
         max-height: 80px;
