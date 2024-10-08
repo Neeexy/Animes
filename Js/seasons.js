@@ -45,32 +45,6 @@ const isAnyTemporadaOpen = () => {
     return Array.from(seasons).some(temp => temp.style.display === 'block');
 };
 
-// Função para atualizar o estilo do .anime-details
-const atualizarMargemAnimeDetails = () => {
-    if (isAnyTemporadaOpen()) {
-        animeDetails.style.marginTop = '0px';
-        return; // Sai da função se alguma temporada estiver aberta
-    }
-
-    const windowWidth = window.innerWidth;
-    const windowHeight = window.innerHeight;
-
-    if (windowWidth > 1366) {
-        animeDetails.style.marginTop = '-95px'; // Telas grandes (maior que 1366px)
-    } else if (windowWidth > 768) {
-        animeDetails.style.marginTop = '0px';  // Telas médias (entre 768px e 1366px)
-    } else if (windowWidth > 565) {
-        animeDetails.style.marginTop = '-110px';  // Telas pequenas (entre 565px e 768px)
-    } else if (windowWidth > 324) {
-         animeDetails.style.marginTop = '-90px'; // Telas muito pequenas (entre 324px e 565px)
-    } 
-    // Telas menores que 324px de largura OU menores que 375px de altura
-    if (windowHeight <= 500) {
-        animeDetails.style.marginTop = '0px';}
-    //  else if (windowHeight >= 480 && windowWidth > 800){
-    //     animeDetails.style.marginTop = '-170px';
-    // }
-};
 
 // Event listeners para botões de idioma
 languageButtons.forEach(button => {
