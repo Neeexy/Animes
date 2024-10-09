@@ -36,8 +36,6 @@ function showSeason(seasonId) {
         }
     }
 
-    // Atualiza a margem do .anime-details
-    atualizarMargemAnimeDetails();
 }
 
 // Função para verificar se alguma temporada está visível
@@ -63,13 +61,8 @@ seasonButtons.forEach(button => {
 });
 
 // Inicialmente, mostrar todos os botões de temporada
-filterSeasonButtons('none'); // Ou ('dublado')/('legendado')
+filterSeasonButtons('dublado'); // Ou ('dublado')/('legendado')
 
-// Verifica a margem ao carregar a página
-atualizarMargemAnimeDetails();
-
-// Também atualiza ao redimensionar a janela
-window.addEventListener('resize', atualizarMargemAnimeDetails);
 
 // Dragger nas temporadas (deslizar)
 const SeasonSelector = document.querySelector('.temporada-selector');
@@ -94,6 +87,7 @@ function resetCursor() {
 
 // Evento que inicia o arrasto quando o botão do mouse é pressionado
 SeasonSelector.addEventListener('mousedown', (e) => {
+    console.log("Mouse Down");
     isDragging = true; // Ativa o modo de arrasto
     SeasonSelector.classList.add('dragging'); // Adiciona a classe de estilo de arrasto
     startX = e.pageX - SeasonSelector.offsetLeft; // Posição X do clique menos a posição do container
@@ -117,10 +111,11 @@ SeasonSelector.addEventListener('mouseup', () => {
 
 // Evento que controla o movimento de arrasto enquanto o mouse é movido
 SeasonSelector.addEventListener('mousemove', (e) => {
-    if (!isDragging) return; // Se não estiver arrastando, sai da função
-    e.preventDefault(); // Evita seleções de texto ou outros efeitos indesejados
-    const x = e.pageX - SeasonSelector.offsetLeft; // Calcula a nova posição X do mouse
-    const walk = (x - startX) * 2; // Calcula a distância percorrida (multiplica por 2 para aumentar a velocidade)
-    SeasonSelector.scrollLeft = scrollLeft - walk; // Atualiza a posição de rolagem com base na distância percorrida
-    setGrabbingCursor(); // Mantém o cursor como 'grabbing' durante o arrasto
+    if (!isDragging) return;
+    console.log("Mouse Move");
+    e.preventDefault();
+    const x = e.pageX - SeasonSelector.offsetLeft;
+    const walk = (x - startX) * 2;
+    SeasonSelector.scrollLeft = scrollLeft - walk;
+    setGrabbingCursor();
 });
