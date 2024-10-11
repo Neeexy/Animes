@@ -61,7 +61,7 @@ seasonButtons.forEach(button => {
 });
 
 // Inicialmente, mostrar todos os botões de temporada
-filterSeasonButtons('dublado'); // Ou ('dublado')/('legendado')
+// filterSeasonButtons(none); // Ou ('dublado')/('legendado')
 
 
 // Dragger nas temporadas (deslizar)
