@@ -193,10 +193,22 @@ iframe{
 
 }
 .video-container {
-    position: relative;
-    width:90%;
-    height: 600px;
+    width: 100%; /* Defina a largura do contêiner conforme necessário */
+    height: 550px; /* A altura será automática com base na largura */
+    position: relative; /* Isso permite que o vídeo seja posicionado corretamente */
+    overflow: hidden; /* Oculta qualquer parte do vídeo que ultrapasse o contêiner */
+    display: flex; /* Usa flexbox para centralizar o vídeo */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
 }
+
+#video-frame {
+    width: 80%; /* O vídeo ocupará 100% da largura do contêiner */
+    height: 100%; /* O vídeo ocupará 100% da altura do contêiner */
+    object-fit: cover; /* Garante que o vídeo mantenha sua proporção */
+}
+
+
 .poster-episode{
     position: absolute;
     cursor: pointer;
@@ -253,11 +265,7 @@ picture.poster > img{
             font-size: 17px;
         }
     }
-    button{
-        max-width: fit-content;
-        max-height: 50px;
-        font-size: 10.6px;
-    }
+
     .controls{
         padding: 0px;
         padding-left: 10px;
@@ -285,6 +293,24 @@ picture.poster > img{
         max-width: 420px;
         overflow: auto;
     }
+    .video-container {
+        width: 100%; /* Defina a largura do contêiner conforme necessário */
+        height: 250px; /* A altura será automática com base na largura */
+    }
+    #video-frame {
+        width: 100%; /* O vídeo ocupará 100% da largura do contêiner */
+        height: 90%; /* O vídeo ocupará 100% da altura do contêiner */
+        object-fit: cover; /* Garante que o vídeo mantenha sua proporção */
+    }
+    .video-js .vjs-big-play-button{
+        font-size: 2.2em;
+    }
+    .vjs-controls-disabled .vjs-big-play-button,
+    .vjs-has-started .vjs-big-play-button,
+    .vjs-using-native-controls .vjs-big-play-button,
+    .vjs-error .vjs-big-play-button {
+    display: none;
+}
 }
 @media (max-width: 745px){
     .sgenders{
@@ -296,4 +322,36 @@ picture.poster > img{
         max-width: 120px;
         overflow: hidden;
     }
+}
+
+/* Button Player */
+.video-js .vjs-big-play-button{
+    font-size: 3em;
+    line-height: 1.5em;
+    height: 1.63332em;
+    width: 3em;
+    display: block;
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    padding: 0;
+    cursor: pointer;
+    opacity: 1;
+    border: 0.06666em solid #fff;
+    background-color: #2B333F;
+    background-color: rgba(43, 51, 63, 0.7);
+    border-radius: 0.3em;
+    transition: all 0.4s;
+     /* As seguintes propriedades ajudam a ocultar o botão corretamente */
+     visibility: visible; /* Mantém o botão visível inicialmente */
+     z-index: 10; /* Mantenha o z-index, mas ajuste conforme necessário */
+}
+.video-js .vjs-big-play-button.vjs-hidden {
+    visibility: hidden; /* Oculta o botão quando o vídeo está reproduzindo */
+}
+.vjs-controls-disabled .vjs-big-play-button,
+.vjs-has-started .vjs-big-play-button,
+.vjs-using-native-controls .vjs-big-play-button,
+.vjs-error .vjs-big-play-button {
+  display: none;
 }
