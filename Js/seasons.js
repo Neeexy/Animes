@@ -6,11 +6,14 @@ const languageButtons = document.querySelectorAll('.linguagem-selector button');
 const seasons = document.querySelectorAll('.temporada');
 const animeDetails = document.querySelector('.anime-details');
 
-
+// Inicialmente, esconde todos os botões de temporada
+seasonButtons.forEach(button =>{
+    button.style.display = 'none'
+})
 // Função para mostrar/esconder botões de temporada baseados na linguagem
 function filterSeasonButtons(language) {
     seasonButtons.forEach(button => {
-        button.style.display = button.dataset.linguagem === language ? 'inline-block' : 'none';
+        button.style.display = button.dataset.linguagem === language ? 'block' : 'none';
     });
 
     // Foca no primeiro botão de temporada visível
@@ -26,16 +29,14 @@ function showSeason(seasonId) {
         sea.style.display = sea.id === seasonId ? 'block' : 'none';
     });
 
-    // Foca no primeiro episódio da temporada
-    const season = document.getElementById(seasonId);
-    if (season) {
-        const firstEpisode = season.querySelector('.episodes a'); // Corrigido aqui
-        if (firstEpisode) {
-            // Opcional: rolar suavemente até o episódio
-            firstEpisode.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }
-    }
-
+ // Foca no primeiro episódio da temporada
+ const season = document.getElementById(seasonId);
+ if (season) {
+     const firstEpisode = season.querySelector('.episodes a');
+     if (firstEpisode) {
+         firstEpisode.scrollIntoView({ behavior: 'smooth', block: 'center' });
+     }
+ }
 }
 
 // Função para verificar se alguma temporada está visível
@@ -49,8 +50,13 @@ languageButtons.forEach(button => {
     button.addEventListener('click', () => {
         const language = button.dataset.linguagem;
         filterSeasonButtons(language);
+
+        // Exibe a primeira temporada correspondente ao idioma selecionado
+        const firstSeasonId = `temporada-1-${language}`;
+        showSeason(firstSeasonId);
     });
 });
+
 
 // Event listeners para botões de temporada
 seasonButtons.forEach(button => {
@@ -59,9 +65,6 @@ seasonButtons.forEach(button => {
         showSeason(seasonId);
     });
 });
-
-// Inicialmente, mostrar todos os botões de temporada
-// filterSeasonButtons(none); // Ou ('dublado')/('legendado')
 
 
 // Dragger nas temporadas (deslizar)
