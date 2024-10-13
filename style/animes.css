@@ -328,9 +328,9 @@ picture.poster > img{
 /* Button Player */
 .video-js .vjs-big-play-button{
     font-size: 3em;
-    line-height: 1.5em;
-    height: 1.63332em;
-    width: 3em;
+    line-height: 1.9em;
+    height: 1.93332em;
+    width: 4em;
     display: block;
     position: absolute;
     top: 45%;
