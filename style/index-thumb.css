@@ -1,11 +1,12 @@
 /* Mantém todos os cards coloridos inicialmente */
 .thumb {
-    width: 140px;
-    max-width: 161px;
-    height: 210px;
-    max-height: 230px;
+    width: 200px;
+    max-width: 201px;
+    height: 290px;
+    max-height: 290px;
     border-radius: 10px;
-    border: rgb(243, 129, 53) solid 2.2px;
+    border: rgb(243, 129, 53) solid 1.5px;
+    box-shadow: 4px 5px 10px black;
     transition: all 0.4s ease-in-out;
 }
 .anime-item{
@@ -33,47 +34,47 @@
     filter:contrast(100%);
     filter: opacity(0.65);
     filter:grayscale(60%);
-    transform: translateZ(15px);
-
+    transform: translateZ(50px) rotateY(20deg);
+    
 }
 .anime-grid .anime-item:hover + * + *{
-    transition: all 1s ease-in-out;
+    
     filter: opacity(0.65);
     filter:grayscale(60%);
-
+    
 }
 .anime-grid .anime-item:hover + * + * + *{
-    transition: all 1s ease-in-out;
+    
     filter: opacity(0.65);
     filter:grayscale(60%);
 
 }
 .anime-grid .anime-item:hover + * + * + * + *{
-    transition: all 1s ease-in-out;
+    
     filter: opacity(0.65);
     filter:grayscale(60%);
 
 }
 .anime-grid .anime-item:hover + * + *+ *+ *+ {
-    transition: all 1s ease-in-out;
+    
     filter: opacity(0.65);
     filter:grayscale(60%);
 
 }
 .anime-grid .anime-item:hover + * + *+ *+ *+ *+ *{
-    transition: all 1s ease-in-out;
+    
     filter: opacity(0.65);
     filter:grayscale(60%);
 
 }
 .anime-grid .anime-item:hover + * + *+ *+ *+ *+ *+ *{
-    transition: all 1s ease-in-out;
+    
     filter: opacity(0.65);
     filter:grayscale(60%);
 
 }
 .anime-grid .anime-item:hover + * + * + *+ *+ *+ *+ *+ *{
-    transition: all 1s ease-in-out;
+    
     filter: opacity(0.65);
     filter:grayscale(60%);
 }
@@ -93,47 +94,48 @@
     filter:contrast(100%);
     filter: opacity(0.65);
     filter:grayscale(60%);
-    transform: translateZ(15px);
-
+    transform: translateZ(50px) rotateY(-20deg);
+    
 }
 .anime-grid .anime-item:has( + * + *:hover){
-    transition: all 1s ease-in-out;
+    
+    filter: opacity(0.65);
+    filter:grayscale(60%);
+    
+}
+.anime-grid .anime-item:has( + * + * + *:hover){
+    
     filter: opacity(0.65);
     filter:grayscale(60%);
 
-}
-.anime-grid .anime-item:has( + * + * + *:hover){
-    transition: all 1s ease-in-out;
-    filter: opacity(0.65);
-    filter:grayscale(60%);
 
 }
 .anime-grid .anime-item:has( + * + * + * + *:hover){
-    transition: all 1s ease-in-out;
+    
     filter: opacity(0.65);
     filter:grayscale(60%);
 
 }
 .anime-grid .anime-item:has(+ * + *+ *+ *+:hover){
-    transition: all 1s ease-in-out;
+    
     filter: opacity(0.65);
     filter:grayscale(60%);
 
 }
 .anime-grid .anime-item:has(+ * + *+ *+ *+ *+ *:hover){
-    transition: all 1s ease-in-out;
+    
     filter: opacity(0.65);
     filter:grayscale(60%);
 
 }
 .anime-grid .anime-item:has(+ * + *+ *+ *+ *+ *+ *:hover){
-    transition: all 1s ease-in-out;
+    
     filter: opacity(0.65);
     filter:grayscale(60%);
 
 }
 .anime-grid .anime-item:has(+ * + * + *+ *+ *+ *+ *+ *:hover){
-    transition: all 1s ease-in-out;
+    
     filter: opacity(0.65);
     filter:grayscale(60%);
 }
@@ -143,4 +145,8 @@ a{
 }
 .anime-grid .anime-item:hover .anime-title{
     opacity: 0;
+}
+
+.anime-grid{
+    gap: 12px;
 }
