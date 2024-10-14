@@ -1,8 +1,8 @@
 /* Mantém todos os cards coloridos inicialmente */
 .thumb {
-    width: 200px;
+    width: 195px;
     max-width: 201px;
-    height: 290px;
+    height: 270px;
     max-height: 290px;
     border-radius: 10px;
     border: rgb(243, 129, 53) solid 1.5px;
