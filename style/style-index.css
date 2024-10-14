@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 *,html{
     padding: 0px;
     margin: 0px;
@@ -10,10 +12,10 @@
        -khtml-user-select: none; /* Konqueror HTML */
          -moz-user-select: none; /* Old versions of Firefox */
           -ms-user-select: none; /* Internet Explorer/Edge */
-              user-select: none; /* Non-prefixed version, currently
+            user-select: none; /* Non-prefixed version, currently
                                     supported by Chrome, Edge, Opera and Firefox */
 
-    font-family: "kanit", sans-serif;
+    font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal
@@ -46,7 +48,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image: url(../background.jpg);
+    background-image: url(../background-black.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: blur(4px);
@@ -113,11 +115,7 @@ nav {
     margin-top: 5px;
     margin-left: 8px;
 }
-.anime-grid {
-    display: flex;
-    grid-template-columns: repeat(auto-fit, minmax(185px, 1fr)); /* Até 5 por linha */
-    gap: 25px;
-}
+
 .anime-title{
     font-size: 16px;
     max-width: 150px;
