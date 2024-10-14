@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:description" content="Uzumaki Episódio 04 Online em HD, Assistir Uzumaki Episódio 04 HD, Uzumaki ep 04. Animes Online">
+    <title>Nexy Animes - Uzumaki - Episódio 04</title>
+    <link rel="stylesheet" href="../../../../style/style-index.css"> 
+    <link rel="shortcut icon" href="../../../../style/components/Nexy Animes logo.png" type="image/x-icon">
+    <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../style/animes.css"> 
+    <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-thumbnails/0.0.4/videojs-thumbnails.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../../../../style/components/Nexy Animes nav.png"  alt=""></div>
+            <button  id="back"><a href="https://nexyanimes.netlify.app/">Início</a></button>
+        </nav>
+    </header>
+
+    <main>
+        <h2>⇩⇩CLIQUE PARA ASSISTIR⇩⇩</h2>
+        <div class="video-container" >
+            <video id="video-frame" class="video-js vjs-default-skin" controls preload="auto" poster="https://image.tmdb.org/t/p/original/pFWge5egr38r9gQLydJGMBB2Ri8.jpg" alt="Uzumaki-Poster-Ep-03" data-setup="{}">
+                <source src="https://api.anivideo.fun/videohls.php?d=https://cdn-s01.mywallpaper-4k-image.net/stream/u/uzumaki/04.mp4/index.m3u8" alt="uzimaki-episódio-04" type="application/x-mpegURL">
+            </video>
+        </div>
+        
+
+        <section class="episode-info">
+            <h2>Uzumaki - 04</h2>
+            <h3>O Hostipal Kurouzu</h3>
+            <span class="date">Oct. 21, 2024</span>
+
+
+            <div class="controls">
+                <a href="uzumaki-1x03.html"><button id="prev-episode">&#x25C0; Anterior</button></a>
+                <a href="../uzimaki.html"><button id="episode-list">Lista de Episódios</button></a>
+                <a href="../uzimaki.html"><button id="next-episode">Próximo &#x25B6;</button></a>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Poster Script
+        const poster = document.getElementById('video-poster');
+const iframe = document.getElementById('video-frame');
+
+poster.addEventListener('click',function(){
+    // Esconder o poster
+    poster.style.display = 'none'
+
+    // Recuperar URL do vídeo atribuido pelo "data-src" e adicionar o autoplay
+    const videoSrc = iframe.getAttribute('data-src') + "?autoplay=1";
+    iframe.setAttribute('src',videoSrc);
+
+    // Mostrar iframe com o vídeo
+    iframe.style.display = 'block'
+})
+
+
+    </script>
+</body>
+</html>
