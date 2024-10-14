@@ -1,11 +1,146 @@
-.thumb{
-    max-width: 190px;
+/* Mantém todos os cards coloridos inicialmente */
+.thumb {
+    width: 140px;
+    max-width: 161px;
+    height: 210px;
     max-height: 230px;
     border-radius: 10px;
     border: rgb(243, 129, 53) solid 2.2px;
+    transition: all 0.4s ease-in-out;
 }
-.thumb:hover{
-    transform: scale(1.04);
-    border: red solid 2.3px;
-    transition: ease-in-out 0.5s;
+.anime-item{
+    transition: all 0.3s ease-in-out;
+
+}
+.anime-grid{
+    transform-style:preserve-3d ;
+    transform: perspective(1000px);
+}
+
+/* After Effetcs */
+.anime-grid .anime-item{
+    transform: .7;
+    filter: brightness(1);
+}
+
+.anime-grid .anime-item:hover{
+    filter: brightness(1);
+    transform: translateY(-10px);
+    transform: translateZ(90px);
+}
+
+.anime-grid .anime-item:hover  + *{
+    filter:contrast(100%);
+    filter: opacity(0.65);
+    filter:grayscale(60%);
+    transform: translateZ(15px);
+
+}
+.anime-grid .anime-item:hover + * + *{
+    transition: all 1s ease-in-out;
+    filter: opacity(0.65);
+    filter:grayscale(60%);
+
+}
+.anime-grid .anime-item:hover + * + * + *{
+    transition: all 1s ease-in-out;
+    filter: opacity(0.65);
+    filter:grayscale(60%);
+
+}
+.anime-grid .anime-item:hover + * + * + * + *{
+    transition: all 1s ease-in-out;
+    filter: opacity(0.65);
+    filter:grayscale(60%);
+
+}
+.anime-grid .anime-item:hover + * + *+ *+ *+ {
+    transition: all 1s ease-in-out;
+    filter: opacity(0.65);
+    filter:grayscale(60%);
+
+}
+.anime-grid .anime-item:hover + * + *+ *+ *+ *+ *{
+    transition: all 1s ease-in-out;
+    filter: opacity(0.65);
+    filter:grayscale(60%);
+
+}
+.anime-grid .anime-item:hover + * + *+ *+ *+ *+ *+ *{
+    transition: all 1s ease-in-out;
+    filter: opacity(0.65);
+    filter:grayscale(60%);
+
+}
+.anime-grid .anime-item:hover + * + * + *+ *+ *+ *+ *+ *{
+    transition: all 1s ease-in-out;
+    filter: opacity(0.65);
+    filter:grayscale(60%);
+}
+
+/* Before Effects */
+.anime-grid .anime-item{
+    transform: .7;
+    filter: brightness(1);
+}
+
+.anime-grid .anime-item:has{
+    filter: brightness(1);
+    transform: translateY(-10px);
+}
+
+.anime-grid .anime-item:has(  + *:hover){
+    filter:contrast(100%);
+    filter: opacity(0.65);
+    filter:grayscale(60%);
+    transform: translateZ(15px);
+
+}
+.anime-grid .anime-item:has( + * + *:hover){
+    transition: all 1s ease-in-out;
+    filter: opacity(0.65);
+    filter:grayscale(60%);
+
+}
+.anime-grid .anime-item:has( + * + * + *:hover){
+    transition: all 1s ease-in-out;
+    filter: opacity(0.65);
+    filter:grayscale(60%);
+
+}
+.anime-grid .anime-item:has( + * + * + * + *:hover){
+    transition: all 1s ease-in-out;
+    filter: opacity(0.65);
+    filter:grayscale(60%);
+
+}
+.anime-grid .anime-item:has(+ * + *+ *+ *+:hover){
+    transition: all 1s ease-in-out;
+    filter: opacity(0.65);
+    filter:grayscale(60%);
+
+}
+.anime-grid .anime-item:has(+ * + *+ *+ *+ *+ *:hover){
+    transition: all 1s ease-in-out;
+    filter: opacity(0.65);
+    filter:grayscale(60%);
+
+}
+.anime-grid .anime-item:has(+ * + *+ *+ *+ *+ *+ *:hover){
+    transition: all 1s ease-in-out;
+    filter: opacity(0.65);
+    filter:grayscale(60%);
+
+}
+.anime-grid .anime-item:has(+ * + * + *+ *+ *+ *+ *+ *:hover){
+    transition: all 1s ease-in-out;
+    filter: opacity(0.65);
+    filter:grayscale(60%);
+}
+
+a{
+    color: white;
+}
+.anime-grid .anime-item:hover .anime-title{
+    opacity: 0;
 }
