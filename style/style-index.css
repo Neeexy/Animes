@@ -184,7 +184,8 @@ button#back >a{
     justify-content: start;
     gap: 6px;
     overflow-x: auto;
-    height: 56px;
+    overflow: hidden;
+    height: 76px;
     padding: 10px 0;
     }
     .temporada-selector::-webkit-scrollbar {
@@ -222,7 +223,7 @@ button#back >a{
     nav {
         display: flex;
         justify-content:space-between;
-        align-items: center;
+        align-items: end;
     }
     button#prev-episode,#next-episode,#episode-list{
         padding: 5px;
