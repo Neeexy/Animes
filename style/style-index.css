@@ -102,6 +102,7 @@ nav {
     display: flex;
     justify-content:space-between;
     align-items: end;
+    position: relative;
 }
 .seasons-episodes>h4{
     border-bottom: 6.5px solid rgba(223, 85, 5, 0.816);  /* Borda inferior */
@@ -290,34 +291,34 @@ button#back >a{
     border-bottom:1px solid rgba(255,255,255,.5);
     transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
 }
-
-/* Container de resultados */
+/* Container para os resultados da busca */
 .search-results {
-    display: none;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     position: absolute;
-    top: 60px; /* Ajuste essa posição conforme o layout */
-    width: 300px;
-    z-index: 100;
+    top: 100%; /* Abaixo da barra de navegação */
+    left: 100;
+    right: 0;
+    background-color: white;
+    max-width: 40%;
+    max-height: 300px; /* Para evitar que a aba ocupe toda a tela */
+    overflow-y: auto; /* Para adicionar barra de rolagem se houver muitos resultados */
+    border: 1px solid #ccc;
+    z-index: 1000; /* Sobrepondo o restante do site */
+    display: none; /* Inicialmente escondido */
 }
 
-/* Cada item da lista de resultados */
-.result-item {
+.search-results div {
     padding: 10px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    display: flex;
+    align-items: center; /* Para alinhar a imagem e o texto */
 }
 
-.result-item:last-child {
-    border-bottom: none;
+.search-results div:hover {
+    background-color: #f0f0f0;
 }
 
-.result-item a {
-    text-decoration: none;
-    color: #333;
-}
-
-.result-item:hover {
-    background-color: #f1f1f1;
+.search-results img {
+    width: 50px; /* Tamanho da imagem */
+    margin-right: 10px; /* Espaçamento entre imagem e texto */
 }

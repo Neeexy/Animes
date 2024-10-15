@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexy Animes</title>
+    <style>
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            position: relative;
+        }
+
+        .search-results {
+            position: absolute;
+            top: 100%; /* Abaixo da barra de navegação */
+            left: 0;
+            right: 0;
+            background-color: white;
+            max-height: 300px; /* Para evitar que a aba ocupe toda a tela */
+            overflow-y: auto; /* Para adicionar barra de rolagem se houver muitos resultados */
+            border: 1px solid #ccc;
+            z-index: 1000; /* Sobrepondo o restante do site */
+            display: none; /* Inicialmente escondido */
+        }
+
+        .search-results div {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+            cursor: pointer;
+            display: flex;
+            align-items: center; /* Para alinhar a imagem e o texto */
+        }
+
+        .search-results div:hover {
+            background-color: #f0f0f0;
+        }
+
+        .search-results img {
+            width: 50px; /* Tamanho da imagem */
+            margin-right: 10px; /* Espaçamento entre imagem e texto */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">
+            <img src="style/components/Nexy Animes nav.png" alt="">
+        </div>
+        <button id="botão" id="back">
+            <a href="https://nexyanimes.netlify.app/">Início</a>
+        </button>
+
+        <div class="search-box">
+            <button class="btn-search">
+                <i class="fas fa-search"></i>
+            </button>
+            <input type="text" class="input-search" placeholder="Buscar Animes..">
+        </div>
+    </nav>
+    <div id="search-results" class="search-results"></div>
+</header>
+
+<script>
+    const searchInput = document.querySelector('.input-search');
+    const searchResults = document.getElementById('search-results');
+    const animes = [
+        { title: "Naruto", image: "style/components/Nexy Animes nav.png" },
+        { title: "Bleach", image: "https://example.com/bleach.jpg" },
+        { title: "One Piece", image: "https://example.com/onepiece.jpg" },
+        { title: "Attack on Titan", image: "https://example.com/attackontitan.jpg" },
+        { title: "Dragon Ball Z", image: "https://example.com/dragonball.jpg" },
+        { title: "My Hero Academia", image: "https://example.com/myhero.jpg" }
+    ];
+
+    searchInput.addEventListener('input', (e) => {
+        const searchTerm = e.target.value.toLowerCase();
+        const filteredAnimes = animes.filter(anime => anime.title.toLowerCase().includes(searchTerm));
+
+        searchResults.innerHTML = ''; // Limpa os resultados anteriores
+
+        filteredAnimes.forEach(anime => {
+            const resultItem = document.createElement('div');
+            resultItem.classList.add('result-item');
+
+            // Criando um elemento de imagem
+            const img = document.createElement('img');
+            img.src = anime.image; // URL da imagem
+            img.alt = anime.title; // Texto alternativo
+
+            resultItem.appendChild(img); // Adiciona a imagem ao item de resultado
+            resultItem.appendChild(document.createTextNode(anime.title)); // Adiciona o texto do título
+            searchResults.appendChild(resultItem); // Adiciona o item de resultado à lista
+
+            // Exibir a aba de resultados
+            searchResults.style.display = 'block';
+        });
+
+        // Mostrar ou ocultar a aba de resultados com base no número de resultados
+        searchResults.style.display = filteredAnimes.length > 0 ? 'block' : 'none';
+    });
+
+    // Para esconder os resultados quando clicar fora da barra de busca
+    document.addEventListener('click', (e) => {
+        if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
+            searchResults.style.display = 'none'; // Esconde a aba se clicar fora
+        }
+    });
+</script>
+
+</body>
+</html>

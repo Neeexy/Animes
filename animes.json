@@ -1,0 +1,8 @@
+[
+    { "title": "Naruto", "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0Z1YHauVWVljH8wx6vciW2QimSlpsu1ASRw&s", "url": "animes/naruto/index.html" },
+    { "title": "Bleach", "image": "https://static.anroll.net/images/animes/capas/bleach-sennen-kessen-hen-ketsubetsu-tan.jpg", "url": "assistir-anime/bleach-tybw/bleach-tybw.html" },
+    { "title": "One Piece", "image": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2021/07/One-Piece.jpg", "url": "animes/one-piece/index.html" },
+    { "title": "Attack on Titan", "image": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2021/07/Attack-on-Titan.jpg", "url": "animes/attack-on-titan/index.html" },
+    { "title": "Dragon Ball Z", "image": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2021/07/Dragon-Ball-Z.jpg", "url": "animes/dragon-ball-z/index.html" },
+    { "title": "My Hero Academia", "image": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2021/07/My-Hero-Academia.jpg", "url": "animes/my-hero-academia/index.html" }
+]
