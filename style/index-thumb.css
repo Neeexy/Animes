@@ -38,7 +38,7 @@ a{
     border-bottom: 1.7px solid #4e4e4ed0;  /* Borda inferior */
 }
 .anime-dragger{
-    width: 80vw;
+    width: 95vw;
     overflow: auto;
     cursor: grab;
 }
@@ -46,6 +46,9 @@ a{
 .anime-dragger .dragging{
     cursor: grabbing;
     user-select: none;
+}
+.anime-dragger img {
+    pointer-events: none; /* Isso impede que a imagem receba eventos do mouse */
 }
 /* Animes Head */
 .animes-head{
@@ -126,20 +129,20 @@ a{
 
 
 .anime-dragger .animes-head:hover +*{
-    filter: grayscale(60%) blur(2.5px);
+    filter: grayscale(75%) blur(2.5px);
 }
 .anime-dragger .animes-head:hover +*+*{
-    filter: grayscale(60%) blur(2.5px);
+    filter: grayscale(75%) blur(2.5px);
 }
 .anime-dragger .animes-head:hover +*+*+*{
-    filter: grayscale(60%) blur(2.5px);
+    filter: grayscale(75%) blur(2.5px);
 }
 .anime-dragger .animes-head:has(+*:hover){
-    filter: grayscale(60%) blur(2.5px);
+    filter: grayscale(75%) blur(2.5px);
 }
 .anime-dragger .animes-head:has(+*+*:hover){
-    filter: grayscale(60%) blur(2.5px);
+    filter: grayscale(75%) blur(2.5px);
 }
 .anime-dragger .animes-head:has(+*+*+*:hover){
-    filter: grayscale(60%) blur(2.5px);
+    filter: grayscale(75%) blur(2.5px);
 }

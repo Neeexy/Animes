@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Após sofrer um vexame na Copa do Mundo de 2018, a seleção japonesa sofre para se recompor. Falta ao time um artilheiro, uma estrela capaz de guiá-los à vitória. Com o intuito de criar um atacante com fome de bola e sede de vitória, capaz de virar jogos tidos como impossíveis, a Confederação Japonesa de Futebol reune 300 dos melhores jogadores de base do país em um só lugar. Centenas de jovens vão se enfrentar numa batalha de músculos e de egos para provar que são os melhores..">
+    <meta property="og:site_name" content="Nexy Animes - Animes Br - Assistir Animes Online Grátis - Nexy Animes - Animes Online, Assistir Animes Online. Assista Animes Dublados e Legendados, ou Faça downloads. Animes em Full HD e HD.">
+    <meta property="og:title" content="Blue Lock - Nexy Animes - Animes Br - Assistir Animes Online Grátis">
+    <meta property="og:url" content="https://nexyanimes.netlify.app/animes/Blue Lock/Blue Lock">
+    <title>Nexy Animes - Blue Lock - Episódio 01</title>
+    <link rel="stylesheet" href="../../../../style/style-index.css"> 
+    <link rel="shortcut icon" href="../../../../style/components/Nexy Animes logo.png" type="image/x-icon">
+    <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../style/animes.css"> 
+    <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-thumbnails/0.0.4/videojs-thumbnails.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../../../../style/components/Nexy Animes nav.png"  alt=""></div>
+            <button  id="back"><a href="https://nexyanimes.netlify.app/">Início</a></button>
+        </nav>
+    </header>
+
+    <main>
+        <h2>⇩⇩CLIQUE PARA ASSISTIR⇩⇩</h2>
+        <div class="video-container" >
+            <video id="video-frame" class="video-js vjs-default-skin" controls preload="auto" poster="https://image.tmdb.org/t/p/original/seMRyWVwIVBWbC9xaMzDMZJ8fUH.jpg?language=pt-BRg" alt="Blue Lock-Poster" data-setup="{}">
+                <source src="https://cdn-s01.mywallpaper-4k-image.net/stream/b/blue-lock/20.mp4/index.m3u8" alt="Blue Lock-episódio-20" type="application/x-mpegURL">
+            </video>
+        </div>
+        
+
+        <section class="episode-info">
+            <h2>Blue Lock - 20 </h2>
+            <h3>Jogada Super Sincronizada</h3>
+            <span class="date">Feb. 26, 2023</span>
+
+
+            <div class="controls">
+                <a href="Blue Lock-1x019.html"><button id="prev-episode">&#x25C0; Anterior</button></a>
+                <a href="../../Blue Lock.html"><button id="episode-list">Lista de Episódios</button></a>
+                <a href="Blue Lock-1x21.html"><button id="next-episode">Próximo &#x25B6;</button></a>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Poster Script
+        const poster = document.getElementById('video-poster');
+const iframe = document.getElementById('video-frame');
+
+poster.addEventListener('click',function(){
+    // Esconder o poster
+    poster.style.display = 'none'
+
+    // Recuperar URL do vídeo atribuido pelo "data-src" e adicionar o autoplay
+    const videoSrc = iframe.getAttribute('data-src') + "?autoplay=1";
+    iframe.setAttribute('src',videoSrc);
+
+    // Mostrar iframe com o vídeo
+    iframe.style.display = 'block'
+})
+
+
+    </script>
+</body>
+</html>
