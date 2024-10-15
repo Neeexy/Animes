@@ -158,3 +158,10 @@ a{
 .anime-dragger .animes-head:has(+*+*+*:hover){
     filter: grayscale(75%) blur(2.5px);
 }
+
+/* Media query */
+/* @media (max-width: 980px) {
+    .anime-dragger{
+        width: 70vw;
+    }
+} */
