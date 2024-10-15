@@ -3,7 +3,6 @@ const searchResults = document.getElementById('search-results');
 const btn_search = document.querySelector('.btn-search');
 const logo = document.getElementById('logo');
 const pageContent = document.getElementById('page-content'); // Contêiner principal da página
-const view_portWd = document.documentElement.clientWidth
 let isSearchActive = false;
 let animes = [];
 
@@ -84,10 +83,27 @@ btn_search.addEventListener('click', () => {
     pageContent.style.filter = 'none'; // Remove o efeito de blur
 });
 
-
-btn_search.addEventListener('click', ()=>{
+// Remover a logo quando clicar no botão de pesquisa, se a tela for menor que 560px width
+btn_search.addEventListener('click', (e) =>{
     let nav_flex = document.getElementById('nav')
-    if(view_portWd <560){
-        nav_flex.style.justifyContent = 'end'
-        logo.style.display = 'none'}
+    let view_portWd = document.documentElement.clientWidth
+
+    // Esconde a logo se a largura da tela for menor que 560px
+    if (view_portWd <= 560){
+        nav_flex.style.justifyContent = 'end';
+        logo.style.display = 'none'
+    };
+    
+    // Adiciona o evento de clique no documento para trazer a logo de volta ao clicar fora da aba de pesquisa
+    document.addEventListener('click', function ClickOutSite(event){
+        // Verifica se o clique foi fora do botão de busca e fora da barra de pesquisa
+        if (!btn_search.contains(event.target) && !searchInput.contains(event.target)) {
+            nav_flex.style.justifyContent = 'space-between';
+            logo.style.display = 'block'
+
+        // Remove o event listner após restaurar a logo
+            document.removeEventListener('click',ClickOutSite);
+        }
+    })
+
 })

@@ -427,6 +427,7 @@ span{
 }
 
 /* Search Button */
+
 .search-box{
     width: fit-content;
     height: fit-content;
@@ -466,6 +467,8 @@ span{
     color:#ffffff ;
     background-color:transparent;
     pointer-events: painted;  
+    z-index: 1000;
+
 }
 .btn-search:focus ~ .input-search{
     width: 300px;
@@ -499,7 +502,6 @@ span{
 }
 
 .search-results div {
-    
     border-bottom: 1px solid rgba(223, 85, 5, 0.816);
     cursor: pointer;
     display: flex;
