@@ -215,15 +215,19 @@ button#back >a{
 .episodes-list{
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Três colunas de igual largura */
-    padding-right: 175px;
-    margin-left: 20px;
+    padding-left: 175px;
+    margin-left: -20px;
     margin-top: 15px;
+    transform: scalex(-1); /* Inverte horizontalmente */
+    gap: 16px; /* Espaçamento entre os itens */
+    overflow: hidden;
 }
 .item-episode{
     background-color: rgba(0, 0, 0, 0);
     width: 330px;
     height: 260px;
     
+    transform: scalex(-1); /* Inverte horizontalmente */
 }
 
 /* Index Poster */
@@ -265,6 +269,18 @@ button#back >a{
 }
 span{
     color: rgba(255, 255, 255, .5);
+}
+/* Media Queries para Responsividade */
+@media (max-width: 1200px) {
+    .episodes-list {
+        grid-template-columns: repeat(2, 1fr); /* Duas colunas para telas menores */
+    }
+}
+
+@media (max-width: 800px) {
+    .episodes-list {
+        grid-template-columns: 1fr; /* Uma coluna para telas ainda menores */
+    }
 }
 @media (max-width: 768px){
     .logo img{
