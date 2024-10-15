@@ -259,8 +259,8 @@ button#back >a{
 .input-search::placeholder{
     color:rgba(255,255,255,.5);
     font-size: 18px;
-    letter-spacing: 2px;
-    font-weight: 100;
+    letter-spacing: 3px;
+    font-weight: 200;
 }
 .btn-search{
     width: 50px;
@@ -270,7 +270,7 @@ button#back >a{
     font-weight: bold;
     outline: none;
     cursor: pointer;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     position: absolute;
     right: 0px;
     color:#ffffff ;
