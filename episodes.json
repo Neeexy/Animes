@@ -1,0 +1,46 @@
+{
+    "animes": [
+    {
+        "name": "Bleach",
+        "year": "2022",
+        "episodes": [
+        {
+            "number": "27",
+            "title": "Episode 1",
+            "url": "https://nexyanimes.netlify.app/assistir-anime/bleach-tybw/legendado/episodio-1",
+            "poster": "https://image.tmdb.org/t/p/original/2ePGciwFJMvzIWe19HOTwtFzCXO.jpg"
+        },
+        {
+            "number": "28",
+            "title": "Episode 2",
+            "url": "https://nexyanimes.netlify.app/assistir-anime/bleach-tybw/legendado/episodio-2",
+            "poster": "https://image.tmdb.org/t/p/original/ffRYdyzMHI2A3HF98lMUXsTj4rV.jpg"
+        }
+        ]
+    },
+    {
+        "name": "Uzumaki",
+        "year": "2024",
+        "episodes": [
+        {
+            "number": "3",
+            "title": "Episode 1",
+            "url": "https://nexyanimes.netlify.app/assistir-anime/Uzumaki/legendado/episodio-1",
+            "poster": "https://image.tmdb.org/t/p/original/fS2it0pG00gJBkMYJz3DmOE0yPT.jpg"
+        }
+        ]
+    },
+    {
+        "name": "Uzumaki",
+        "year": "2024",
+        "episodes": [
+        {
+            "number": "3",
+            "title": "Episode 1",
+            "url": "https://nexyanimes.netlify.app/assistir-anime/Uzumaki/legendado/episodio-1",
+            "poster": "https://image.tmdb.org/t/p/original/fS2it0pG00gJBkMYJz3DmOE0yPT.jpg"
+        }
+        ]
+    }
+    ]
+}
