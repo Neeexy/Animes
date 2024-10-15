@@ -2,6 +2,7 @@ const searchInput = document.querySelector('.input-search');
 const searchResults = document.getElementById('search-results');
 const btn_search = document.querySelector('.btn-search');
 const logo = document.getElementById('logo');
+const pageContent = document.getElementById('page-content'); // Contêiner principal da página
 const view_portWd = document.documentElement.clientWidth
 let isSearchActive = false;
 let animes = [];
@@ -11,7 +12,6 @@ fetch('animes.json')
     .then(response => response.json())
     .then(data => {
         animes = data;
-        console.log(animes);
     })
     .catch(error => console.error('Erro ao carregar os animes:', error));
 
@@ -24,7 +24,6 @@ searchInput.addEventListener('input', (e) => {
     const filteredAnimes = animes.filter(anime => anime.title.toLowerCase().includes(searchTerm));
 
     searchResults.innerHTML = ''; // Limpa os resultados anteriores
-
     filteredAnimes.forEach(anime => {
         const resultItem = document.createElement('div');
         resultItem.classList.add('result-item');
@@ -61,16 +60,34 @@ searchInput.addEventListener('input', (e) => {
     });
 
     searchResults.style.display = filteredAnimes.length > 0 ? 'block' : 'none';
-});
 
-// Para esconder os resultados quando clicar fora da barra de busca
-document.addEventListener('click', (e) => {
-    if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
-        searchResults.style.display = 'none';
+    // Aplicar o efeito de blur ao conteúdo da página quando houver uma pesquisa ativa
+    if (filteredAnimes.length > 0) {
+        pageContent.style.filter = 'blur(5px)'; // Aplica o blur ao conteúdo da página
+    } else {
+        pageContent.style.filter = 'none'; // Remove o blur se não houver resultados
     }
 });
 
+// Remover o efeito de blur quando clicar fora da barra de busca ou resultados
+document.addEventListener('click', (e) => {
+    if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
+        searchResults.style.display = 'none';
+        pageContent.style.filter = 'none'; // Remove o blur
+    }
+});
+
+// Limpar o input e remover o blur ao clicar no botão de pesquisa
+btn_search.addEventListener('click', () => {
+    searchInput.value = ''; // Limpa o valor do campo de entrada
+    searchResults.style.display = 'none'; // Esconde a aba de resultados
+    pageContent.style.filter = 'none'; // Remove o efeito de blur
+});
+
+
 btn_search.addEventListener('click', ()=>{
+    let nav_flex = document.getElementById('nav')
     if(view_portWd <560){
+        nav_flex.style.justifyContent = 'end'
         logo.style.display = 'none'}
 })

@@ -19,7 +19,7 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav id="nav">
             <div class="logo" id="logo">
                 <a href="https://nexyanimes.netlify.app"><img src="style/components/Nexy Animes nav.png" alt="Nexy Animes logo"></a>
             </div>
@@ -33,137 +33,139 @@
         </nav>
         <div id="search-results" class="search-results"></div>
     </header>
-
-    <main>
-        <h2 class="topic">Animes Em Lançamento</h2>
-        <article class="anime-dragger">
-            <div class="animes-head">
-                <div class="anime-card">
-                    <a href="assistir-anime/bleach-tybw/bleach-tybw.html">
-                        <img src="https://static.anroll.net/images/animes/capas/bleach-sennen-kessen-hen-ketsubetsu-tan.jpg" alt="Bleach" class="poster">
-                        
-                    </a>
-                    <div class="card-content">
-                        <h2>Bleach</h2>
-                        <div class="card-rating">
-                            <ion-icon name="star" class="star"></ion-icon>
-                            <ion-icon name="star" class="star"></ion-icon>
-                            <ion-icon name="star" class="star"></ion-icon>
-                            <ion-icon name="star" class="star"></ion-icon>
-                            <ion-icon name="star-half" class="star"></ion-icon>
-                        </div>
-                    </div>
-                </div>
-                <div class="data-feature">
-                    <h3 class="anime-title"><a href="assistir-anime/bleach-tybw/bleach-tybw.html">Bleach - TYBW</a></h3>
-                    <span class="date">2022</span>
-                </div>
-            </div>
-
-<!-- 
-            <div class="animes-head">
-                <div class="anime-card">
-                    <a href="assistir-anime/naruto/naruto-classico.html">
-                        <img src="https://static.anroll.net/images/animes/capas/naruto-classico.jpg" alt="Naruto Classico" class="poster">
-                        
-                    </a>
-                    <div class="card-content">
-                        <h2>Naruto</h2>
-                        <div class="card-rating">
-                            <ion-icon name="star" class="star"></ion-icon>
-                            <ion-icon name="star" class="star"></ion-icon>
-                            <ion-icon name="star" class="star"></ion-icon>
-                            <ion-icon name="star" class="star"></ion-icon>
-                            <ion-icon name="star-half" class="star"></ion-icon>
-                        </div>
-                    </div>
-                </div>
-                <div class="data-feature">
-                    <h3 class="anime-title"><a href="assistir-anime/naruto/naruto-classico.html">Naruto-Clássico</a></h3>
-                    <span class="date">2002</span>
-                </div>
-            </div> 
--->
-
-
-            <div class="animes-head">
-                <div class="anime-card">
-                    <a href="assistir-anime/Uzumaki/uzimaki.html">
-                        <img src="https://i.ibb.co/wSdqZhS/uzumaki-grande.jpg" alt="Uzumaki" class="poster">
-                        
-                    </a>
-                    <div class="card-content">
-                        <h2>Uzumaki</h2>
-                        <div class="card-rating">
-                            <ion-icon name="star" class="star"></ion-icon>
-                            <ion-icon name="star" class="star"></ion-icon>
-                            <ion-icon name="star" class="star"></ion-icon>
-                            <ion-icon name="star-half" class="star"></ion-icon>
-                        </div>
-                    </div>
-                </div>
-                <div class="data-feature">
-                    <h3 class="anime-title"><a href="assistir-anime/Uzumaki/uzimaki.html">Uzumaki</a></h3>
-                    <span class="date">2024</span>
-                </div>
-            </div>
-
-
-            <div class="animes-head">
-                <div class="anime-card">
-                    <a href="assistir-anime/Tsue to Tsurugi no Wistoria/Wistoria.html">
-                        <img src="https://i.ibb.co/DQ1QCmh/wistoria-poster.jpg" alt="Tsue to Tsurugi no Wistoria" class="poster">
-                        
-                    </a>
-                    <div class="card-content">
-                        <h2>Tsue to Tsurugi no Wistoria</h2>
-                        <div class="card-rating">
-                            <ion-icon name="star" class="star"></ion-icon>
-                            <ion-icon name="star" class="star"></ion-icon>
-                            <ion-icon name="star" class="star"></ion-icon>
-                            <ion-icon name="star-half" class="star"></ion-icon>
-                        </div>
-                    </div>
-                </div>
-                <div class="data-feature">
-                    <h3 class="anime-title"><a href="assistir-anime/Tsue to Tsurugi no Wistoria/Wistoria.html">Tsue to Tsurugi no Wistoria</a></h3>
-                    <span class="date">2024</span>
-                </div>
-            </div>
-
-
-            <div class="animes-head">
-                <div class="anime-card">
-                    <a href="assistir-anime/Blue Lock/Blue Lock.html">
-                        <img src="https://i.ibb.co/Bym4D7k/Blue-Lock-Poster.jpg" alt="Blue Lock" class="poster">
-                        
-                    </a>
-                    <div class="card-content">
-                        <h2>Blue Lock</h2>
-                        <div class="card-rating">
-                            <ion-icon name="star" class="star"></ion-icon>
-                            <ion-icon name="star" class="star"></ion-icon>
-                            <ion-icon name="star-half" class="star"></ion-icon>
-                        </div>
-                    </div>
-                </div>
-                <div class="data-feature">
-                    <h3 class="anime-title"><a href="assistir-anime/Blue Lock/Blue Lock.html">Blue Lock</a></h3>
-                    <span class="date">2022</span>
-                </div>
-            </div>
-
-            
-
-        </article>
-
-        <div id="topic"><h2 class="topic" style="margin-top: 15px;">Últimos Episódios</h2></div>
+<div id="page-content">
     
-        <section class="episodes-list" id="episodes-container">
-            <!-- Episódios serão adicionados aqui dinamicamente -->
-        </section>
-    </main>
-
+        <main>
+            <h2 class="topic">Animes Em Lançamento</h2>
+            <article class="anime-dragger" id="a-g">
+                <div class="animes-head">
+                    <div class="anime-card">
+                        <a href="assistir-anime/bleach-tybw/bleach-tybw.html">
+                            <img src="https://static.anroll.net/images/animes/capas/bleach-sennen-kessen-hen-ketsubetsu-tan.jpg" alt="Bleach" class="poster">
+    
+                        </a>
+                        <div class="card-content">
+                            <h2>Bleach</h2>
+                            <div class="card-rating">
+                                <ion-icon name="star" class="star"></ion-icon>
+                                <ion-icon name="star" class="star"></ion-icon>
+                                <ion-icon name="star" class="star"></ion-icon>
+                                <ion-icon name="star" class="star"></ion-icon>
+                                <ion-icon name="star-half" class="star"></ion-icon>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="data-feature">
+                        <h3 class="anime-title"><a href="assistir-anime/bleach-tybw/bleach-tybw.html">Bleach - TYBW</a></h3>
+                        <span class="date">2022</span>
+                    </div>
+                </div>
+    
+    <!--
+                <div class="animes-head">
+                    <div class="anime-card">
+                        <a href="assistir-anime/naruto/naruto-classico.html">
+                            <img src="https://static.anroll.net/images/animes/capas/naruto-classico.jpg" alt="Naruto Classico" class="poster">
+    
+                        </a>
+                        <div class="card-content">
+                            <h2>Naruto</h2>
+                            <div class="card-rating">
+                                <ion-icon name="star" class="star"></ion-icon>
+                                <ion-icon name="star" class="star"></ion-icon>
+                                <ion-icon name="star" class="star"></ion-icon>
+                                <ion-icon name="star" class="star"></ion-icon>
+                                <ion-icon name="star-half" class="star"></ion-icon>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="data-feature">
+                        <h3 class="anime-title"><a href="assistir-anime/naruto/naruto-classico.html">Naruto-Clássico</a></h3>
+                        <span class="date">2002</span>
+                    </div>
+                </div>
+    -->
+    
+    
+                <div class="animes-head">
+                    <div class="anime-card">
+                        <a href="assistir-anime/Uzumaki/uzimaki.html">
+                            <img src="https://i.ibb.co/wSdqZhS/uzumaki-grande.jpg" alt="Uzumaki" class="poster">
+    
+                        </a>
+                        <div class="card-content">
+                            <h2>Uzumaki</h2>
+                            <div class="card-rating">
+                                <ion-icon name="star" class="star"></ion-icon>
+                                <ion-icon name="star" class="star"></ion-icon>
+                                <ion-icon name="star" class="star"></ion-icon>
+                                <ion-icon name="star-half" class="star"></ion-icon>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="data-feature">
+                        <h3 class="anime-title"><a href="assistir-anime/Uzumaki/uzimaki.html">Uzumaki</a></h3>
+                        <span class="date">2024</span>
+                    </div>
+                </div>
+    
+    
+                <div class="animes-head">
+                    <div class="anime-card">
+                        <a href="assistir-anime/Tsue to Tsurugi no Wistoria/Wistoria.html">
+                            <img src="https://i.ibb.co/DQ1QCmh/wistoria-poster.jpg" alt="Tsue to Tsurugi no Wistoria" class="poster">
+    
+                        </a>
+                        <div class="card-content">
+                            <h2>Tsue to Tsurugi no Wistoria</h2>
+                            <div class="card-rating">
+                                <ion-icon name="star" class="star"></ion-icon>
+                                <ion-icon name="star" class="star"></ion-icon>
+                                <ion-icon name="star" class="star"></ion-icon>
+                                <ion-icon name="star-half" class="star"></ion-icon>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="data-feature">
+                        <h3 class="anime-title"><a href="assistir-anime/Tsue to Tsurugi no Wistoria/Wistoria.html">Tsue to Tsurugi no Wistoria</a></h3>
+                        <span class="date">2024</span>
+                    </div>
+                </div>
+    
+    
+                <div class="animes-head">
+                    <div class="anime-card">
+                        <a href="assistir-anime/Blue Lock/Blue Lock.html">
+                            <img src="https://i.ibb.co/Bym4D7k/Blue-Lock-Poster.jpg" alt="Blue Lock" class="poster">
+    
+                        </a>
+                        <div class="card-content">
+                            <h2>Blue Lock</h2>
+                            <div class="card-rating">
+                                <ion-icon name="star" class="star"></ion-icon>
+                                <ion-icon name="star" class="star"></ion-icon>
+                                <ion-icon name="star-half" class="star"></ion-icon>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="data-feature">
+                        <h3 class="anime-title"><a href="assistir-anime/Blue Lock/Blue Lock.html">Blue Lock</a></h3>
+                        <span class="date">2022</span>
+                    </div>
+                </div>
+    
+    
+    
+            </article>
+    
+            <div id="topic"><h2 class="topic" style="margin-top: 15px;">Últimos Episódios</h2></div>
+    
+            <section class="episodes-list" id="episodes-container">
+                <!-- Episódios serão adicionados aqui dinamicamente -->
+            </section>
+        </main>
+    
+</div>
 
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

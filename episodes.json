@@ -6,7 +6,7 @@
         "episodes": [
           {
             "number": "26",
-            "title": "Episode 1",
+            "title": "Episode",
             "url": "http://127.0.0.1:5500/assistir-anime/Blue%20Lock/legendado/2/Blue%20Lock-2x26.html",
             "poster": "https://image.tmdb.org/t/p/original/97NloZcN94eEMjCqdgtLwWwMs5.jpg"
           }
@@ -18,8 +18,8 @@
         "episodes": [
           {
             "number": "3",
-            "title": "Episode 1",
-            "url": "https://nexyanimes.netlify.app/assistir-anime/Uzumaki/legendado/episodio-1",
+            "title": "Episode",
+            "url": "https://nexyanimes.netlify.app/assistir-anime/Uzumaki/legendado/uzumaki-1x03",
             "poster": "https://image.tmdb.org/t/p/original/fS2it0pG00gJBkMYJz3DmOE0yPT.jpg"
           }
         ]
@@ -30,14 +30,14 @@
         "episodes": [
           {
             "number": "27",
-            "title": "Episode 1",
-            "url": "https://nexyanimes.netlify.app/assistir-anime/bleach-tybw/legendado/episodio-1",
+            "title": "Episode",
+            "url": "https://nexyanimes.netlify.app/assistir-anime/bleach-tybw/leg/temp%20-%203/bleach-sennen%20kessen-hen%E2%80%93soukoku-tan-1",
             "poster": "https://image.tmdb.org/t/p/original/2ePGciwFJMvzIWe19HOTwtFzCXO.jpg"
           },
           {
             "number": "28",
             "title": "Episode 2",
-            "url": "https://nexyanimes.netlify.app/assistir-anime/bleach-tybw/legendado/episodio-2",
+            "url": "https://nexyanimes.netlify.app/assistir-anime/bleach-tybw/leg/temp%20-%203/bleach-sennen%20kessen-hen%E2%80%93soukoku-tan-2",
             "poster": "https://image.tmdb.org/t/p/original/ffRYdyzMHI2A3HF98lMUXsTj4rV.jpg"
           }
         ]

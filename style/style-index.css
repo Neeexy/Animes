@@ -546,3 +546,35 @@ span{
 div#topic{
     width: fit-content;
 }
+
+@media (max-width: 1050px) {
+    .search-results{
+        left: 60%;
+    }
+    
+}
+@media (max-width: 681px) {
+    .search-results{
+        left: 50%;
+    }
+    
+}
+@media (max-width: 660px) {
+    .search-results{
+        left: 40%;
+    }
+    
+}
+@media (max-width: 500px) {
+    .search-results{
+        left: 30%;
+    }
+    
+}
+@media (max-width: 380px) {
+    .search-results{
+        left: 30%;
+        /* backdrop-filter: blur(10px) ; */
+    }
+    
+}

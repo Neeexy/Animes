@@ -27,12 +27,11 @@ function displayEpisodes(animes) {
                 // Cria o HTML para cada episódio
                 const episodeHTML = `
                     <article class="item-episode" id="post-${episode.number}">
-                        <div class="index-poster">
-                            <img src="${episode.poster}" alt="Poster do ${anime.name} - Episódio ${episode.number}">
-                            <div class="episode-link">
-                                <a href="${episode.url}"></a>
+                        <a href="${episode.url}">
+                            <div class="index-poster">
+                                <img src="${episode.poster}" alt="Poster do ${anime.name} - Episódio ${episode.number}">
                             </div>
-                        </div>
+                        </a>
                         <div class="data">
                             <center>
                                 <h3>
