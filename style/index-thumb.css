@@ -39,7 +39,7 @@ a{
     border-bottom: 1.7px solid #4e4e4ed0;  /* Borda inferior */
 }
 .anime-dragger{
-    width: 95vw;
+    width: 85vw;
     overflow: auto;
     cursor: grab;
 }
@@ -73,7 +73,20 @@ a{
 .data-feature h3 a:hover{
     color: #df5505d0;
 }
+.date{
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.555);
+    border-bottom: 0.5px solid #df5505d0;  /* Borda inferior */
+    font-size: 14px;
+}
+.date{
+    width: fit-content;
+    transition: all 0.3s ease-in-out;
+}
+.date:hover{
+    color: #df5505d0;
 
+}
 /* Anime card  style*/
 
 .anime-card{

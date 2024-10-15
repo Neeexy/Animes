@@ -49,7 +49,7 @@ animeDragger.addEventListener('mousemove', (e) => {
     console.log("Mouse Move");
     e.preventDefault();
     const x = e.pageX - animeDragger.offsetLeft;
-    const walk = (x - startX) * 0.5; // Multiplica o movimento para ajustar a sensibilidade
+    const walk = (x - startX) * 0.8; // Multiplica o movimento para ajustar a sensibilidade
     animeDragger.scrollLeft = scrollLeft - walk;
     setGrabbingCursor();
 });

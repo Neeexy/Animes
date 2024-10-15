@@ -1,8 +1,7 @@
 [
-    { "title": "Naruto", "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0Z1YHauVWVljH8wx6vciW2QimSlpsu1ASRw&s", "url": "animes/naruto/index.html" },
-    { "title": "Bleach", "image": "https://static.anroll.net/images/animes/capas/bleach-sennen-kessen-hen-ketsubetsu-tan.jpg", "url": "assistir-anime/bleach-tybw/bleach-tybw.html" },
-    { "title": "One Piece", "image": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2021/07/One-Piece.jpg", "url": "animes/one-piece/index.html" },
-    { "title": "Attack on Titan", "image": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2021/07/Attack-on-Titan.jpg", "url": "animes/attack-on-titan/index.html" },
-    { "title": "Dragon Ball Z", "image": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2021/07/Dragon-Ball-Z.jpg", "url": "animes/dragon-ball-z/index.html" },
-    { "title": "My Hero Academia", "image": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2021/07/My-Hero-Academia.jpg", "url": "animes/my-hero-academia/index.html" }
+    { "title": "Bleach", "image": "https://static.anroll.net/images/animes/capas/bleach-sennen-kessen-hen-ketsubetsu-tan.jpg", "url": "https://nexyanimes.netlify.app/assistir-anime/bleach-tybw/bleach-tybw" , "date":"2022" },
+    {"title":"Blue Lock", "image": "https://i.ibb.co/Bym4D7k/Blue-Lock-Poster.jpg", "url": "https://nexyanimes.netlify.app/assistir-anime/blue%20lock/blue%20lock" , "date":"2022" },
+    {"title": "Uzumaki", "image":"https://i.ibb.co/wSdqZhS/uzumaki-grande.jpg","url":"https://nexyanimes.netlify.app/assistir-anime/uzumaki/uzimaki", "date":"2024" },
+    {"title":"Tsue to Tsurugi no Wistoria", "image": "https://i.ibb.co/DQ1QCmh/wistoria-poster.jpg", "url": "https://nexyanimes.netlify.app/assistir-anime/tsue%20to%20tsurugi%20no%20wistoria/wistorial" , "date":"2024" }
+
 ]

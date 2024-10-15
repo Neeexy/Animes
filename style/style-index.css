@@ -294,31 +294,64 @@ button#back >a{
 /* Container para os resultados da busca */
 .search-results {
     position: absolute;
+    margin-right: 10px;
     top: 100%; /* Abaixo da barra de navegação */
-    left: 100;
+    left: 69%;
     right: 0;
-    background-color: white;
-    max-width: 40%;
+    background-color: rgba(0, 0, 0, 0.678);
+    max-width: 90%;
     max-height: 300px; /* Para evitar que a aba ocupe toda a tela */
     overflow-y: auto; /* Para adicionar barra de rolagem se houver muitos resultados */
-    border: 1px solid #ccc;
     z-index: 1000; /* Sobrepondo o restante do site */
     display: none; /* Inicialmente escondido */
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.747);
+    text-overflow: ellipsis;
 }
 
 .search-results div {
-    padding: 10px;
-    border-bottom: 1px solid #eee;
+    
+    border-bottom: 1px solid rgba(223, 85, 5, 0.816);
     cursor: pointer;
     display: flex;
     align-items: center; /* Para alinhar a imagem e o texto */
+    justify-content: start;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
 
 .search-results div:hover {
-    background-color: #f0f0f0;
+    background-color: rgba(24, 24, 24, 0.678);
 }
 
 .search-results img {
-    width: 50px; /* Tamanho da imagem */
-    margin-right: 10px; /* Espaçamento entre imagem e texto */
+    width: 70px; /* Tamanho da imagem */
+    margin-right: 6px; /* Espaçamento entre imagem e texto */
+}
+
+.search-ico{
+    font-size: 30px;
+    margin-top: 6px;
+}
+.result-item >a{
+    text-align: left;
+    justify-content: start;
+    width: 100%;
+}
+.result-item >a >span{
+    font-size: 16px;
+    color: whitesmoke;
+    font-weight: 600;
+}
+
+.topic{
+    font-weight: 700; 
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: #c95715 5px solid;
+}
+#topic{
+    width: 94.4vw;
 }
