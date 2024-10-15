@@ -118,9 +118,19 @@ nav {
 
 .anime-title{
     font-size: 16px;
-    max-width: 150px;
+    max-width: 90%;
     max-height: 35px;
-    overflow-y: auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.anime-title a{
+    font-size: 16px;
+    max-width: 80%;
+    max-height: 35px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    /* white-space: nowrap; */
 }
 
 a, 

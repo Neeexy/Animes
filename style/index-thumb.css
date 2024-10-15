@@ -5,7 +5,8 @@
     font-family:  'Nunito', Courier, monospace;
     font-optical-sizing: auto;
     font-weight: normal;
-    font-style: normal
+    font-style: normal;
+    user-select: none;
 }
 /* Main Style */
 main{
@@ -16,17 +17,36 @@ main{
 
 a{
     color: white;
+    font-weight: 500;
 }
 /* Anime Dragger Style */
 .anime-dragger{
     display: flex;
     gap: 12px;
+    overflow:hidden;
+    scroll-behavior: smooth;
 }
-
+.anime-dragger::-webkit-scrollbar {
+    display: none; /* Oculta a barra de rolagem no WebKit (Chrome, Safari, etc.) */
+}
+.anime-dragger {
+    -ms-overflow-style: none;  /* Oculta a barra de rolagem no IE e Edge */
+    scrollbar-width: none;  /* Oculta a barra de rolagem no Firefox */
+}
 .anime-dragger{
-    border-bottom: 1.5px solid #df5505d0;  /* Borda inferior */
+    padding-bottom:8px ;
+    border-bottom: 1.7px solid #4e4e4ed0;  /* Borda inferior */
+}
+.anime-dragger{
+    width: 80vw;
+    overflow: auto;
+    cursor: grab;
 }
 
+.anime-dragger .dragging{
+    cursor: grabbing;
+    user-select: none;
+}
 /* Animes Head */
 .animes-head{
     display: flex;
@@ -39,17 +59,19 @@ a{
     font-weight: 500;
     color: rgba(255, 255, 255, 0.555);
     border-bottom: 0.5px solid #df5505d0;  /* Borda inferior */
+    font-size: 14px;
 }
 .data-feature h3{
     font-size: 18px;
 }
 .data-feature a {
+    width: fit-content;
     transition: all 0.3s ease-in-out;
-    
 }
 .data-feature h3 a:hover{
     color: #df5505d0;
 }
+
 /* Anime card  style*/
 
 .anime-card{
@@ -68,4 +90,56 @@ a{
     object-fit: cover;
     left: 0;
     top: 0;
+    transition: all 0.8s ease-in-out;
+}
+
+.anime-card:hover .poster{
+    scale: 1.12;
+}
+
+.card-content{
+    position: absolute;
+    color: white;
+    left: 0;
+    bottom: -100%;
+    padding:10px ;
+    backdrop-filter: blur(3.5px);
+    width: 100%;
+    transition: 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+    background-color: rgba(95, 95, 95, 0.315);
+}
+
+.anime-card:hover .card-content{
+    bottom: 0;
+}
+.card-content h2{
+    font-weight: 800;
+    filter:contrast() ;
+}
+.anime-card .card-rating{
+    color: gold;
+    font-size: 1.15rem;
+}
+
+
+/* Grayscale effect */
+
+
+.anime-dragger .animes-head:hover +*{
+    filter: grayscale(60%) blur(2.5px);
+}
+.anime-dragger .animes-head:hover +*+*{
+    filter: grayscale(60%) blur(2.5px);
+}
+.anime-dragger .animes-head:hover +*+*+*{
+    filter: grayscale(60%) blur(2.5px);
+}
+.anime-dragger .animes-head:has(+*:hover){
+    filter: grayscale(60%) blur(2.5px);
+}
+.anime-dragger .animes-head:has(+*+*:hover){
+    filter: grayscale(60%) blur(2.5px);
+}
+.anime-dragger .animes-head:has(+*+*+*:hover){
+    filter: grayscale(60%) blur(2.5px);
 }

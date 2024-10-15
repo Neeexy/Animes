@@ -25,7 +25,8 @@ main {
     align-items: flex-start; /* Alinha os itens no topo */
     gap: 20px; /* Espaçamento entre a imagem e as informações */
     color: #afaaaaa6;
-    
+    border-bottom: 0.5px solid #df5505d0;  /* Borda inferior */
+
 }
 .sea-name{
     padding-left: 8px;
@@ -312,6 +313,15 @@ picture.poster > img{
     .vjs-error .vjs-big-play-button {
     display: none;
 }
+    .video-js .vjs-big-play-button{
+        font-size: 3em;
+        line-height: 1.9em;
+        height: 1em;
+        width: 2em;
+        top: 25%;
+        left: 45%;
+
+    }
 }
 @media (max-width: 745px){
     .sgenders{
@@ -329,7 +339,7 @@ picture.poster > img{
 .video-js .vjs-big-play-button{
     font-size: 3em;
     line-height: 1.9em;
-    height: 1.93332em;
+    height: 2em;
     width: 4em;
     display: block;
     position: absolute;
