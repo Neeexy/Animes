@@ -352,6 +352,9 @@ button#back >a{
     padding-left: 10px;
     border-left: #c95715 5px solid;
 }
-#topic{
-    width: 94.4vw;
+.episodes-list{
+    width: 100%;
+}
+div#topic{
+    width: fit-content;
 }
