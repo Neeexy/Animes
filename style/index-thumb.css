@@ -25,6 +25,7 @@ a{
     gap: 12px;
     overflow:hidden;
     /* scroll-behavior: smooth; */
+    padding-left: 10px;
 }
 .anime-dragger::-webkit-scrollbar {
     display: none; /* Oculta a barra de rolagem no WebKit (Chrome, Safari, etc.) */
