@@ -70,7 +70,7 @@ header {
     padding-right: 15px;
     padding-bottom: 5px;
     text-align: center;
-    position: sticky;
+    /* position: sticky; */
   top: 0; 
   z-index: 100;
 
