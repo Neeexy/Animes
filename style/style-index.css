@@ -56,6 +56,12 @@ body {
     backdrop-filter: blur(4px);
 
 }
+@media (max-width: 720px) {
+    body{
+    background-image: url(../background-black\ mobile.jpg);
+    background-size: contain;
+    }
+}
 
 header {
     background-color: #302d2c34;
