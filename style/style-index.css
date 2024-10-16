@@ -384,7 +384,7 @@ span{
 @media (max-width: 768px){
     .item-episode{
         width: 250px;
-        height: 1900px;
+        height: 210px;
     }
 
     .episodes-list {
@@ -415,7 +415,7 @@ span{
 @media (max-width: 596px) {
     .item-episode{
         width: 220px;
-        height: 210px;
+        height: 178px;
     }
 
     .episodes-list {
@@ -437,7 +437,7 @@ span{
     .item-episode{
 
         width: 186px;
-        height: 185px;
+        height: 165px;
     }
 
     .episodes-list {
@@ -451,7 +451,7 @@ span{
     .item-episode{
 
         width: 166px;
-        height: 185px;
+        height: 155px;
     }
 
     .episodes-list {
