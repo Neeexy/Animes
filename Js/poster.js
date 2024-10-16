@@ -1,4 +1,5 @@
-const poster = document.getElementById('video-poster');
+        // Poster Script
+        const poster = document.getElementById('video-poster');
 const iframe = document.getElementById('video-frame');
 
 poster.addEventListener('click',function(){
@@ -12,4 +13,3 @@ poster.addEventListener('click',function(){
     // Mostrar iframe com o vídeo
     iframe.style.display = 'block'
 })
-
