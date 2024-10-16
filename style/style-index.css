@@ -53,7 +53,6 @@ body {
     background-image: url(../background-black.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    backdrop-filter: blur(4px);
 
 }
 @media (max-width: 510px) {
@@ -184,9 +183,11 @@ button#back >a{
     justify-content: start;
     gap: 6px;
     overflow-x: auto;
-    overflow: hidden;
+    overflow-y: hidden;
+    /* overflow: hidden; */
     height: 76px;
     padding: 10px 0;
+    margin-bottom: 10px;
     }
     .temporada-selector::-webkit-scrollbar {
     height: 5px; /* Altura da barra de rolagem horizontal */

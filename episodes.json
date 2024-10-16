@@ -1,6 +1,24 @@
 {
     "animes": [
       {
+        "name": "Dungeon Ni Deai V",
+        "year": "2024",
+        "episodes": [
+          {
+            "number": "02",
+            "title": "Episode 2",
+            "url": "https://nexyanimes.netlify.app/assistir-anime/dungeon%20ni%20deai/legendado/05/dungeon-ni-deai-5x02",
+            "poster": "https://static.anroll.net/images/animes/screens/dungeon-ni-deai-wo-motomeru-no-wa-machigatteiru-darou-ka-v/002.jpg"
+          },
+          {
+            "number": "01",
+            "title": "Episode",
+            "url": "https://nexyanimes.netlify.app/assistir-anime/dungeon%20ni%20deai/legendado/05/dungeon-ni-deai-5x01",
+            "poster": "https://static.anroll.net/images/animes/screens/dungeon-ni-deai-wo-motomeru-no-wa-machigatteiru-darou-ka-v/001.jpg"
+          }
+        ]
+      },
+      {
         "name": "Blue Lock",
         "year": "2024",
         "episodes": [
