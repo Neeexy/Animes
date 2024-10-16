@@ -226,6 +226,8 @@ button#back >a{
     gap: 16px; /* Espaçamento entre os itens */
     overflow: hidden;
     width: fit-content;
+    border-bottom:1px solid rgba(255,255,255,.5);
+    margin-bottom: 10px;
 }
 .item-episode{
     background-color: rgba(0, 0, 0, 0);
