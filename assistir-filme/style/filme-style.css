@@ -54,8 +54,6 @@ ol {
 .episode-info{
     h2{
         color: #afacac;
-        padding-top: 10px;
-        font-size: 18px;
     }
     h3 {
         display: block;
@@ -110,7 +108,7 @@ li span {
     color: var(--verde);
 }
 li h2 {
-    font-size: 12px;
+    font-size: 17px;
     display: inline-block;
 }
 .episode-info > .date{
@@ -156,5 +154,11 @@ iframe{
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+    }
+    li h2 {
+        font-size: 15px;
+    }
+    li{
+        font-size: 13px;
     }
 }
