@@ -549,7 +549,6 @@ span{
 .search-results {
     position: absolute;
     margin-right: 10px;
-     top: 10%; /*Abaixo da barra de navegação */
     left: 69%;
     right: 0;
     background-color: rgba(0, 0, 0, 0.678);
