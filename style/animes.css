@@ -12,6 +12,12 @@ body {
     
 
 }
+:root {
+    --body: #1c1c1c;
+    --branco: #fff;
+    --verde: #df5505d0;
+}
+
 
 main {
     padding: 20px;
@@ -94,11 +100,8 @@ a:vise{
 .episode-info{
     
     h2{
-        color: #afacac;
-        padding-top: 10px;
         max-width: fit-content;
-        border-bottom: 3.5px solid #504945d0;  /* Borda inferior */
-        font-size: 35px;
+        font-size: 24px;
     }
     h3{
         max-width: fit-content;
@@ -210,7 +213,41 @@ iframe{
     object-fit: cover; /* Garante que o vídeo mantenha sua proporção */
 }
 
+.episode-info{
+    width: 80%;
+}
+#data{
+    width: 100%;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+}
+ol {
+    display: block;
+    list-style-type: decimal;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+ol li {
+    list-style: none;
+}
+li{
+    border-bottom: 0.5px solid #3a3633d0;  /* Borda inferior */
 
+}
+li span {
+    font-weight: bold;
+    color: var(--verde);
+}
+li h2 {
+    font-size: 17px;
+    display: inline-block;
+}
 .poster-episode{
     position: absolute;
     cursor: pointer;
@@ -228,7 +265,9 @@ picture.poster > img{
     display: flex;
     align-items: center;
     gap: 10px;
-    padding-top: 15px;
+    padding-top: 5px;
+    justify-content: center;
+    width: 100%;
 }
 @media (max-width: 768px){
 
