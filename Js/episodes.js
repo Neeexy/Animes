@@ -17,13 +17,16 @@ async function loadAnimes() {
     }
 }
 
-// Função para exibir episódios de cada anime
+// Função para exibir episódios de cada anime (limite de 15 episódios)
 function displayEpisodes(animes) {
     const episodesContainer = document.getElementById('episodes-container');
+    let episodeCount = 0; // Variável para contar o número de episódios exibidos
 
     animes.forEach(anime => {
         if (anime.episodes && Array.isArray(anime.episodes)) {
             anime.episodes.forEach(episode => {
+                if (episodeCount >= 16) return; // Se já exibiu 15 episódios, parar
+
                 // Cria o HTML para cada episódio
                 const episodeHTML = `
                     <article class="item-episode" id="post-${episode.number}">
@@ -46,6 +49,7 @@ function displayEpisodes(animes) {
 
                 // Adiciona o episódio ao container de episódios
                 episodesContainer.insertAdjacentHTML('beforeend', episodeHTML);
+                episodeCount++; // Incrementa o contador de episódios exibidos
             });
         } else {
             console.error(`Episódios inválidos para o anime ${anime.name}`);
