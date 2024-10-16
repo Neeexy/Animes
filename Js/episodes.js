@@ -30,6 +30,7 @@ function displayEpisodes(animes) {
                         <a href="${episode.url}" target="_blank">
                             <div class="index-poster">
                                 <img src="${episode.poster}" alt="Poster do ${anime.name} - Episódio ${episode.number}">
+                                <div class="play-button"></div>
                             </div>
                         </a>
                         <div class="data">
