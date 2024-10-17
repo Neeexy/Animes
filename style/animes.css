@@ -422,7 +422,13 @@ picture.poster > img{
 .vjs-hover:hover{
     color: rgb(198 73 22);
 }
-.vjs-icon-placeholder > span{
+.vjs-icon-placeholder {
+    color: rgb(198 73 22);
+}
+.vjs-remaining-time-display{
+    color: white;
+}
+.video-js .vjs-play-control .vjs-icon-placeholder::before{
     color: rgb(198 73 22);
 }
 @media (max-width: 500px){
