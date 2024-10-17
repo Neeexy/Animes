@@ -229,8 +229,20 @@
     
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="Js/search.js"></script>
+    <script src="Js/dragger.js" ></script>
+    <script src="Js/episodes.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js')
+      .then(function(registration) {
+        console.log('Service Worker registrado com sucesso:', registration);
+      })
+      .catch(function(error) {
+        console.log('Erro ao registrar o Service Worker:', error);
+      });
+    }
+    </script>
 </body>
-<script src="Js/search.js"></script>
-<script src="Js/dragger.js" ></script>
-<script src="Js/episodes.js"></script>
+
 </html>
