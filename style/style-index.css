@@ -308,10 +308,12 @@ button#back >a{
     padding: 5px;
     max-width: fit-content;
 }
-span{
-    color: rgba(255, 255, 255, .5);
+.vjs-icon-placeholder {
+    color: rgb(198 73 22);
 }
-
+.vjs-remaining-time-display{
+    color: white;
+}
 /* End of Season  */
 .end-of-season {
     text-align: center;

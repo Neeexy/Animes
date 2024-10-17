@@ -405,3 +405,33 @@ picture.poster > img{
 .vjs-error .vjs-big-play-button {
   display: none;
 }
+
+.video-js .vjs-control-bar {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3em;
+    background-color: #2B333F;
+    background-color: #000000a1;
+}
+.video-js .vjs-play-progress {
+    background-color: rgb(161, 62, 23);
+}
+.vjs-hover:hover{
+    color: rgb(198 73 22);
+}
+.vjs-icon-placeholder > span{
+    color: rgb(198 73 22);
+}
+@media (max-width: 500px){
+    .video-js .vjs-big-play-button{
+        top: 40%;
+       left: 39%;
+        line-height: 1.6em;
+       height: 1.7em;
+       width: 3em;
+    }
+   }
+   
