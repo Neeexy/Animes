@@ -5,6 +5,12 @@
         "year": "2024",
         "episodes": [
           {
+            "number": "03",
+            "title": "Episode 3",
+            "url": "https://nexyanimes.netlify.app/assistir-anime/dungeon%20ni%20deai/legendado/05/dungeon-ni-deai-5x03",
+            "poster": "https://image.tmdb.org/t/p/original/4IkdI8TwVeHcQ49TxKoCUmfTxzk.jpg"
+          },
+          {
             "number": "02",
             "title": "Episode 2",
             "url": "https://nexyanimes.netlify.app/assistir-anime/dungeon%20ni%20deai/legendado/05/dungeon-ni-deai-5x02",
