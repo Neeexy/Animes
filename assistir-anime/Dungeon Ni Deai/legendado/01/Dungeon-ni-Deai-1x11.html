@@ -11,7 +11,17 @@
     <link rel="stylesheet" href="../../../../style/animes.css"> 
     <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-thumbnails/0.0.4/videojs-thumbnails.min.js"></script>
-
+    <style>
+        .thumbnail-preview {
+            position: absolute;
+    display: none;
+    width: 120px; /* Ajuste conforme necessário */
+    height: auto;
+    z-index: 9999; /* Aumente o valor do z-index */
+    border: 1px solid #ccc;
+    pointer-events: none; /* Adicione isso para evitar interações com o mouse */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -38,9 +48,9 @@
         </div>
         <section class="episode-info">
             <div class="controls">
-                <a href="Dungeon-ni-Deai-1x10.html"><button id="botão"id="prev-episode">&#x25C0; Anterior</button></a>
-                <a href="https://nexyanimes.netlify.app/assistir-anime/dungeon%20ni%20deai/dungeon-ni-deai"><button id="botão"id="episode-list">Lista de Episódios</button></a>
-                <a href="Dungeon-ni-Deai-1x12.html"><button id="botão"id="next-episode">Próximo &#x25B6;</button></a>
+                <a href="Dungeon-ni-Deai-1x10.html"><button id="botão" id="prev-episode">&#x25C0; Anterior</button></a>
+                <a href="https://nexyanimes.netlify.app/assistir-anime/dungeon%20ni%20deai/dungeon-ni-deai"><button id="botão" id="episode-list">Lista de Episódios</button></a>
+                <a href="Dungeon-ni-Deai-1x12.html"><button id="botão" id="next-episode">Próximo &#x25B6;</button></a>
             </div>
             <div id="data">
                 <ol>
@@ -48,87 +58,12 @@
                     <li><span>Episódio: </span> 11</li>
                     <li><span>Audio: </span>Japonês </li>
                     <li><span>Data Lançamento: </span>2015</li>
-                    </ol>
+                </ol>
             </div>
-
-
         </section>
     </main>
 
-    <script>
-//         // Poster Script
-//         const poster = document.getElementById('video-poster');
-// const iframe = document.getElementById('video-frame');
-
-// poster.addEventListener('click',function(){
-//     // Esconder o poster
-//     poster.style.display = 'none'
-
-//     // Recuperar URL do vídeo atribuido pelo "data-src" e adicionar o autoplay
-//     const videoSrc = iframe.getAttribute('data-src') + "?autoplay=1";
-//     iframe.setAttribute('src',videoSrc);
-
-//     // Mostrar iframe com o vídeo
-//     iframe.style.display = 'block'
-// })
-
-    // Esperar até que o Video.js esteja pronto
-    videojs('video-frame').ready(function() {
-        const video = document.getElementById('video-frame');
-        const progressBar = document.querySelector('.vjs-progress-holder.vjs-slider.vjs-slider-horizontal');
-        const thumbnailPreview = document.getElementById('thumbnail-preview');
-        const thumbnailImg = document.getElementById('thumbnail-img');
-
-        // Função para calcular o tempo do vídeo de acordo com a posição do mouse
-        function getVideoTime(mouseX, progressBar) {
-            const progressBarRect = progressBar.getBoundingClientRect();
-            const progressBarWidth = progressBarRect.width;
-            const relativeX = mouseX - progressBarRect.left;
-            const percentage = relativeX / progressBarWidth;
-            const videoDuration = video.duration;
-            return Math.floor(percentage * videoDuration); // Tempo do vídeo correspondente
-        }
-
-        // Função para formatar o tempo em MM:SS
-        function formatTime(seconds) {
-            const minutes = Math.floor(seconds / 60);
-            const secs = seconds % 60;
-            return `${minutes}:${secs < 10 ? '0' : ''}${secs}`;
-        }
-
-        // Função para obter o caminho correto das miniaturas
-        function getThumbnailPath(videoId, videoTime) {
-            const episodeNumber = videoId; // Assumindo que o ID do vídeo seja o número do episódio
-            return `thumb-frames/${episodeNumber}/thumbnail-${seconds}s.jpg`;
-        }
-
-        // Quando o mouse passar sobre a barra de progresso
-        progressBar.addEventListener('mousemove', (e) => {
-            const videoTime = getVideoTime(e.clientX, progressBar);
-
-            // Aqui assumimos que o vídeo tenha um ID que corresponde ao número do episódio
-            const videoId = video.getAttribute('data-episode-id'); // Exemplo: "1"
-            
-            // Formatar o tempo do vídeo corretamente (MM:SS)
-            const formattedTime = formatTime(videoTime);
-
-            // Atualizar a imagem da miniatura com base no tempo e no número do episódio
-            thumbnailImg.src = getThumbnailPath(videoId, formattedTime);
-            
-            // Mostrar a miniatura
-            thumbnailPreview.style.display = 'block';
-            
-            // Posicionar a miniatura corretamente
-            thumbnailPreview.style.left = `${e.clientX - 60}px`; // 60 é metade da largura da miniatura
-            thumbnailPreview.style.top = `${e.clientY - 80}px`;  // Ajuste para posicionar acima do mouse
-        });
-
-        // Esconder a miniatura quando o mouse sair da barra de progresso
-        progressBar.addEventListener('mouseleave', () => {
-            thumbnailPreview.style.display = 'none';
-        });
-    });
-
+    <script src="">
     </script>
 
 </body>
