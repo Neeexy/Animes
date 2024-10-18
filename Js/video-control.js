@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (event.target.tagName.toLowerCase() !== 'input' && event.target.tagName.toLowerCase() !== 'textarea') {
                 switch(event.key) {
                     case ' ':
+                    case 'k':
                         // Pausar ou tocar o vídeo com a barra de espaço
                         if (video.paused) {
                             video.play();
