@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
             if (event.target.tagName.toLowerCase() !== 'input' && event.target.tagName.toLowerCase() !== 'textarea') {
                 switch(event.key) {
                     case ' ':
-                    case 'k':
                         // Pausar ou tocar o vídeo com a barra de espaço
                         if (video.paused) {
                             video.play();
@@ -18,6 +17,12 @@ document.addEventListener('DOMContentLoaded', function() {
                         event.preventDefault(); // Evitar scroll ao pressionar espaço
                         event.stopPropagation(); // Prevenir o evento de continuar propagando
                         break;
+                    case 'k':
+                        if (video.paused) {
+                            video.play();
+                        } else {
+                            video.pause();
+                        }
                     case 'l':
                     case 'ArrowRight':
                         // Avançar 5 segundos com a seta direita ou 'l'
