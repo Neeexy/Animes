@@ -18,11 +18,17 @@ document.addEventListener('DOMContentLoaded', function() {
                         event.stopPropagation(); // Prevenir o evento de continuar propagando
                         break;
                     case 'l':
+                        // Avançar 10 segundos com a letra 'l'
+                        video.currentTime += 10;
+                        break;
                     case 'ArrowRight':
                         // Avançar 5 segundos com a seta direita ou 'l'
                         video.currentTime += 5;
                         break;
                     case 'j':
+                        // Avançar 10 segundos com a letra 'j'
+                        video.currentTime -= 10;
+                        break;
                     case 'ArrowLeft':
                         // Voltar 5 segundos com a seta esquerda ou 'j'
                         video.currentTime -= 5;
