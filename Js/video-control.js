@@ -2,6 +2,27 @@ document.addEventListener('DOMContentLoaded', function() {
     const video = document.querySelector('video');
 
     if (video) {
+         // Função para retroceder 10 segundos
+    function goBack10Seconds() {
+        video.currentTime(video.currentTime() - 10);
+    }
+
+    // Criar o botão de voltar 10s
+    const rewindButton = video.controlBar.addChild('button', {
+        text: 'Voltar 10s',
+        className: 'vjs-rewind-button'
+    });
+
+    // Definir o comportamento do botão
+    rewindButton.el().innerHTML = '<span class="vjs-icon-placeholder"></span><span class="vjs-control-text">Voltar 10s</span>';
+    rewindButton.on('click', goBack10Seconds);
+
+    // Inserir o botão de voltar 10s entre play/pause e volume
+    const playControl = video.controlBar.playToggle.el();
+    const volumeControl = video.controlBar.volumePanel.el();
+    video.controlBar.el().insertBefore(rewindButton.el(), volumeControl);
+
+        
         // Detecta o pressionamento das teclas
         document.addEventListener('keydown', function(event) {
             // Se o foco estiver no player de vídeo, ou evitar conflitos com espaço em outros elementos
