@@ -1,15 +1,29 @@
 {
     "animes": [
-        {
-        "name": "Bleach",
-        "year": "2022",
+      {
+        "name": "Bleach-TBYW III",
+        "year": "2024",
         "episodes": [
           {
-            "number": "29",
+            "number": "03",
             "title": "Episode",
             "url": "https://nexyanimes.netlify.app/assistir-anime/bleach-tybw/leg/temp%20-%203/bleach-sennen%20kessen-hen%E2%80%93soukoku-tan-3",
-            "poster": "https://image.tmdb.org/t/p/original/2ePGciwFJMvzIWe19HOTwtFzCXO.jpg"
-          },
+            "poster": "https://static.anroll.net/images/animes/screens/bleach-sennen-kessen-hen-soukoku-tan/003.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Blue Lock",
+        "year": "2024",
+        "episodes": [
+          {
+            "number": "27",
+            "title": "Episode",
+            "url": "https://nexyanimes.netlify.app/assistir-anime/Blue%20Lock/legendado/2/Blue%20Lock-2x27.html",
+            "poster": "https://static.anroll.net/images/animes/screens/blue-lock-2/003.jpg"
+          }
+        ]
+      },
       {
         "name": "Dungeon Ni Deai V",
         "year": "2024",
