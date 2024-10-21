@@ -1,10 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const video = document.querySelector('video');
-
     if (video) {
-    
 
-        
         // Detecta o pressionamento das teclas
         document.addEventListener('keydown', function(event) {
             // Se o foco estiver no player de vídeo, ou evitar conflitos com espaço em outros elementos
@@ -76,4 +73,30 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+    // Encontre o elemento onde será inserido o botão (depois de .vjs-current-time-display)
+const currentTimeDisplay = document.querySelector('.vjs-current-time-display');
+
+// Cria um novo botão para retroceder 10 segundos
+const rewindButton = document.createElement('button');
+rewindButton.classList.add('vjs-control', 'vjs-button', 'rewind-button');
+rewindButton.setAttribute('type', 'button');
+rewindButton.setAttribute('title', 'Rewind 10 seconds');
+
+// Adiciona o texto ao botão
+rewindButton.innerHTML = `<span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Rewind 10s</span>`;
+
+// Função para retroceder 10 segundos no vídeo
+rewindButton.addEventListener('click', function() {
+    const videoPlayer = document.querySelector('video');
+    if (videoPlayer) {
+        videoPlayer.currentTime = Math.max(0, videoPlayer.currentTime - 10);
+    }
+});
+
+// Insere o botão após o .vjs-current-time-display
+if (currentTimeDisplay) {
+    currentTimeDisplay.parentNode.insertBefore(rewindButton, currentTimeDisplay.nextSibling);
+}
+
 });

@@ -444,6 +444,10 @@ picture.poster > img{
 .video-js .vjs-play-control .vjs-icon-placeholder::before{
     color: rgb(198 73 22);
 }
+.video-js .vjs-current-time, .vjs-no-flex .vjs-current-time {
+    display: block;
+    color: white;
+}
 @media (max-width: 500px){
     .video-js .vjs-big-play-button{
         top: 40%;

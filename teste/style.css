@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    background-image: url(../background-black.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body{
+    color: white;
+}
+.video-container{
+    margin: auto 0;
+    width: 300px;
+
+}
+
+.rewind-button {
+    background-color: #444; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    margin-left: 5px; /* Margem para espaçar do tempo atual */
+}
