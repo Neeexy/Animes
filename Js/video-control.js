@@ -2,10 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const video = document.querySelector('video');
 
     if (video) {
-         // Função para retroceder 10 segundos
-    function goBack10Seconds() {
-        video.currentTime(video.currentTime() - 10);
-    }
+    
 
         
         // Detecta o pressionamento das teclas
