@@ -448,8 +448,18 @@ picture.poster > img{
     display: block;
     color: white;
 }
-.rewind-button{
-color: white;
+span.rewind10s {
+    font-size: 22px;
+    position: absolute;
+    top: -1px;
+    left: 30px;
+    color: rgb(198 73 22)
+}
+span.vjs-current-time-display {
+    position: absolute;
+    /* margin-right: 11px; */
+    top: 1px;
+    left: 6px;
 }
 @media (max-width: 500px){
     .video-js .vjs-big-play-button{
