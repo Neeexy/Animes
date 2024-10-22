@@ -128,4 +128,19 @@ if (currentTimeDisplay) {
     currentTimeDisplay.parentNode.insertBefore(rewindButton, currentTimeDisplay.nextSibling);
 }
 
+// Função para verificar se o usuário está em um dispositivo móvel
+function isMobile() {
+    return /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop|BlackBerry/i.test(navigator.userAgent);
+}
+
+// Seleciona o botão de volume
+const volumePanel = document.querySelector('.vjs-volume-panel');
+
+// Esconde o botão de volume se o usuário estiver em um dispositivo móvel
+if (isMobile()) {
+    if (volumePanel) {
+        volumePanel.style.display = 'none';
+    }
+}
+
 });
