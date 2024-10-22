@@ -74,8 +74,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Encontre o elemento onde será inserido o botão (depois de .vjs-current-time-display)
+// Encontre o elemento da barra de controle onde será inserido o botão (depois de .vjs-current-time-display)
 const currentTimeDisplay = document.querySelector('.vjs-current-time-display');
+
+// Cria um novo contêiner (div) para o botão de retroceder
+const rewindButtonDiv = document.createElement('div');
+rewindButtonDiv.classList.add('vjs-control', 'vjs-time-control', 'rewind-button-container');
 
 // Cria um novo botão para retroceder 10 segundos
 const rewindButton = document.createElement('button');
@@ -83,11 +87,16 @@ rewindButton.classList.add('vjs-control', 'vjs-button', 'rewind-button');
 rewindButton.setAttribute('type', 'button');
 rewindButton.setAttribute('title', 'Rewind 10 seconds');
 
-// Adiciona o texto ao botão
-rewindButton.innerHTML = `<span class="rewind10s" aria-hidden="true">
-    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 19 2 12 11 5 11 19"></polygon><polygon points="22 19 13 12 22 5 22 19"></polygon></svg>
-</span>
+// Adiciona o ícone de rewind (ou símbolo) ao botão
+rewindButton.innerHTML = `<span class="rewind10s" aria-hidden="true">↺</span>
 <span class="vjs-control-text" aria-live="polite">Rewind 10s</span>`;
+
+// Adiciona o botão à nova div
+rewindButtonDiv.appendChild(rewindButton);
+
+// Insere a nova div logo após a .vjs-current-time-display
+currentTimeDisplay.parentNode.insertBefore(rewindButtonDiv, currentTimeDisplay.nextSibling);
+
 
 // Função para retroceder 10 segundos no vídeo
 rewindButton.addEventListener('click', function() {
