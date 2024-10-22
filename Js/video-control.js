@@ -98,7 +98,7 @@ avanceButton.setAttribute('type', 'button');
 avanceButton.setAttribute('title', 'avance 10 seconds');
 
 // Adiciona o ícone de rewind (ou símbolo) ao botão
-avanceButton.innerHTML = `<span class="rewind10s" aria-hidden="true">↻</span>
+avanceButton.innerHTML = `<span class="avance10s" aria-hidden="true">↻</span>
 <span class="vjs-control-text" aria-live="polite">Rewind 10s</span>`;
 
 // Adiciona o botão à nova div
