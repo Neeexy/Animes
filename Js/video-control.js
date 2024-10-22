@@ -84,7 +84,13 @@ rewindButton.setAttribute('type', 'button');
 rewindButton.setAttribute('title', 'Rewind 10 seconds');
 
 // Adiciona o texto ao botão
-rewindButton.innerHTML = `<span class="rewind10s" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Rewind 10s</span>`;
+rewindButton.innerHTML = `<span class="rewind10s" aria-hidden="true">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+        <polygon points="11 19 2 12 11 5 11 19" />
+        <polygon points="22 19 13 12 22 5 22 19" />
+    </svg>
+</span>
+<span class="vjs-control-text" aria-live="polite">Rewind 10s</span>`;
 
 // Função para retroceder 10 segundos no vídeo
 rewindButton.addEventListener('click', function() {
