@@ -452,7 +452,15 @@ span.rewind10s {
     font-size: 22px;
     position: absolute;
     top: -1px;
-    left: 30px;
+    left: 25px;
+    color: rgb(198 73 22);
+    font-weight: bolder;
+}
+span.avance10s {
+    position: absolute;
+    top: -43px;
+    font-size: 22px;
+    left: 50px;
     color: rgb(198 73 22);
     font-weight: bolder;
 }
@@ -461,6 +469,19 @@ span.vjs-current-time-display {
     /* margin-right: 11px; */
     top: 1px;
     left: 6px;
+}
+.video-js .vjs-control {
+    position: relative;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 3.2em;
+    flex: none;
+}
+.vjs-current-time.vjs-time-control.vjs-control {
+    padding: 0;
+    margin-right: 26px;
 }
 @media (max-width: 500px){
     .video-js .vjs-big-play-button{
