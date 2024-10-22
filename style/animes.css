@@ -470,15 +470,6 @@ span.vjs-current-time-display {
     top: 1px;
     left: 6px;
 }
-.video-js .vjs-control {
-    position: relative;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 3.2em;
-    flex: none;
-}
 .vjs-current-time.vjs-time-control.vjs-control {
     padding: 0;
     margin-right: 26px;
