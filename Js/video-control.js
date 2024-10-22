@@ -91,8 +91,19 @@ rewindButton.setAttribute('title', 'Rewind 10 seconds');
 rewindButton.innerHTML = `<span class="rewind10s" aria-hidden="true">↺</span>
 <span class="vjs-control-text" aria-live="polite">Rewind 10s</span>`;
 
+// Cria um novo botão para Avançar 10 segundos
+const avanceButton = document.createElement('button');
+avanceButton.classList.add('vjs-control', 'vjs-button', 'avance-button');
+avanceButton.setAttribute('type', 'button');
+avanceButton.setAttribute('title', 'avance 10 seconds');
+
+// Adiciona o ícone de rewind (ou símbolo) ao botão
+avanceButton.innerHTML = `<span class="rewind10s" aria-hidden="true">↻</span>
+<span class="vjs-control-text" aria-live="polite">Rewind 10s</span>`;
+
 // Adiciona o botão à nova div
 rewindButtonDiv.appendChild(rewindButton);
+rewindButtonDiv.appendChild(avanceButton);
 
 // Insere a nova div logo após a .vjs-current-time-display
 currentTimeDisplay.parentNode.insertBefore(rewindButtonDiv, currentTimeDisplay.nextSibling);
@@ -103,6 +114,12 @@ rewindButton.addEventListener('click', function() {
     const videoPlayer = document.querySelector('video');
     if (videoPlayer) {
         videoPlayer.currentTime = Math.max(0, videoPlayer.currentTime - 10);
+    }
+});
+avanceButton.addEventListener('click', function() {
+    const videoPlayer = document.querySelector('video');
+    if (videoPlayer) {
+        videoPlayer.currentTime = Math.max(0, videoPlayer.currentTime + 10);
     }
 });
 
