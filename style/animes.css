@@ -448,6 +448,9 @@ picture.poster > img{
     display: block;
     color: white;
 }
+.rewind-button{
+color: white;
+}
 @media (max-width: 500px){
     .video-js .vjs-big-play-button{
         top: 40%;
