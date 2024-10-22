@@ -11,8 +11,8 @@
     --back-grad: linear-gradient(to right, #d86a21, #d15d10);
 }
 body{
-    background-color: #c9d6ff;
-    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    background-color: #9198b1;
+    background: linear-gradient(to right, #e2e2e2, #9099b4);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,7 +27,7 @@ body{
 
 
 .container{
-    background-color: #fff;
+    background-color: #c2bebe;
     border-radius: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     position: relative;
@@ -75,7 +75,7 @@ body{
 }
 
 .container form{
-    background-color: #fff;
+    background-color: #c2bebe;
     display: flex;
     align-items: center;
     justify-content: center;
