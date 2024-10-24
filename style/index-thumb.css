@@ -120,7 +120,7 @@ a{
     padding:10px ;
     backdrop-filter: blur(3.5px);
     width: 100%;
-    transition: 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: 0.8s cubic-bezier(0.085, 0.82, 0.165, 1);
     background-color: rgba(95, 95, 95, 0.315);
 }
 
@@ -141,22 +141,37 @@ a{
 
 
 .anime-dragger .animes-head:hover +*{
-    filter: grayscale(75%) blur(2.5px);
+    filter: grayscale(85%) blur(2.5px);
 }
 .anime-dragger .animes-head:hover +*+*{
-    filter: grayscale(75%) blur(2.5px);
+    filter: grayscale(85%) blur(2.5px);
 }
 .anime-dragger .animes-head:hover +*+*+*{
-    filter: grayscale(75%) blur(2.5px);
+    filter: grayscale(85%) blur(2.5px);
 }
+.anime-dragger .animes-head:hover +*+*+*+*{
+    filter: grayscale(85%) blur(2.5px);
+}
+.anime-dragger .animes-head:hover +*+*+*+*+*{
+    filter: grayscale(85%) blur(2.5px);
+}
+
+
+/* Before */
 .anime-dragger .animes-head:has(+*:hover){
-    filter: grayscale(75%) blur(2.5px);
+    filter: grayscale(85%) blur(2.5px);
 }
 .anime-dragger .animes-head:has(+*+*:hover){
-    filter: grayscale(75%) blur(2.5px);
+    filter: grayscale(85%) blur(2.5px);
 }
 .anime-dragger .animes-head:has(+*+*+*:hover){
-    filter: grayscale(75%) blur(2.5px);
+    filter: grayscale(85%) blur(2.5px);
+}
+.anime-dragger .animes-head:has(+*+*+*+*:hover){
+    filter: grayscale(85%) blur(2.5px);
+}
+.anime-dragger .animes-head:has(+*+*+*+*+*:hover){
+    filter: grayscale(85%) blur(2.5px);
 }
 
 /* Media query */
