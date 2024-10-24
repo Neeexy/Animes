@@ -44,23 +44,35 @@ document.addEventListener('DOMContentLoaded', function() {
                         // Mutar ou desmutar com a tecla 'm'
                         video.muted = !video.muted;
                         break;
+                    case 'f':
+                        // Alternar tela cheia com a tecla 'f'
+                        if (!document.fullscreenElement) {
+                            if (video.requestFullscreen) {
+                                video.requestFullscreen();
+                            } else if (video.mozRequestFullScreen) { // Firefox
+                                video.mozRequestFullScreen();
+                            } else if (video.webkitRequestFullscreen) { // Chrome, Safari e Opera
+                                video.webkitRequestFullscreen();
+                            } else if (video.msRequestFullscreen) { // Internet Explorer/Edge
+                                video.msRequestFullscreen();
+                            }
+                        } else {
+                            if (document.exitFullscreen) {
+                                document.exitFullscreen();
+                            } else if (document.mozCancelFullScreen) { // Firefox
+                                document.mozCancelFullScreen();
+                            } else if (document.webkitExitFullscreen) { // Chrome, Safari e Opera
+                                document.webkitExitFullscreen();
+                            } else if (document.msExitFullscreen) { // Internet Explorer/Edge
+                                document.msExitFullscreen();
+                            }
+                        }
+                        break;
                 }
             }
         });
     }
 
-    document.addEventListener('keydown', function(event) {
-        // Verifica se a tecla pressionada é o 'F'
-        if (event.key.toLowerCase() === 'f') {
-            // Seleciona o botão de fullscreen
-            const fullscreenButton = document.querySelector('.vjs-fullscreen-control');
-            
-            // Simula o clique no botão de fullscreen
-            if (fullscreenButton) {
-                fullscreenButton.click();
-            }
-        }
-    });
 // Encontre o elemento da barra de controle onde será inserido o botão (depois de .vjs-current-time-display)
 const currentTimeDisplay = document.querySelector('.vjs-current-time-display');
 
