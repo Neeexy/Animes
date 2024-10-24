@@ -232,7 +232,7 @@ button#back >a{
 
 /* Index Poster */
 .index-poster{
-    border-radius: 20px;
+    border-radius: 10px;
     float: left;
     position: relative;
     overflow: hidden;
