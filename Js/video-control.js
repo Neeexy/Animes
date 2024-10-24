@@ -135,11 +135,13 @@ function isMobile() {
 
 // Seleciona o botão de volume
 const volumePanel = document.querySelector('.vjs-volume-panel');
+const PinP = document.querySelector('.vjs-picture-in-picture-control'); //Picture In Picture Mode
 
 // Esconde o botão de volume se o usuário estiver em um dispositivo móvel
 if (isMobile()) {
     if (volumePanel) {
         volumePanel.style.display = 'none';
+        PinP.style.display = 'none';
     }
 }
 

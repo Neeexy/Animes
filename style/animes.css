@@ -504,13 +504,33 @@ span.vjs-current-time-display {
     width: 3em;
     }}
 
+@media (max-width: 1466px) {
+    .vjs-current-time.vjs-time-control.vjs-control {
+        margin-right: 79%;
+    }
+}
+@media (max-width: 1366px) {
+    .vjs-current-time.vjs-time-control.vjs-control {
+        margin-right: 78%;
+    }
+}
+@media (max-width: 1130px) {
+    .vjs-current-time.vjs-time-control.vjs-control {
+        margin-right: 72%;
+    }
+}
+@media (max-width: 1025px) {
+    .vjs-current-time.vjs-time-control.vjs-control {
+        margin-right: 65%;
+    }
+}
 @media (max-width: 800px) {
     .vjs-current-time.vjs-time-control.vjs-control {
         margin-right: 62%;
     }
 }
 
-@media (max-width:550px) {
+@media (max-width:600px) {
     .vjs-current-time.vjs-time-control.vjs-control {
         margin-right: 50%;
     }
