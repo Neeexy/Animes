@@ -498,10 +498,25 @@ span.vjs-current-time-display {
 @media (max-width: 500px){
     .video-js .vjs-big-play-button{
         top: 40%;
-       left: 39%;
+    left: 39%;
         line-height: 1.6em;
-       height: 1.7em;
-       width: 3em;
+    height: 1.7em;
+    width: 3em;
+    }}
+
+@media (max-width: 800px) {
+    .vjs-current-time.vjs-time-control.vjs-control {
+        margin-right: 62%;
     }
-   }
-   
+}
+
+@media (max-width:550px) {
+    .vjs-current-time.vjs-time-control.vjs-control {
+        margin-right: 50%;
+    }
+}
+@media (max-width:411px) {
+    .vjs-current-time.vjs-time-control.vjs-control {
+        margin-right: 38%;
+    }
+}
