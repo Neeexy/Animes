@@ -448,8 +448,28 @@ picture.poster > img{
     display: block;
     color: white;
 }
+
+/* Play/Pause/Mute/Pic/FScreen Buttons */
+.vjs-button > .vjs-icon-placeholder:before {
+    font-size: 2.3em;
+    line-height: 1.17;
+}
+
+/* Barra de Progresso */
+.video-js .vjs-progress-control {
+    cursor: pointer;
+    flex: auto;
+    display: flex;
+    align-items: center;
+    min-width: 4em;
+    touch-action: none;
+    position: absolute;
+    top: -31px;
+    width: 95%;
+    left: 16px;
+}
 span.rewind10s {
-    font-size: 22px;
+    font-size: 2.67em;
     position: absolute;
     top: -1px;
     left: 25px;
@@ -459,7 +479,7 @@ span.rewind10s {
 span.avance10s {
     position: absolute;
     top: -43px;
-    font-size: 22px;
+    font-size: 2.67em;
     left: 50px;
     color: rgb(198 73 22);
     font-weight: bolder;
@@ -474,7 +494,7 @@ span.vjs-current-time-display {
 }
 .vjs-current-time.vjs-time-control.vjs-control {
     padding: 0;
-    margin-right: 26px;
+    margin-right: 75%;
 }
 @media (max-width: 500px){
     .video-js .vjs-big-play-button{
