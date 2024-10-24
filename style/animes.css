@@ -34,6 +34,21 @@ main {
     border-bottom: 0.5px solid #df5505d0;  /* Borda inferior */
 
 }
+button:focus {
+    outline: none; /* Remove o contorno de foco do botão */
+    transform: none; /* Garante que o foco não aplique nenhuma transformação */
+}
+
+.temporada-selector button {
+    cursor: grab; /* Mantém o cursor como 'grab' */
+}
+
+.anime-details {
+    background-size: cover; /* Garante que a imagem de fundo cubra a área sem distorcer */
+    background-position: center; /* Mantém a posição centralizada */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+}
+
 .sea-name{
     padding-left: 8px;
     font-size: 23px;
