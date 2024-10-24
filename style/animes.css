@@ -465,8 +465,7 @@ picture.poster > img{
     touch-action: none;
     position: absolute;
     top: -31px;
-    width: 95%;
-    left: 16px;
+    width: 100%;
 }
 span.rewind10s {
     font-size: 2.67em;
