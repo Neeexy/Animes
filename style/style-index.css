@@ -52,7 +52,7 @@ body {
     min-height: 100vh;
     background-image: url(../background-yellow.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 @media (max-width: 510px) {
     body{
