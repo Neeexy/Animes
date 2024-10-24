@@ -128,21 +128,39 @@ if (currentTimeDisplay) {
     currentTimeDisplay.parentNode.insertBefore(rewindButton, currentTimeDisplay.nextSibling);
 }
 
-// Função para verificar se o usuário está em um dispositivo móvel
+
+// Função para verificar se o dispositivo é mobile
 function isMobile() {
     return /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop|BlackBerry/i.test(navigator.userAgent);
 }
 
-// Seleciona o botão de volume
-const volumePanel = document.querySelector('.vjs-volume-panel');
-const PinP = document.querySelector('.vjs-picture-in-picture-control'); //Picture In Picture Mode
+document.addEventListener('fullscreenchange', function() {
+    const videoControls = document.querySelector('.vjs-current-time.vjs-time-control.vjs-control');
 
-// Esconde o botão de volume se o usuário estiver em um dispositivo móvel
+    if (document.fullscreenElement) {
+        if (isMobile()) {
+            // Se for mobile, define margin-right como 75%
+            videoControls.style.marginRight = '75%';
+        } else {
+            // Caso não seja mobile, usa 81%
+            videoControls.style.marginRight = '81%';
+        }
+    } else {
+        // Se o vídeo não está em fullscreen, restaura o estilo original
+        videoControls.style.marginRight = '';
+    }
+});
+
+// Seleciona o botão de volume e o modo Picture-in-Picture (PiP)
+const volumePanel = document.querySelector('.vjs-volume-panel');
+const PinP = document.querySelector('.vjs-picture-in-picture-control');
+
+// Esconde o botão de volume e PiP se o usuário estiver em um dispositivo móvel
 if (isMobile()) {
     if (volumePanel) {
         volumePanel.style.display = 'none';
-        PinP.style.display = 'none';
+        if (PinP) {
+            PinP.style.display = 'none';
+        }
     }
-}
-
-});
+}})
