@@ -503,8 +503,12 @@ span.vjs-current-time-display {
     height: 1.7em;
     width: 3em;
     }}
-
-@media (max-width: 1466px) {
+@media (max-width: 1439px) and (height: 899px) {
+    .vjs-current-time.vjs-time-control.vjs-control {
+        margin-right: 81%;
+    }
+}
+@media (max-width: 1440px) {
     .vjs-current-time.vjs-time-control.vjs-control {
         margin-right: 76%;
     }

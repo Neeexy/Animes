@@ -52,5 +52,16 @@
 
     <script src="../../../Js/poster.js">
     </script>
+    <script>document.addEventListener('fullscreenchange', function() {
+        const videoControls = document.querySelector('.vjs-current-time.vjs-time-control.vjs-control');
+    
+        if (document.fullscreenElement) {
+            // Se o vídeo está em fullscreen
+            videoControls.style.marginRight = '81%';
+        } else {
+            // Se o vídeo não está em fullscreen
+            videoControls.style.marginRight = '';
+        }
+    });</script>
 </body>
 </html>
