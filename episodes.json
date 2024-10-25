@@ -1,6 +1,18 @@
 {
     "animes": [
       {
+        "name": "Re:Zero 2",
+        "year": "2020",
+        "episodes": [
+          {
+            "number": "25",
+            "title": "Episode",
+            "url": "https://animesnexy.netlify.app/assistir-anime/Re-Zero-1/legendado/Re-Zero-1x13.html",
+            "poster": "https://static.anroll.net/images/animes/screens/re-zero-kara-hajimeru-isekai-seikatsu/013.jpg"
+          }
+        ]
+      },
+      {
         "name": "Re:Zero",
         "year": "2016",
         "episodes": [
