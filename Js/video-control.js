@@ -151,3 +151,32 @@ if (isMobile()) {
         }
     }
 }})
+
+document.addEventListener('DOMContentLoaded', function () {
+    const video = document.getElementById('video-frame');
+
+    // Pegue os dados do vídeo dinamicamente (nome do anime e número do episódio)
+    const animeTitle = document.querySelector('h2').innerText.trim();
+    const episodeNumber = document.querySelector('ol li:nth-child(2)').innerText.trim().split(" ")[1]; // Ex: "03"
+
+    // Crie um identificador único para cada vídeo
+    const videoId = `${animeTitle.replace(/\s+/g, '-')}-Ep${episodeNumber}`;
+
+    // Carregar o tempo salvo do vídeo quando os metadados forem carregados
+    video.addEventListener('loadedmetadata', function () {
+        const savedTime = localStorage.getItem(videoId);
+        if (savedTime) {
+            video.currentTime = parseFloat(savedTime);
+        }
+    });
+
+    // Salvar o tempo atual do vídeo no localStorage a cada mudança de tempo
+    video.addEventListener('timeupdate', function () {
+        localStorage.setItem(videoId, video.currentTime);
+    });
+
+    // Quando o vídeo acabar, remover o tempo salvo
+    video.addEventListener('ended', function () {
+        localStorage.removeItem(videoId);
+    });
+});

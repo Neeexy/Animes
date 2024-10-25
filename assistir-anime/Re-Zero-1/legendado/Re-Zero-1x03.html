@@ -52,28 +52,7 @@
 
     <script src="../../../Js/poster.js">
     </script>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const video = document.getElementById('video-frame');
-        const videoId = 'ReZero-Ep03';  // Um identificador único para este vídeo
 
-        // Carregar o tempo salvo do vídeo, se houver
-        const savedTime = localStorage.getItem(videoId);
-        if (savedTime) {
-            video.currentTime = parseFloat(savedTime);
-        }
-
-        // Salvar o tempo atual do vídeo no localStorage a cada 5 segundos
-        video.addEventListener('timeupdate', function () {
-            localStorage.setItem(videoId, video.currentTime);
-        });
-
-        // Quando o vídeo acabar, remover o tempo salvo
-        video.addEventListener('ended', function () {
-            localStorage.removeItem(videoId);
-        });
-    });
-</script>
 
 </body>
 </html>
