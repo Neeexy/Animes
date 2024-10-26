@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:description" content="Uzumaki Episódio 02 Online em HD, Assistir Uzumaki Episódio 02 HD, Uzumaki ep 02. Animes Online">
-    <title>Nexy Animes - Uzumaki - Episódio 03</title>
+    <meta property="og:description" content="Uzumaki 02 Online em HD, Assistir Uzumaki 02 HD, Uzumaki ep 02. Animes Online">
+    <title>Nexy Animes - Uzumaki- Episódio 02</title>
     <link rel="stylesheet" href="../../../../style/style-index.css"> 
     <link rel="shortcut icon" href="../../../../style/components/Nexy Animes logo.png" type="image/x-icon">
     <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet">
-    <link rel="stylesheet" href="../../../../style/animes.css"> 
     <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
+    <link rel="stylesheet" href="../../../../style/animes.css"> 
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-thumbnails/0.0.4/videojs-thumbnails.min.js"></script>
 
 </head>
@@ -18,52 +19,38 @@
         <nav>
             <div class="logo">
                 <img src="../../../../style/components/Nexy Animes nav.png"  alt=""></div>
-            <button  id="back"><a href="https://nexyanimes.netlify.app/">Início</a></button>
+            <button id="botão" id="back"><a href="https://animesnexy.netlify.app/">Início</a></button>
         </nav>
     </header>
 
     <main>
-        <h2>⇩⇩CLIQUE PARA ASSISTIR⇩⇩</h2>
         <div class="video-container" >
-            <video id="video-frame" class="video-js vjs-default-skin" controls preload="auto" poster="https://image.tmdb.org/t/p/original/j4q1Oxyslpap1aldbk8vYgPvuEM.jpg" alt="Uzumaki-Poster-Ep-02" data-setup="{}">
-                <source src="https://cdn-s01.mywallpaper-4k-image.net/stream/u/uzumaki/02.mp4/index.m3u8" alt="uzimaki-episódio-02" type="application/x-mpegURL">
+            <video id="video-frame" class="video-js vjs-default-skin" controls preload="auto" poster="https://static.anroll.net/images/animes/screens/uzumaki/002.jpg" alt="Uzumaki-poster" data-setup="{}">
+                <source src="https://cdn-s01.mywallpaper-4k-image.net/stream/u/uzumaki/02.mp4/index.m3u8" alt="Uzumaki"type="application/x-mpegURL">
             </video>
         </div>
-        
-
         <section class="episode-info">
-            <h2>Uzumaki - 02 </h2>
-            <h3>Cabelo Em Espiral</h3>
-            <span class="date">Oct. 07, 2024</span>
-
-
             <div class="controls">
-                <a href="uzumaki-1x01.html"><button id="prev-episode">&#x25C0; Anterior</button></a>
-                <a href="../uzimaki.html"><button id="episode-list">Lista de Episódios</button></a>
-                <a href="uzumaki-1x03.html"><button id="next-episode">Próximo &#x25B6;</button></a>
+                <a href="Uzumaki-1x01.html"><button id="botão"id="prev-episode">&#x25C0; Anterior</button></a>
+                <a href="https://animesnexy.netlify.app/assistir-anime/uzumaki/uzimaki"><button id="botão"id="episode-list">Lista de Episódios</button></a>
+                <a href="uzumaki-1x03.html"><button id="botão"id="next-episode">Próximo &#x25B6;</button></a>
+                
             </div>
+            <div id="data">
+                <ol>
+                    <li><span>Anime: </span> <h2>Uzumaki</h2></li>
+                    <li><span>Episódio: </span> 02 - Cabelo Em Espiral</li>
+                    <li><span>Audio: </span>Japonês </li>
+                    <li><span>Data Lançamento: </span>Oct, 07. 2024</li>
+                    </ol>
+            </div>
+
+
         </section>
     </main>
     <script src="../../../../Js/video-control.js"></script>
 
-    <script>
-        // Poster Script
-        const poster = document.getElementById('video-poster');
-const iframe = document.getElementById('video-frame');
-
-poster.addEventListener('click',function(){
-    // Esconder o poster
-    poster.style.display = 'none'
-
-    // Recuperar URL do vídeo atribuido pelo "data-src" e adicionar o autoplay
-    const videoSrc = iframe.getAttribute('data-src') + "?autoplay=1";
-    iframe.setAttribute('src',videoSrc);
-
-    // Mostrar iframe com o vídeo
-    iframe.style.display = 'block'
-})
-
-
+    <script src="../../../Js/poster.js">
     </script>
 </body>
 </html>

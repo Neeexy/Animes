@@ -1,5 +1,42 @@
 {
     "animes": [
+      
+      {
+        "name": "Dandadan",
+        "year": "2024",
+        "episodes": [
+          {
+            "number": "04",
+            "title": "Episode",
+            "url": "https://animesnexy.netlify.app/assistir-anime/dandadan/legendado/dandadan-1x04",
+            "poster": "https://static.anroll.net/images/animes/screens/dandadan/004.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Dandadan - Dublado",
+        "year": "2024",
+        "episodes": [
+          {
+            "number": "03",
+            "title": "Episode",
+            "url": "https://animesnexy.netlify.app/assistir-anime/dandadan/dublado/dandadan-1x03",
+            "poster": "https://static.anroll.net/images/animes/screens/dandadan/003.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Re:Zero 3",
+        "year": "2024",
+        "episodes": [
+          {
+            "number": "04",
+            "title": "Episode",
+            "url": "https://animesnexy.netlify.app/assistir-anime/re-zero-3/legendado/re-zero-3x04",
+            "poster": "https://static.anroll.net/images/animes/screens/re-zero-kara-hajimeru-isekai-seikatsu-3/004.jpg"
+          }
+        ]
+      },
       {
         "name": "Re:Zero 2",
         "year": "2020",
