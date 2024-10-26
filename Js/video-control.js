@@ -61,6 +61,22 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     });
+    document.addEventListener('keydown', function(speed){ 
+        // Alterar velocidade do vídeo enquando a tecla 'v' estiver pressionada
+        if (speed.key === 'v'){
+            // Aumenta a velocidade do video
+            video.playbackRate = 2.0
+        }
+
+    })
+    // Detecta quando a tecla é solta
+
+    document.addEventListener('keyup', function(speed){
+        if(speed.key === 'v'){
+            video.playbackRate = 1.0
+        }
+    })
+
 // Encontre o elemento da barra de controle onde será inserido o botão (depois de .vjs-current-time-display)
 const currentTimeDisplay = document.querySelector('.vjs-current-time-display');
 
