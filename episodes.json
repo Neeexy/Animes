@@ -1,6 +1,17 @@
 {
     "animes": [
-      
+      {
+        "name": "Dungeon Ni Deai V",
+        "year": "2024",
+        "episodes": [
+          {
+            "number": "04",
+            "title": "Episode 4",
+            "url": "https://animesnexy.netlify.app/assistir-anime/dungeon%20ni%20deai/legendado/05/dungeon-ni-deai-5x04",
+            "poster": "https://image.tmdb.org/t/p/original/uFQExDNG7w3RA7kFxVkoGO0Fkmx.jpg"
+          }
+        ]
+      },
       {
         "name": "Dandadan",
         "year": "2024",
