@@ -2,6 +2,7 @@ const searchInput = document.querySelector('.input-search');
 const searchResults = document.getElementById('search-results');
 const btn_search = document.querySelector('.btn-search');
 const logo = document.getElementById('logo');
+const menu = document.getElementById('menu')
 const pageContent = document.getElementById('page-content'); // Contêiner principal da página
 let isSearchActive = false;
 let animes = [];
@@ -92,6 +93,7 @@ btn_search.addEventListener('click', (e) =>{
     if (view_portWd <= 560){
         nav_flex.style.justifyContent = 'end';
         logo.style.display = 'none'
+        menu.style.display = 'none'
     };
     
     // Adiciona o evento de clique no documento para trazer a logo de volta ao clicar fora da aba de pesquisa
@@ -99,7 +101,7 @@ btn_search.addEventListener('click', (e) =>{
         // Verifica se o clique foi fora do botão de busca e fora da barra de pesquisa
         if (!btn_search.contains(event.target) && !searchInput.contains(event.target)) {
             nav_flex.style.justifyContent = 'space-between';
-            logo.style.display = 'block'
+            menu.style.display = 'block'
 
         // Remove o event listner após restaurar a logo
             document.removeEventListener('click',ClickOutSite);
