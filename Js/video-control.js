@@ -119,29 +119,6 @@ video.addEventListener('touchend', function() {
     }
 });
 
-// Volume fluid icon
-const volumeSlider = document.querySelector('.vjs-volume-bar');
-const volumeIco = document.createElement('div');
-volumeIco.classList.add('fluid');
-updateVolumeDisplay(); // Atualiza a exibição inicial
-
-let gay = document.createElement('div')
-gay.innerText = 'GAY'
-iframe.appendChild(gay)
-// Adiciona o elemento de volume ao iframe
-iframe.appendChild(volumeIco);
-
-
-// Função para atualizar a exibição do volume
-function updateVolumeDisplay() {
-    const volume = volumeSlider.getAttribute('aria-valuetext')
-    volumeIco.innerHTML = `<span class='fluid-icons'>${volume}</span>`
-}
-// Observa mudanças no volume slider e atualiza o display
-volumeSlider.addEventListener('input', updateVolumeDisplay);
-volumeSlider.addEventListener('change', updateVolumeDisplay);
-
-iframe.appendChild(volumeIco)
 
 
 // Encontre o elemento da barra de controle onde será inserido o botão (depois de .vjs-current-time-display)
