@@ -96,6 +96,9 @@ let touchHoldTime;
 video.addEventListener('touchstart', function() {
     // Inicia um timeout de 1 segundo para realizar a função
     touchHoldTime = setTimeout(() =>{
+        if (video.paused) {
+            video.play();
+        }
     // Adicinar simbolo '2x'
     if(!iframe.contains(speed_ico)){
         iframe.appendChild(speed_ico);
@@ -110,9 +113,6 @@ video.addEventListener('touchend', function() {
     // Cancela o timeout se o toque foi rápido
     clearTimeout(touchHoldTime);
     // Remove o ícone de velocidade e ajusta a velocidade do vídeo ao normal, caso o toque tenha sido longo
-    if (video.paused) {
-        video.play();
-    }
     if (iframe.contains(speed_ico)) {
         iframe.removeChild(speed_ico);
         video.playbackRate = 1.0;
