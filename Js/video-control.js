@@ -125,20 +125,21 @@ const volumeIco = document.createElement('div');
 volumeIco.classList.add('fluid');
 updateVolumeDisplay(); // Atualiza a exibição inicial
 
-
+let gay = document.createElement('div')
+gay.innerText = 'GAY'
+iframe.appendChild(gay)
 // Adiciona o elemento de volume ao iframe
 iframe.appendChild(volumeIco);
 
-// Observa mudanças no volume slider e atualiza o display
-volumeSlider.addEventListener('input', updateVolumeDisplay);
-volumeSlider.addEventListener('change', updateVolumeDisplay);
 
 // Função para atualizar a exibição do volume
 function updateVolumeDisplay() {
-    const volume = volumeSlider.getAttribute('aria-valuetext') || "0%"; // Use "0%" se não estiver definido
-    volumeIco.innerHTML = `<span class='fluid-icons' aria-hidden="true">${volume}%</span>
-    <span class="vjs-control-text" aria-live="polite">Volume</span>`
+    const volume = volumeSlider.getAttribute('aria-valuetext')
+    volumeIco.innerHTML = `<span class='fluid-icons'>${volume}</span>`
 }
+// Observa mudanças no volume slider e atualiza o display
+volumeSlider.addEventListener('input', updateVolumeDisplay);
+volumeSlider.addEventListener('change', updateVolumeDisplay);
 
 iframe.appendChild(volumeIco)
 
