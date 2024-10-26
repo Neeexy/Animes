@@ -69,6 +69,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Alterar velocidade do vídeo enquando a tecla 'v' estiver pressionada
     document.addEventListener('keydown', function(speed){ 
         if (speed.key === 'v'){
+            if (video.paused) {
+                video.play();
+            }
         // Adicinar simbolo '2x'
             if(!iframe.contains(speed_ico)){
                 iframe.appendChild(speed_ico);
