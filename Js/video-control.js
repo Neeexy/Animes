@@ -61,63 +61,82 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     });
-    const iframe = document.querySelector('.vjs-text-track-display')
-    const speed_ico = document.createElement('div')
-    speed_ico.classList.add('fluid')
-    speed_ico.innerHTML = `<span class='fluid-icons' aria-hidden="true">2x ‣‣</span>
-<span class="vjs-control-text"  aria-live="polite">Speed 2x-ico</span>`
-    // Alterar velocidade do vídeo enquando a tecla 'v' estiver pressionada
-    document.addEventListener('keydown', function(speed){ 
-        if (speed.key === 'v'){
-            if (video.paused) {
-                video.play();
-            }
-        // Adicinar simbolo '2x'
-            if(!iframe.contains(speed_ico)){
-                iframe.appendChild(speed_ico);
-            }
-        // Aumenta a velocidade do video
-        video.playbackRate = 2.0
-        }
-    })
-    // Detecta quando a tecla é solta
-    document.addEventListener('keyup', function(speed){
-        if(speed.key === 'v'){
-             // Remove o ícone de velocidade e ajusta a velocidade do vídeo
-                if (iframe.contains(speed_ico)) {
-                iframe.removeChild(speed_ico);
-            }
-            video.playbackRate = 1.0
-        }
-    })
-// Speed Function Phone
-// Evento para quando o usuário pressiona a tela do vídeo
-let touchHoldTime;
-video.addEventListener('touchstart', function() {
-    // Inicia um timeout de 1 segundo para realizar a função
-    touchHoldTime = setTimeout(() =>{
+    // Definir o elemento do vídeo corretamente
+
+// Seleciona o iframe e cria o ícone de velocidade
+const iframe = document.querySelector('.vjs-text-track-display');
+const speed_ico = document.createElement('div');
+speed_ico.classList.add('fluid');
+speed_ico.innerHTML = `<span class='fluid-icons' aria-hidden="true">2x ‣‣</span>
+<span class="vjs-control-text" aria-live="polite">Speed 2x-ico</span>`;
+
+// Alterar velocidade do vídeo enquanto a tecla 'v' estiver pressionada
+document.addEventListener('keydown', function (speed) {
+    if (speed.key === 'v') {
         if (video.paused) {
             video.play();
         }
-    // Adicinar simbolo '2x'
-    if(!iframe.contains(speed_ico)){
-        iframe.appendChild(speed_ico);
+        // Adicionar ícone de '2x' se ainda não estiver presente
+        if (!iframe.contains(speed_ico)) {
+            iframe.appendChild(speed_ico);
+        }
+        // Aumenta a velocidade do vídeo para 2x
+        video.playbackRate = 2.0;
     }
-    // Aumenta a velocidade do vídeo para 2x
-    video.playbackRate = 2.0;
-},1000); // 1000ms = 1s
 });
 
-// Evento para quando o usuário solta a tela do vídeo
-video.addEventListener('touchend', function() {
-    // Cancela o timeout se o toque foi rápido
+// Detecta quando a tecla é solta
+document.addEventListener('keyup', function (speed) {
+    if (speed.key === 'v') {
+        // Remove o ícone de velocidade e ajusta a velocidade do vídeo ao normal
+        if (iframe.contains(speed_ico)) {
+            iframe.removeChild(speed_ico);
+        }
+        video.playbackRate = 1.0;
+    }
+});
+
+// Função para alterar a velocidade no toque (móvel)
+let touchHoldTime;
+video.addEventListener('touchstart', function () {
+    touchHoldTime = setTimeout(() => {
+        if (video.paused) {
+            video.play();
+        }
+        if (!iframe.contains(speed_ico)) {
+            iframe.appendChild(speed_ico);
+        }
+        video.playbackRate = 2.0;
+    }, 1000); // 1000ms = 1s
+});
+
+video.addEventListener('touchend', function () {
     clearTimeout(touchHoldTime);
-    // Remove o ícone de velocidade e ajusta a velocidade do vídeo ao normal, caso o toque tenha sido longo
     if (iframe.contains(speed_ico)) {
         iframe.removeChild(speed_ico);
         video.playbackRate = 1.0;
     }
 });
+
+// Volume fluid icon
+const volumeSlider = document.querySelector('.vjs-volume-bar');
+const volumeDisplay = document.querySelector('#volume-ico') || document.createElement('div');
+volumeDisplay.id = 'volume-ico';
+
+function updateVolumeDisplay() {
+    const volume = volumeSlider.getAttribute('aria-valuenow') || "100";
+    volumeDisplay.innerHTML = `<span class='fluid-icons' aria-hidden="true">${volume}%</span>
+    <span class="vjs-control-text" aria-live="polite">Volume</span>`;
+}
+
+// Observa mudanças no volume slider e atualiza o display
+volumeSlider.addEventListener('input', updateVolumeDisplay);
+volumeSlider.addEventListener('change', updateVolumeDisplay);
+
+// Certifique-se de que o volumeDisplay esteja adicionado, se necessário
+if (!document.body.contains(volumeDisplay)) {
+    iframe.appendChild(volumeDisplay);
+}
 
 
 // Encontre o elemento da barra de controle onde será inserido o botão (depois de .vjs-current-time-display)
