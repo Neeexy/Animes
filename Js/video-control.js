@@ -110,6 +110,9 @@ video.addEventListener('touchend', function() {
     // Cancela o timeout se o toque foi rápido
     clearTimeout(touchHoldTime);
     // Remove o ícone de velocidade e ajusta a velocidade do vídeo ao normal, caso o toque tenha sido longo
+    if (video.paused) {
+        video.play();
+    }
     if (iframe.contains(speed_ico)) {
         iframe.removeChild(speed_ico);
         video.playbackRate = 1.0;
