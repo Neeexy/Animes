@@ -379,18 +379,6 @@ picture.poster > img{
     }
 }
 
-.vjs-rewind-button {
-    display: inline-block;
-    cursor: pointer;
-    margin-right: 10px;
-    padding: 5px;
-}
-
-.vjs-rewind-button .vjs-icon-placeholder {
-    background: url('../../../../style/components/rewind-icon.png') no-repeat center;
-    width: 24px;
-    height: 24px;
-}
 @media (max-width: 745px){
     .sgenders{
         margin-bottom: 10px;
@@ -421,9 +409,21 @@ picture.poster > img{
     background-color: rgba(43, 51, 63, 0.7);
     border-radius: 0.3em;
     transition: all 0.4s;
-     /* As seguintes propriedades ajudam a ocultar o botão corretamente */
-     visibility: visible; /* Mantém o botão visível inicialmente */
-     z-index: 10; /* Mantenha o z-index, mas ajuste conforme necessário */
+    /* As seguintes propriedades ajudam a ocultar o botão corretamente */
+    visibility: visible; /* Mantém o botão visível inicialmente */
+    z-index: 10; /* Mantenha o z-index, mas ajuste conforme necessário */
+}
+.vjs-rewind-button {
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.vjs-rewind-button .vjs-icon-placeholder {
+    background: url('../../../../style/components/rewind-icon.png') no-repeat center;
+    width: 24px;
+    height: 24px;
 }
 .video-js .vjs-big-play-button.vjs-hidden {
     visibility: hidden; /* Oculta o botão quando o vídeo está reproduzindo */
@@ -464,7 +464,23 @@ picture.poster > img{
     display: block;
     color: white;
 }
-
+/* Fluid icons */
+.fluid {
+    width: fit-content;
+    margin: auto;
+    margin-top: 20px;
+}
+span.fluid-icons {
+    font-size: 1.8em;
+    background-color: #343435c5;
+    color: white;
+    padding-right: 12px;
+    padding-left: 12px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 10px;
+    font-weight: 650;
+}
 /* Play/Pause/Mute/Pic/FScreen Buttons */
 .vjs-button > .vjs-icon-placeholder:before {
     font-size: 2.3em;

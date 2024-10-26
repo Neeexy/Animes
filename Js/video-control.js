@@ -61,16 +61,29 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     });
+    const iframe = document.querySelector('.vjs-text-track-display')
+    const speed_ico = document.createElement('div')
+    speed_ico.classList.add('fluid')
+    speed_ico.innerHTML = `<span class='fluid-icons' aria-hidden="true">2x ‣‣</span>
+<span class="vjs-control-text"  aria-live="polite">Speed 2x-ico</span>`
     // Alterar velocidade do vídeo enquando a tecla 'v' estiver pressionada
     document.addEventListener('keydown', function(speed){ 
         if (speed.key === 'v'){
-            // Aumenta a velocidade do video
-            video.playbackRate = 2.0
+        // Adicinar simbolo '2x'
+            if(!iframe.contains(speed_ico)){
+                iframe.appendChild(speed_ico);
+            }
+        // Aumenta a velocidade do video
+        video.playbackRate = 2.0
         }
     })
     // Detecta quando a tecla é solta
     document.addEventListener('keyup', function(speed){
         if(speed.key === 'v'){
+             // Remove o ícone de velocidade e ajusta a velocidade do vídeo
+                if (iframe.contains(speed_ico)) {
+                iframe.removeChild(speed_ico);
+            }
             video.playbackRate = 1.0
         }
     })
