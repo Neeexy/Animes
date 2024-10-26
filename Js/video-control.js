@@ -92,23 +92,28 @@ document.addEventListener('DOMContentLoaded', function() {
     })
 // Speed Function Phone
 // Evento para quando o usuário pressiona a tela do vídeo
+let touchHoldTime;
 video.addEventListener('touchstart', function() {
+    // Inicia um timeout de 1 segundo para realizar a função
+    touchHoldTime = setTimeout(() =>{
     // Adicinar simbolo '2x'
     if(!iframe.contains(speed_ico)){
         iframe.appendChild(speed_ico);
     }
     // Aumenta a velocidade do vídeo para 2x
     video.playbackRate = 2.0;
+},1000); // 1000ms = 1s
 });
 
 // Evento para quando o usuário solta a tela do vídeo
 video.addEventListener('touchend', function() {
-    // Remove o ícone de velocidade e ajusta a velocidade do vídeo
+    // Cancela o timeout se o toque foi rápido
+    clearTimeout(touchHoldTime);
+    // Remove o ícone de velocidade e ajusta a velocidade do vídeo ao normal, caso o toque tenha sido longo
     if (iframe.contains(speed_ico)) {
         iframe.removeChild(speed_ico);
+        video.playbackRate = 1.0;
     }
-    // Retorna a velocidade do vídeo ao normal (1x)
-    video.playbackRate = 1.0;
 });
 
 
