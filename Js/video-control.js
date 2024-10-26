@@ -61,21 +61,32 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     });
+    // Alterar velocidade do vídeo enquando a tecla 'v' estiver pressionada
     document.addEventListener('keydown', function(speed){ 
-        // Alterar velocidade do vídeo enquando a tecla 'v' estiver pressionada
         if (speed.key === 'v'){
             // Aumenta a velocidade do video
             video.playbackRate = 2.0
         }
-
     })
     // Detecta quando a tecla é solta
-
     document.addEventListener('keyup', function(speed){
         if(speed.key === 'v'){
             video.playbackRate = 1.0
         }
     })
+// Speed Function Phone
+// Evento para quando o usuário pressiona a tela do vídeo
+video.addEventListener('touchstart', function() {
+    // Aumenta a velocidade do vídeo para 2x
+    video.playbackRate = 2.0;
+});
+
+// Evento para quando o usuário solta a tela do vídeo
+video.addEventListener('touchend', function() {
+    // Retorna a velocidade do vídeo ao normal (1x)
+    video.playbackRate = 1.0;
+});
+
 
 // Encontre o elemento da barra de controle onde será inserido o botão (depois de .vjs-current-time-display)
 const currentTimeDisplay = document.querySelector('.vjs-current-time-display');
