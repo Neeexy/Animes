@@ -104,62 +104,6 @@ video.addEventListener('touchend', function() {
 });
 
 
-
-// Encontre o elemento da barra de controle onde será inserido o botão (depois de .vjs-current-time-display)
-const currentTimeDisplay = document.querySelector('.vjs-current-time-display');
-
-// Cria um novo contêiner (div) para o botão de retroceder
-const rewindButtonDiv = document.createElement('div');
-rewindButtonDiv.classList.add('vjs-control', 'vjs-time-control', 'rewind-button-container');
-
-// Cria um novo botão para retroceder 10 segundos
-const rewindButton = document.createElement('button');
-rewindButton.classList.add('vjs-control', 'vjs-button', 'rewind-button');
-rewindButton.setAttribute('type', 'button');
-rewindButton.setAttribute('title', 'Rewind 10 seconds');
-
-// Adiciona o ícone de rewind (ou símbolo) ao botão
-rewindButton.innerHTML = `<span class="rewind10s" aria-hidden="true">↺</span>
-<span class="vjs-control-text" aria-live="polite">Rewind 10s</span>`;
-
-// Cria um novo botão para Avançar 10 segundos
-const avanceButton = document.createElement('button');
-avanceButton.classList.add('vjs-control', 'vjs-button', 'avance-button');
-avanceButton.setAttribute('type', 'button');
-avanceButton.setAttribute('title', 'avance 10 seconds');
-
-// Adiciona o ícone de rewind (ou símbolo) ao botão
-avanceButton.innerHTML = `<span class="avance10s" aria-hidden="true">↻</span>
-<span class="vjs-control-text" aria-live="polite">Rewind 10s</span>`;
-
-// Adiciona o botão à nova div
-rewindButtonDiv.appendChild(rewindButton);
-rewindButtonDiv.appendChild(avanceButton);
-
-// Insere a nova div logo após a .vjs-current-time-display
-currentTimeDisplay.parentNode.insertBefore(rewindButtonDiv, currentTimeDisplay.nextSibling);
-
-
-// Função para retroceder 10 segundos no vídeo
-rewindButton.addEventListener('click', function() {
-    const videoPlayer = document.querySelector('video');
-    if (videoPlayer) {
-        videoPlayer.currentTime = Math.max(0, videoPlayer.currentTime - 10);
-    }
-});
-avanceButton.addEventListener('click', function() {
-    const videoPlayer = document.querySelector('video');
-    if (videoPlayer) {
-        videoPlayer.currentTime = Math.max(0, videoPlayer.currentTime + 10);
-    }
-});
-
-// Insere o botão após o .vjs-current-time-display
-if (currentTimeDisplay) {
-    currentTimeDisplay.parentNode.insertBefore(rewindButton, currentTimeDisplay.nextSibling);
-}
-
-
 // Função para verificar se o dispositivo é mobile
 function isMobile() {
     return /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop|BlackBerry/i.test(navigator.userAgent);
@@ -287,5 +231,59 @@ document.addEventListener('DOMContentLoaded', function () {
                     break;
             }
         });
+
+        // Encontre o elemento da barra de controle onde será inserido o botão (depois de .vjs-current-time-display)
+        const currentTimeDisplay = document.querySelector('.vjs-current-time-display');
+
+        // Cria um novo contêiner (div) para o botão de retroceder
+        const rewindButtonDiv = document.createElement('div');
+        rewindButtonDiv.classList.add('vjs-control', 'vjs-time-control', 'rewind-button-container');
+
+        // Cria um novo botão para retroceder 10 segundos
+        const rewindButton = document.createElement('button');
+        rewindButton.classList.add('vjs-control', 'vjs-button', 'rewind-button');
+        rewindButton.setAttribute('type', 'button');
+        rewindButton.setAttribute('title', 'Rewind 10 seconds');
+
+        // Adiciona o ícone de rewind (ou símbolo) ao botão
+        rewindButton.innerHTML = `<span class="rewind10s" aria-hidden="true">↺</span>
+        <span class="vjs-control-text" aria-live="polite">Rewind 10s</span>`;
+
+        // Cria um novo botão para Avançar 10 segundos
+        const avanceButton = document.createElement('button');
+        avanceButton.classList.add('vjs-control', 'vjs-button', 'avance-button');
+        avanceButton.setAttribute('type', 'button');
+        avanceButton.setAttribute('title', 'avance 10 seconds');
+
+        // Adiciona o ícone de rewind (ou símbolo) ao botão
+        avanceButton.innerHTML = `<span class="avance10s" aria-hidden="true">↻</span>
+        <span class="vjs-control-text" aria-live="polite">Rewind 10s</span>`;
+
+        // Adiciona o botão à nova div
+        rewindButtonDiv.appendChild(rewindButton);
+        rewindButtonDiv.appendChild(avanceButton);
+
+        // Insere a nova div logo após a .vjs-current-time-display
+        currentTimeDisplay.parentNode.insertBefore(rewindButtonDiv, currentTimeDisplay.nextSibling);
+
+
+        // Função para retroceder 10 segundos no vídeo
+        rewindButton.addEventListener('click', function() {
+            const videoPlayer = document.querySelector('video');
+            if (videoPlayer) {
+                skipVideo(-10, '10s ▸▸', false);
+            }
+        });
+        avanceButton.addEventListener('click', function() {
+            const videoPlayer = document.querySelector('video');
+            if (videoPlayer) {
+                skipVideo(10, '10s ▸▸', true);
+            }
+        });
+
+        // Insere o botão após o .vjs-current-time-display
+        if (currentTimeDisplay) {
+            currentTimeDisplay.parentNode.insertBefore(rewindButton, currentTimeDisplay.nextSibling);
+        }
     }
 });
