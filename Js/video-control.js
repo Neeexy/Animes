@@ -16,22 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
                             video.pause();
                         }
                         break;
-                    case 'l':
-                        // Avançar 10 segundos com a letra 'l'
-                        video.currentTime += 10;
-                        break;
-                    case 'ArrowRight':
-                        // Avançar 5 segundos com a seta direita ou 'l'
-                        video.currentTime += 5;
-                        break;
-                    case 'j':
-                        // Avançar 10 segundos com a letra 'j'
-                        video.currentTime -= 10;
-                        break;
-                    case 'ArrowLeft':
-                        // Voltar 5 segundos com a seta esquerda ou 'j'
-                        video.currentTime -= 5;
-                        break;
                     case 'ArrowUp':
                         // Aumentar volume com a seta para cima
                         video.volume = Math.min(1, video.volume + 0.1); // Máximo de 1
@@ -212,35 +196,6 @@ if (isMobile()) {
     }
 }})
 
-document.addEventListener('DOMContentLoaded', function () {
-    const video = document.getElementById('video-frame');
-
-    // Pegue os dados do vídeo dinamicamente (nome do anime e número do episódio)
-    const animeTitle = document.querySelector('h2').innerText.trim();
-    const episodeNumber = document.querySelector('ol li:nth-child(2)').innerText.trim().split(" ")[1]; // Ex: "03"
-
-    // Crie um identificador único para cada vídeo
-    const videoId = `${animeTitle.replace(/\s+/g, '-')}-Ep${episodeNumber}`;
-
-    // Carregar o tempo salvo do vídeo quando os metadados forem carregados
-    video.addEventListener('loadedmetadata', function () {
-        const savedTime = localStorage.getItem(videoId);
-        if (savedTime) {
-            video.currentTime = parseFloat(savedTime);
-        }
-    });
-
-    // Salvar o tempo atual do vídeo no localStorage a cada mudança de tempo
-    video.addEventListener('timeupdate', function () {
-        localStorage.setItem(videoId, video.currentTime);
-    });
-
-    // Quando o vídeo acabar, remover o tempo salvo
-    video.addEventListener('ended', function () {
-        localStorage.removeItem(videoId);
-    });
-});
-
 // DoubleClick skip/back
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -265,7 +220,7 @@ document.addEventListener('DOMContentLoaded', function () {
             feedbackDiv.style.fontSize = '1.8em';
             feedbackDiv.style.fontWeight = '650';
             feedbackDiv.style.color = 'white';
-            feedbackDiv.style.padding = '35px';
+            feedbackDiv.style.padding = '15px';
             feedbackDiv.style.background = '#36353544';
             feedbackDiv.style.borderRadius = '50px';
             feedbackDiv.style.top = '43%';
@@ -311,5 +266,25 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             }
         });
+        document.addEventListener('keydown', function(e){
+            switch(e.key){
+                case 'l':
+                    // Avançar 10 segundos com a letra 'l'
+                    skipVideo(10, '10s ▸▸', true);
+                    break;
+                case 'ArrowRight':
+                    // Avançar 5 segundos com a seta direita
+                    skipVideo(5, '5s ▸▸', true);
+                    break;
+                case 'j':
+                    // Retroceder 10 segundos com a letra 'j'
+                    skipVideo(-10, '◂◂ 10s', false);
+                    break;
+                case 'ArrowLeft':
+                    // Retroceder 5 segundos com a seta esquerda
+                    skipVideo(-5, '◂◂ 5s', false);
+                    break;
+            }
+        })
     }
 });
