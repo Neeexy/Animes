@@ -243,32 +243,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // DoubleClick skip/back
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const video = document.querySelector('video');
-    if (video) {
-        const displayContainer = document.querySelector('.vjs-text-track-display');
+    const displayContainer = document.querySelector('.vjs-text-track-display');
+    
+    if (video && displayContainer) {
+        let lastTap = 0;
 
-        let lastTouchTime = 0;
-        let skipForwardTimeout;
-        let skipBackwardTimeout;
-        let skipForwardAccumulated = 0;
-        let skipBackwardAccumulated = 0;
-
-        const resetAccumulated = () => {
-            skipForwardAccumulated = 0;
-            skipBackwardAccumulated = 0;
-        }
-
-        const skipForward = () => {
-            video.currentTime += skipForwardAccumulated;
-            resetAccumulated();
+        // Função para avançar ou retroceder o vídeo e mostrar a confirmação visual
+        const skipVideo = (seconds, isRightSide) => {
+            video.currentTime += seconds;
+            showVisualFeedback(seconds > 0 ? '10s‣‣' : '◂◂10s', isRightSide);
         };
 
-        const skipBackward = () => {
-            video.currentTime -= skipBackwardAccumulated;
-            resetAccumulated();
-        };
-
+        // Função para exibir o feedback visual dinâmico
         const showVisualFeedback = (message, isRightSide) => {
             const feedbackDiv = document.createElement('div');
             feedbackDiv.className = 'feedback-circle';
@@ -291,38 +279,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
             displayContainer.appendChild(feedbackDiv);
 
+            // Remove o feedback visual após 500 ms
             setTimeout(() => {
                 feedbackDiv.remove();
             }, 500);
-        }
+        };
 
-        video.addEventListener('touchstart', function(event) {
+        video.addEventListener('touchstart', function (event) {
+            const currentTime = new Date().getTime();
+            const timeSinceLastTap = currentTime - lastTap;
+            lastTap = currentTime;
+
             const touchX = event.touches[0].clientX;
             const videoWidth = video.clientWidth;
             const isRightSide = touchX > videoWidth / 2;
             const isLeftSide = touchX <= videoWidth / 2;
 
-            const currentTime = new Date().getTime();
-            const isDoubleClick = (currentTime - lastTouchTime) < 300; // Intervalo para considerar como duplo toque
-            lastTouchTime = currentTime;
-
-            if (isDoubleClick) {
+            if (timeSinceLastTap < 300) {
                 if (isRightSide) {
-                    skipForwardAccumulated += 10;
-                    clearTimeout(skipForwardTimeout);
-                    skipForwardTimeout = setTimeout(() => {
-                        skipForward();
-                        showVisualFeedback('10s‣‣', true);
-                    }, 500);
-                }
-
-                if (isLeftSide) {
-                    skipBackwardAccumulated += 10;
-                    clearTimeout(skipBackwardTimeout);
-                    skipBackwardTimeout = setTimeout(() => {
-                        skipBackward();
-                        showVisualFeedback('◂◂10s', false);
-                    }, 500);
+                    skipVideo(10, true);  // Avança 10 segundos
+                } else if (isLeftSide) {
+                    skipVideo(-10, false); // Retrocede 10 segundos
                 }
             }
         });
