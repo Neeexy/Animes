@@ -253,7 +253,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Função para avançar ou retroceder o vídeo e mostrar a confirmação visual
         const skipVideo = (seconds, isRightSide) => {
             video.currentTime += seconds;
-            showVisualFeedback(seconds > 0 ? '10s‣‣' : '◂◂10s', isRightSide);
+            showVisualFeedback(seconds > 0 ? '10s ▸▸' : '◂◂ 10s', isRightSide);
         };
 
         // Função para exibir o feedback visual dinâmico
@@ -263,15 +263,16 @@ document.addEventListener('DOMContentLoaded', function () {
             feedbackDiv.innerText = message;
             feedbackDiv.style.position = 'absolute';
             feedbackDiv.style.fontSize = '1.8em';
-            feedbackDiv.style.fontWeight = "650";
+            feedbackDiv.style.fontWeight = '650';
             feedbackDiv.style.color = 'white';
-            feedbackDiv.style.padding = '15px';
+            feedbackDiv.style.padding = '35px';
             feedbackDiv.style.background = '#343435c5';
             feedbackDiv.style.borderRadius = '50px';
-            // feedbackDiv.style.transform = 'translate(-50%, -50%)';
             feedbackDiv.style.top = '50%';
+            feedbackDiv.style.opacity = '0'; // Inicialmente invisível para o efeito fade-in
+            feedbackDiv.style.transition = 'opacity 0.3s ease'; // Transição de fade-in
             feedbackDiv.style.zIndex = '10';
-
+        
             if (isRightSide) {
                 feedbackDiv.style.right = '10%';
             } else {
@@ -280,9 +281,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
             displayContainer.appendChild(feedbackDiv);
 
-            // Remove o feedback visual após 500 ms
+            // Inicia o efeito de fade-in
             setTimeout(() => {
-                feedbackDiv.remove();
+                feedbackDiv.style.opacity = '1';
+            }, 0);
+        
+            // Fade-out e remoção após 500 ms
+            setTimeout(() => {
+                feedbackDiv.style.opacity = '0';
+                feedbackDiv.addEventListener('transitionend', () => feedbackDiv.remove());
             }, 500);
         };
 
