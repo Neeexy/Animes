@@ -245,9 +245,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.addEventListener('DOMContentLoaded', function() {
     const video = document.querySelector('video');
-    if(video) {
+    if (video) {
         const displayContainer = document.querySelector('.vjs-text-track-display');
 
+        let lastTouchTime = 0;
         let skipForwardTimeout;
         let skipBackwardTimeout;
         let skipForwardAccumulated = 0;
@@ -301,22 +302,28 @@ document.addEventListener('DOMContentLoaded', function() {
             const isRightSide = touchX > videoWidth / 2;
             const isLeftSide = touchX <= videoWidth / 2;
 
-            if (isRightSide) {
-                skipForwardAccumulated += 10;
-                clearTimeout(skipForwardTimeout);
-                skipForwardTimeout = setTimeout(() => {
-                    skipForward();
-                    showVisualFeedback('10s▸', true);
-                }, 500);
-            }
+            const currentTime = new Date().getTime();
+            const isDoubleClick = (currentTime - lastTouchTime) < 300; // Intervalo para considerar como duplo toque
+            lastTouchTime = currentTime;
 
-            if (isLeftSide) {
-                skipBackwardAccumulated += 10;
-                clearTimeout(skipBackwardTimeout);
-                skipBackwardTimeout = setTimeout(() => {
-                    skipBackward();
-                    showVisualFeedback('◂10s', false);
-                }, 500);
+            if (isDoubleClick) {
+                if (isRightSide) {
+                    skipForwardAccumulated += 10;
+                    clearTimeout(skipForwardTimeout);
+                    skipForwardTimeout = setTimeout(() => {
+                        skipForward();
+                        showVisualFeedback('10s‣‣', true);
+                    }, 500);
+                }
+
+                if (isLeftSide) {
+                    skipBackwardAccumulated += 10;
+                    clearTimeout(skipBackwardTimeout);
+                    skipBackwardTimeout = setTimeout(() => {
+                        skipBackward();
+                        showVisualFeedback('◂◂10s', false);
+                    }, 500);
+                }
             }
         });
     }
