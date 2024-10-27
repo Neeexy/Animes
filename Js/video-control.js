@@ -243,36 +243,81 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // DoubleClick skip/back
 
-document.addEventListener('DOMContentLoaded', function(){
-    const video = document.querySelector('video')
+document.addEventListener('DOMContentLoaded', function() {
+    const video = document.querySelector('video');
+    if(video) {
+        const displayContainer = document.querySelector('.vjs-text-track-display');
 
-    if(video){
-        let lastTap = 0; // Armazena o tempo do último clique
+        let skipForwardTimeout;
+        let skipBackwardTimeout;
+        let skipForwardAccumulated = 0;
+        let skipBackwardAccumulated = 0;
 
-        // Função para avançar/retroceder o vídeo
-        const skipTimeVideo = (seconds) =>{
-            video.currentTime += seconds;
+        const resetAccumulated = () => {
+            skipForwardAccumulated = 0;
+            skipBackwardAccumulated = 0;
+        }
+
+        const skipForward = () => {
+            video.currentTime += skipForwardAccumulated;
+            resetAccumulated();
         };
 
-        // Evento de toque
-        video.addEventListener('touchstart', function(e){
-            const currentTime = new Date().getTime(); // Tempo atual em ms
-            const timeSinceLastTap = currentTime - lastTap; 
-            lastTap = currentTime;
+        const skipBackward = () => {
+            video.currentTime -= skipBackwardAccumulated;
+            resetAccumulated();
+        };
 
-            const touchX = e.touches[0].clientX
-            const videoWidth = video.clientWidth
+        const showVisualFeedback = (message, isRightSide) => {
+            const feedbackDiv = document.createElement('div');
+            feedbackDiv.className = 'feedback-circle';
+            feedbackDiv.innerText = message;
+            feedbackDiv.style.position = 'absolute';
+            feedbackDiv.style.fontSize = '1.2em';
+            feedbackDiv.style.color = 'white';
+            feedbackDiv.style.padding = '10px';
+            feedbackDiv.style.background = 'rgba(0, 0, 0, 0.7)';
+            feedbackDiv.style.borderRadius = '50%';
+            feedbackDiv.style.transform = 'translate(-50%, -50%)';
+            feedbackDiv.style.top = '50%';
+            feedbackDiv.style.zIndex = '10';
+
+            if (isRightSide) {
+                feedbackDiv.style.right = '10%';
+            } else {
+                feedbackDiv.style.left = '10%';
+            }
+
+            displayContainer.appendChild(feedbackDiv);
+
+            setTimeout(() => {
+                feedbackDiv.remove();
+            }, 500);
+        }
+
+        video.addEventListener('touchstart', function(event) {
+            const touchX = event.touches[0].clientX;
+            const videoWidth = video.clientWidth;
             const isRightSide = touchX > videoWidth / 2;
             const isLeftSide = touchX <= videoWidth / 2;
 
-            // Verifica se o segundo toque ocorre em menos de 300ms para considerar como 'DoubleClick'
-            if(timeSinceLastTap < 300){
-                if(isRightSide){
-                    skipTimeVideo(10)
-                }else if (isLeftSide){
-                    skipTimeVideo(-10)
-                }
+            if (isRightSide) {
+                skipForwardAccumulated += 10;
+                clearTimeout(skipForwardTimeout);
+                skipForwardTimeout = setTimeout(() => {
+                    skipForward();
+                    showVisualFeedback('10s▸', true);
+                }, 500);
             }
-        })
+
+            if (isLeftSide) {
+                skipBackwardAccumulated += 10;
+                clearTimeout(skipBackwardTimeout);
+                skipBackwardTimeout = setTimeout(() => {
+                    skipBackward();
+                    showVisualFeedback('◂10s', false);
+                }, 500);
+            }
+        });
     }
 });
