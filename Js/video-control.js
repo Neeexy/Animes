@@ -148,23 +148,12 @@ avanceButton.setAttribute('title', 'avance 10 seconds');
 avanceButton.innerHTML = `<span class="avance10s" aria-hidden="true">↻</span>
 <span class="vjs-control-text" aria-live="polite">Rewind 10s</span>`;
 
-// Cria um novo botão para recarregar a página
-const reloadButton = document.createElement('button');
-reloadButton.classList.add('vjs-control', 'vjs-button', 'reload-button');
-reloadButton.setAttribute('type', 'button');
-reloadButton.setAttribute('title', 'recarregar página');
-
-// Adiciona o ícone de rewind (ou símbolo) ao botão
-reloadButton.innerHTML = `<span class="reload" aria-hidden="true">⨵</span>
-<span class="vjs-control-text" aria-live="polite">reload</span>`;
-
 // Adiciona o botão à nova div
 rewindButtonDiv.appendChild(rewindButton);
 rewindButtonDiv.appendChild(avanceButton);
-rewindButtonDiv.appendChild(reloadButton);
 
 // Insere a nova div logo após a .vjs-current-time-display
-// currentTimeDisplay.parentNode.insertBefore(rewindButtonDiv, currentTimeDisplay.nextSibling);
+currentTimeDisplay.parentNode.insertBefore(rewindButtonDiv, currentTimeDisplay.nextSibling);
 
 
 // Função para retroceder 10 segundos no vídeo
