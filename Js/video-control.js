@@ -266,9 +266,9 @@ document.addEventListener('DOMContentLoaded', function () {
             feedbackDiv.style.fontWeight = '650';
             feedbackDiv.style.color = 'white';
             feedbackDiv.style.padding = '35px';
-            feedbackDiv.style.background = '#343435c5';
+            feedbackDiv.style.background = '#36353544';
             feedbackDiv.style.borderRadius = '50px';
-            feedbackDiv.style.top = '50%';
+            feedbackDiv.style.top = '43%';
             feedbackDiv.style.opacity = '0'; // Inicialmente invisível para o efeito fade-in
             feedbackDiv.style.transition = 'opacity 0.3s ease'; // Transição de fade-in
             feedbackDiv.style.zIndex = '10';
