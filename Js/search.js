@@ -93,7 +93,6 @@ btn_search.addEventListener('click', (e) =>{
     if (view_portWd <= 560){
         nav_flex.style.justifyContent = 'end';
         logo.style.display = 'none'
-        menu.style.display = 'none'
     };
     
     // Adiciona o evento de clique no documento para trazer a logo de volta ao clicar fora da aba de pesquisa
@@ -101,7 +100,7 @@ btn_search.addEventListener('click', (e) =>{
         // Verifica se o clique foi fora do botão de busca e fora da barra de pesquisa
         if (!btn_search.contains(event.target) && !searchInput.contains(event.target)) {
             nav_flex.style.justifyContent = 'space-between';
-            menu.style.display = 'block'
+            logo.style.display = 'block'
 
         // Remove o event listner após restaurar a logo
             document.removeEventListener('click',ClickOutSite);
