@@ -271,7 +271,7 @@ document.addEventListener('DOMContentLoaded', function () {
         rewindButton.addEventListener('click', function() {
             const videoPlayer = document.querySelector('video');
             if (videoPlayer) {
-                skipVideo(-10, '10s ▸▸', false);
+                skipVideo(-10, '◂◂ 10s', false);
             }
         });
         avanceButton.addEventListener('click', function() {
