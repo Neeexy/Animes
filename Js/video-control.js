@@ -262,12 +262,13 @@ document.addEventListener('DOMContentLoaded', function () {
             feedbackDiv.className = 'feedback-circle';
             feedbackDiv.innerText = message;
             feedbackDiv.style.position = 'absolute';
-            feedbackDiv.style.fontSize = '1.2em';
+            feedbackDiv.style.fontSize = '1.8em';
+            feedbackDiv.style.fontWeight = "650";
             feedbackDiv.style.color = 'white';
-            feedbackDiv.style.padding = '10px';
-            feedbackDiv.style.background = 'rgba(0, 0, 0, 0.7)';
-            feedbackDiv.style.borderRadius = '50%';
-            feedbackDiv.style.transform = 'translate(-50%, -50%)';
+            feedbackDiv.style.padding = '15px';
+            feedbackDiv.style.background = '#343435c5';
+            feedbackDiv.style.borderRadius = '50px';
+            // feedbackDiv.style.transform = 'translate(-50%, -50%)';
             feedbackDiv.style.top = '50%';
             feedbackDiv.style.zIndex = '10';
 

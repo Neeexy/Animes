@@ -659,6 +659,7 @@ div#topic{
 
 #menu ol > li >a{
     border-bottom: 2px solid #c95715;
+    border-bottom: 2px solid #363535c5;
     transition: 0.3s;
 }
 
