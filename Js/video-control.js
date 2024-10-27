@@ -242,7 +242,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // Reloader on Click
-const html5_frame = document.getElementById('video-frame_html5_api')
+const html5_frame = document.getElementById('video-frame')
 const reloader = document.createElement('div')
 reloader.classList.add('fluid')
 reloader.innerHTML = `<span class='reloader' class='fluid-icon'>Travou? Clique Aqui!</span>`
