@@ -206,9 +206,9 @@ document.addEventListener('DOMContentLoaded', function () {
         let lastTap = 0;
 
         // Função para avançar ou retroceder o vídeo e mostrar a confirmação visual
-        const skipVideo = (seconds, isRightSide) => {
+        const skipVideo = (seconds, message, isRightSide) => {
             video.currentTime += seconds;
-            showVisualFeedback(seconds > 0 ? '10s ▸▸' : '◂◂ 10s', isRightSide);
+            showVisualFeedback(message, isRightSide);
         };
 
         // Função para exibir o feedback visual dinâmico
@@ -225,7 +225,7 @@ document.addEventListener('DOMContentLoaded', function () {
             feedbackDiv.style.borderRadius = '50px';
             feedbackDiv.style.top = '43%';
             feedbackDiv.style.opacity = '0'; // Inicialmente invisível para o efeito fade-in
-            feedbackDiv.style.transition = 'opacity 0.3s ease'; // Transição de fade-in
+            feedbackDiv.style.transition = 'opacity 0.2s ease'; // Transição de fade-in
             feedbackDiv.style.zIndex = '10';
         
             if (isRightSide) {
@@ -260,12 +260,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
             if (timeSinceLastTap < 300) {
                 if (isRightSide) {
-                    skipVideo(10, true);  // Avança 10 segundos
+                    skipVideo(10, '10s ▸▸', true);  // Avança 10 segundos
                 } else if (isLeftSide) {
-                    skipVideo(-10, false); // Retrocede 10 segundos
+                    skipVideo(-10, '◂◂ 10s', false); // Retrocede 10 segundos
                 }
             }
         });
+
         document.addEventListener('keydown', function(e){
             switch(e.key){
                 case 'l':
@@ -285,6 +286,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     skipVideo(-5, '◂◂ 5s', false);
                     break;
             }
-        })
+        });
     }
 });
