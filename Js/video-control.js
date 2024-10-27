@@ -240,3 +240,39 @@ document.addEventListener('DOMContentLoaded', function () {
         localStorage.removeItem(videoId);
     });
 });
+
+// DoubleClick skip/back
+
+document.addEventListener('DOMContentLoaded', function(){
+    const video = document.querySelector('video')
+
+    if(video){
+        let lastTap = 0; // Armazena o tempo do último clique
+
+        // Função para avançar/retroceder o vídeo
+        const skipTimeVideo = (seconds) =>{
+            video.currentTime += seconds;
+        };
+
+        // Evento de toque
+        video.addEventListener('touchstart', function(e){
+            const currentTime = new Date().getTime(); // Tempo atual em ms
+            const timeSinceLastTap = currentTime - lastTap; 
+            lastTap = currentTime;
+
+            const touchX = e.touches[0].clientX
+            const videoWidth = video.clientWidth
+            const isRightSide = touchX > videoWidth / 2;
+            const isLeftSide = touchX <= videoWidth / 2;
+
+            // Verifica se o segundo toque ocorre em menos de 300ms para considerar como 'DoubleClick'
+            if(timeSinceLastTap < 300){
+                if(isRightSide){
+                    skipTimeVideo(10)
+                }else if (isLeftSide){
+                    skipTimeVideo(-10)
+                }
+            }
+        })
+    }
+});
