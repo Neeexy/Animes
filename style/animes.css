@@ -38,7 +38,39 @@ button:focus {
     outline: none; /* Remove o contorno de foco do botão */
     transform: none; /* Garante que o foco não aplique nenhuma transformação */
 }
-
+.temporada-selector {
+    display: flex;
+     flex-wrap: nowrap; /* Mantém todos os botões em uma única linha */
+    justify-content: start;
+    gap: 6px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    /* overflow: hidden; */
+    height: 76px;
+    }
+    .temporada-selector::-webkit-scrollbar {
+    height: 5px; /* Altura da barra de rolagem horizontal */
+    overflow: hidden;
+    }
+    
+    .temporada-selector::-webkit-scrollbar-thumb {
+    background-color: #888888; /* Cor da "pegada" (parte que se move) */
+    border-radius: 10px; /* Bordas arredondadas */
+    }
+    
+    .temporada-selector::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Cor ao passar o mouse */
+    }
+    .temporada-selector.dragging {
+        cursor: grabbing;
+        cursor: -webkit-grabbing;
+    }
+.temporada-selector > button{
+    flex: 0 0 auto; /* Impede que os botões se expandam */
+    padding: 15px 20px 15px;
+    font-weight: bold;
+    cursor: grab;
+}
 .temporada-selector button {
     cursor: grab; /* Mantém o cursor como 'grab' */
 }
@@ -48,8 +80,14 @@ button:focus {
     background-size: cover; /* Garante que a imagem de fundo cubra a área sem distorcer */
     background-position: center; /* Mantém a posição centralizada */
     background-repeat: no-repeat; /* Impede a repetição da imagem */
+    padding-bottom: 10px;
 }
-
+.description{
+    padding-top: 10px;
+    color: rgb(194, 194, 194);
+    font-weight: bold;
+    letter-spacing: 0.075rem;
+}
 .sea-name{
     padding-left: 8px;
     font-size: 23px;
@@ -67,10 +105,24 @@ a{
 a:vise{
     text-decoration: none;
 }
+.anime-image{
+    position: relative;
+}
 .anime-image img {
     max-width: 230px; /* Ajusta a largura máxima da imagem */
-    padding-bottom: 10px;
+    border-radius: 8px;
 }
+.anime-img {
+    display: block;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1; /* Opacidade total */
+}
+/* Classe para o efeito de fade-out */
+.fade-out {
+    filter: blur(3px);
+    opacity: 0; /* Transparência total */
+}
+
 .ep-img{
     min-width: 179px;
     max-width: 180px;
@@ -91,9 +143,6 @@ a:vise{
     margin-top: 14px;
     /* display: inline-block; */
     max-width: fit-content;
-    border-top: 0.5px solid #df5505d0;  /* Borda Superior */
-    border-bottom: 0.5px solid #df5505d0;  /* Borda inferior */
-
 }
 .sgenders>a{
     float: left;
@@ -143,8 +192,9 @@ a:vise{
 
 }
 .seasons-episodes >.temporada-selector {
-    max-width: 312px;
+    max-width: 600px;
 }
+
 .seasons-episodes > h4{
     font-size: 23px;
 }
@@ -215,7 +265,7 @@ iframe{
 }
 .video-container {
     width: 100%; /* Defina a largura do contêiner conforme necessário */
-    height: 550px; /* A altura será automática com base na largura */
+    height: 595px; /* A altura será automática com base na largura */
     position: relative; /* Isso permite que o vídeo seja posicionado corretamente */
     overflow: hidden; /* Oculta qualquer parte do vídeo que ultrapasse o contêiner */
     display: flex; /* Usa flexbox para centralizar o vídeo */
@@ -264,6 +314,7 @@ li h2 {
     font-size: 17px;
     display: inline-block;
 }
+
 .poster-episode{
     position: absolute;
     cursor: pointer;
@@ -333,6 +384,7 @@ picture.poster > img{
         font-size: 13px;
         max-height: 130px;
         overflow-y: scroll;
+        
     }
 
     .video-container{

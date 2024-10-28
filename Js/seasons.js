@@ -5,39 +5,40 @@ const seasonButtons = document.querySelectorAll('.temporada-selector button');
 const languageButtons = document.querySelectorAll('.linguagem-selector button');
 const seasons = document.querySelectorAll('.temporada');
 const animeDetails = document.querySelector('.anime-details');
+const temp_ind = document.querySelector('.temp-indicator')
 
 // Inicialmente, esconde todos os botões de temporada
 seasonButtons.forEach(button =>{
     button.style.display = 'none'
 })
-// Função para mostrar/esconder botões de temporada baseados na linguagem
+// Função para mostrar/esconder botões de temporada baseados na linguagem com scroll suave
 function filterSeasonButtons(language) {
     seasonButtons.forEach(button => {
         button.style.display = button.dataset.linguagem === language ? 'block' : 'none';
     });
 
-    // Foca no primeiro botão de temporada visível
-    const firstVisibleSeasonButton = Array.from(seasonButtons).find(button => button.style.display === 'inline-block');
-    if (firstVisibleSeasonButton) {
-        firstVisibleSeasonButton.focus();
-    }
+
 }
 
-// Função para mostrar/esconder temporadas
+// Função para mostrar/esconder temporadas com scroll suave
 function showSeason(seasonId) {
+    // Mostra a temporada selecionada
     seasons.forEach(sea => {
         sea.style.display = sea.id === seasonId ? 'block' : 'none';
     });
 
- // Foca no primeiro episódio da temporada
- const season = document.getElementById(seasonId);
- if (season) {
-     const firstEpisode = season.querySelector('.episodes a');
-     if (firstEpisode) {
-         firstEpisode.scrollIntoView({ behavior: 'smooth', block: 'center' });
-     }
- }
+    // Scroll suave para a temporada selecionada após a seleção
+    const season = document.getElementById(seasonId);
+    if (season) {
+        setTimeout(() => {
+            season.scrollIntoView({
+                behavior: 'smooth',
+                block: 'nearest'
+            });
+        }, 1000); // Atraso de 0,7 segundos (700 ms)
+    }
 }
+
 
 // Função para verificar se alguma temporada está visível
 const isAnyTemporadaOpen = () => {
@@ -50,10 +51,8 @@ languageButtons.forEach(button => {
     button.addEventListener('click', () => {
         const language = button.dataset.linguagem;
         filterSeasonButtons(language);
+        temp_ind.style.display = 'block'
 
-        // Exibe a primeira temporada correspondente ao idioma selecionado
-        const firstSeasonId = `temporada-1-${language}`;
-        showSeason(firstSeasonId);
     });
 });
 
