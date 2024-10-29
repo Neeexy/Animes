@@ -29,7 +29,7 @@
                 <picture>
                     <source media="(min-width: 769px)" srcset="https://i.ibb.co/1q7tCDn/dungeon-ni-deai-poster-full.jpg" alt="Poster-Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka">
                     <source media="(max-width: 766px)" srcset="https://i.ibb.co/Sc4PPkv/dungeon-ni-deai-poster-150.jpg" alt="dungeon-ni-deai-poster-150" alt="Poster-Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka-150px">
-                    <img class="none" src="" alt=""> 
+                    <img class="anime-img" src="" alt=""> 
                 </picture>
             </div>
             <div class="anime-info">
@@ -972,5 +972,77 @@
         <h4>&copy;Nexy Animes</h4>
     </footer> -->
 <script src="../../Js/seasons.js"></script>
+<script>
+    // Links de imagem, títulos e datas para cada temporada
+    const seasonDetails = {
+        "1": {
+            large: "https://i.ibb.co/1q7tCDn/dungeon-ni-deai-poster-full.jpg",  // Imagem para desktop
+            small: "https://i.ibb.co/Sc4PPkv/dungeon-ni-deai-poster-150.jpg",   // Imagem para mobile
+            title: "Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka ",
+            releaseDate: "Apr. 04, 2015"
+        },
+        "2": {
+            large: "https://i.ibb.co/1fYkgy6/dungeon-ni-deai-2-full.jpg",
+            small: "https://i.ibb.co/9wXHsmY/dungeon-ni-deai-2-150.jpg",
+            title: "Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka 2",
+            releaseDate: "Jul. 13, 2019"
+        },
+        "3": {
+            large: "https://i.ibb.co/GtRpMYr/dungeon-ni-deai-3-full.jpg",
+            small: "https://i.ibb.co/bFbz4h2/dungeon-ni-deai-3-150.jpg",
+            title: "Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka 3",
+            releaseDate: "Oct. 2, 2020"
+        },
+        "4": {
+            large: "https://i.ibb.co/0jV3Tpn/dungeon-ni-deai-4-full.jpg",
+            small: "https://i.ibb.co/WKPh3Bk/dungeon-ni-deai-4-150.jpg",
+            title: "Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka 4",
+            releaseDate: "Jan. 22, 2022"
+        },
+        "5": {
+            large: "https://i.ibb.co/RDFRxTp/dungeon-ni-deai-5-full.jpg",
+            small: "https://i.ibb.co/dfjxdzk/dungeon-ni-deai-5-150.jpg",
+            title: "Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka 5",
+            releaseDate: "Oct. 04, 2024"
+        }
+    };
+    
+    // Função para atualizar o pôster, título e data de lançamento
+    function updateSeasonDetails(season) {
+        const largeSource = document.querySelector('.anime-image source[media="(min-width: 769px)"]');
+        const smallSource = document.querySelector('.anime-image source[media="(max-width: 766px)"]');
+        const imageElement = document.querySelector('.anime-img');
+        const titleElement = document.querySelector('.anime-info h2');
+        const dateElement = document.querySelector('.anime-info .date');
+    
+        // Adiciona a classe de fade-out para iniciar o efeito
+        imageElement.classList.add('fade-out');
+    
+        // Atualiza a imagem, título e data após um pequeno atraso
+        setTimeout(() => {
+            // Atualiza as imagens
+            largeSource.srcset = seasonDetails[season].large;
+            smallSource.srcset = seasonDetails[season].small;
+            imageElement.src = seasonDetails[season].large;
+            imageElement.alt = `Imagem da temporada ${season}`;
+            
+            // Atualiza o título e a data
+            titleElement.textContent = seasonDetails[season].title;
+            dateElement.textContent = seasonDetails[season].releaseDate;
+            
+            // Remove a classe fade-out para mostrar o fade-in
+            imageElement.classList.remove('fade-out');
+        }, 400); // 400ms para o efeito de fade-out
+    }
+    
+    // Event Listener para os botões de temporada
+    const ButtonSeason = document.querySelectorAll('.temporada-selector button');
+    ButtonSeason.forEach(button => {
+        button.addEventListener('click', () => {
+            const season = button.dataset.temporada;
+            updateSeasonDetails(season);
+        });
+    });
+</script>
 </body>
 </html>
