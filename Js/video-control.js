@@ -289,8 +289,9 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 // Skip Oppening
 
-// Encontre o elemento da barra de controle onde será inserido o botão (dentro da .vjs-control-bar)
-const controlBar = document.querySelector('.vjs-control-bar');
+
+// Encontre o elemento da barra de controle onde será inserido o botão (dentro da .vjs-text-track-display)
+const displaytrack = document.querySelector('vjs-text-track-display');
 
 // Cria um novo contêiner (div) para o botão de pular abertura
 const skipOpContainer = document.createElement('div');
@@ -303,15 +304,14 @@ skipOpButton.setAttribute('type', 'button');
 skipOpButton.setAttribute('title', 'Pular Abertura');
 
 // Adiciona o texto ou ícone ao botão
-skipOpButton.innerHTML = `<span class="skipOp" aria-hidden="true">⏭️</span>
+skipOpButton.innerHTML = `<span class="skipOp" aria-hidden="true">Pular Abertura⏭️</span>
 <span class="vjs-control-text" aria-live="polite">Pular Abertura</span>`;
 
 // Adiciona o botão à nova div
 skipOpContainer.appendChild(skipOpButton);
 
-// Insere a nova div acima da barra de progresso
-const progressControl = controlBar.querySelector('.vjs-progress-control');
-controlBar.insertBefore(skipOpContainer, progressControl);
+// Insere a nova div no display track
+displaytrack.appendChild(skipOpContainer);
 
 // Variável para contar quantas vezes o botão foi clicado
 let skippedOp = 0;
@@ -319,7 +319,7 @@ let skippedOp = 0;
 // Adiciona o evento de clique ao botão
 skipOpButton.addEventListener('click', () => {
     const video = document.querySelector('video'); // Seleciona o elemento de vídeo
-    video.currentTime += 180; // Avança 180 segundos (3 minutos) no vídeo
+    video.currentTime += 90; // Avança 90 segundos (1.5min) no vídeo
     skippedOp++;
 
     // Esconde o botão se já tiver sido clicado uma vez
@@ -327,5 +327,4 @@ skipOpButton.addEventListener('click', () => {
         skipOpContainer.style.display = 'none';
     }
 });
-
 
