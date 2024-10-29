@@ -35,7 +35,7 @@ function showSeason(seasonId) {
                 behavior: 'smooth',
                 block: 'nearest'
             });
-        }, 1500); // Atraso de 1,5 segundos (1500 ms)
+        }, 1200); // Atraso de 1 segundo (1000 ms)
     }
 }
 
