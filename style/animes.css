@@ -335,6 +335,194 @@ picture.poster > img{
     justify-content: center;
     width: 100%;
 }
+
+/* Button Player */
+.video-js .vjs-big-play-button{
+    font-size: 3em;
+    line-height: 1.9em;
+    height: 2em;
+    width: 4em;
+    display: block;
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    padding: 0;
+    cursor: pointer;
+    opacity: 1;
+    border: 0.06666em solid #fff;
+    background-color: #2B333F;
+    background-color: rgba(43, 51, 63, 0.7);
+    border-radius: 0.3em;
+    transition: all 0.4s;
+    /* As seguintes propriedades ajudam a ocultar o botão corretamente */
+    visibility: visible; /* Mantém o botão visível inicialmente */
+    z-index: 10; /* Mantenha o z-index, mas ajuste conforme necessário */
+}
+.vjs-rewind-button {
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.vjs-rewind-button .vjs-icon-placeholder {
+    background: url('../../../../style/components/rewind-icon.png') no-repeat center;
+    width: 24px;
+    height: 24px;
+}
+.video-js .vjs-big-play-button.vjs-hidden {
+    visibility: hidden; /* Oculta o botão quando o vídeo está reproduzindo */
+}
+.vjs-controls-disabled .vjs-big-play-button,
+.vjs-has-started .vjs-big-play-button,
+.vjs-using-native-controls .vjs-big-play-button,
+.vjs-error .vjs-big-play-button {
+  display: none;
+}
+
+.video-js .vjs-control-bar {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3em;
+    background-color: #2B333F;
+    background-color: #000000a1;
+}
+.video-js .vjs-play-progress {
+    background-color: rgb(161, 62, 23);
+}
+.vjs-hover:hover{
+    color: rgb(198 73 22);
+}
+.vjs-icon-placeholder {
+    color: rgb(198 73 22);
+}
+.vjs-remaining-time-display{
+    color: white;
+}
+.video-js .vjs-play-control .vjs-icon-placeholder::before{
+    color: rgb(198 73 22);
+}
+.video-js .vjs-current-time, .vjs-no-flex .vjs-current-time {
+    display: block;
+    color: white;
+}
+/* Play/Pause/Mute/Pic/FScreen Buttons */
+.vjs-button > .vjs-icon-placeholder:before {
+    font-size: 2.3em;
+    line-height: 1.17;
+}
+
+/* Fluid icons */
+.fluid {
+    width: fit-content;
+    margin: auto;
+    margin-top: 20px;
+}
+span.fluid-icons {
+    font-size: 1.8em;
+    background-color: #343435c5;
+    color: white;
+    padding-right: 12px;
+    padding-left: 12px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 10px;
+    font-weight: 650;
+}
+
+/* Barra de Progresso */
+.video-js .vjs-progress-control {
+    cursor: pointer;
+    flex: auto;
+    display: flex;
+    align-items: center;
+    min-width: 4em;
+    touch-action: none;
+    position: absolute;
+    top: -31px;
+    width: 100%;
+}
+/* Skip Opening Button */
+.skipOp {
+    width: 120px; /* Ajuste o tamanho conforme necessário */
+    height: 40px; /* Ajuste o tamanho conforme necessário */
+    background-color: #1c1c1c;
+    color: rgb(198, 73, 22);
+    position: absolute;
+    top: 10px; /* Ajuste a posição */
+    left: 10px; /* Ajuste a posição */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px; /* Cantos arredondados */
+    font-size: 16px; /* Tamanho da fonte */
+    z-index: 10; /* Certifique-se de que o botão esteja acima de outros elementos */
+}
+
+span.rewind10s {
+    font-size: 2.87em;
+    position: absolute;
+    top: -1px;
+    left: 25px;
+    color: rgb(198 73 22);
+    font-weight: bolder;
+}
+span.avance10s {
+    position: absolute;
+    top: -43px;
+    font-size: 2.87em;
+    left: 50px;
+    color: rgb(198 73 22);
+    font-weight: bolder;
+    cursor: pointer;
+}
+span.vjs-current-time-display {
+    position: absolute;
+    /* margin-right: 11px; */
+    top: 1px;
+    left: -1px;
+    cursor: pointer;
+}
+.vjs-current-time.vjs-time-control.vjs-control {
+    padding: 0;
+    margin-right: 75%;
+}
+
+/* Media querys */
+
+@media (max-width: 1439px) and (height: 899px) {
+    .vjs-current-time.vjs-time-control.vjs-control {
+        margin-right: 81%;
+    }
+}
+@media (max-width: 1440px) {
+    .vjs-current-time.vjs-time-control.vjs-control {
+        margin-right: 76%;
+    }
+}
+@media (max-width: 1366px) {
+    .vjs-current-time.vjs-time-control.vjs-control {
+        margin-right: 75%;
+    }
+}
+@media (max-width: 1130px) {
+    .vjs-current-time.vjs-time-control.vjs-control {
+        margin-right: 72%;
+    }
+}
+@media (max-width: 1025px) {
+    .vjs-current-time.vjs-time-control.vjs-control {
+        margin-right: 65%;
+    }
+}
+@media (max-width: 800px) {
+    .vjs-current-time.vjs-time-control.vjs-control {
+        margin-right: 62%;
+    }
+}
 @media (max-width: 768px){
 
     .seasons-episodes{
@@ -434,10 +622,14 @@ picture.poster > img{
         max-height: 235px;
     }
 }
-
 @media (max-width: 745px){
     .sgenders{
         margin-bottom: 10px;
+    }
+}
+@media (max-width:600px) {
+    .vjs-current-time.vjs-time-control.vjs-control {
+        margin-right: 50%;
     }
 }
 @media (max-width: 500px){
@@ -445,145 +637,6 @@ picture.poster > img{
         max-width: 120px;
         overflow: hidden;
     }
-}
-
-/* Button Player */
-.video-js .vjs-big-play-button{
-    font-size: 3em;
-    line-height: 1.9em;
-    height: 2em;
-    width: 4em;
-    display: block;
-    position: absolute;
-    top: 45%;
-    left: 45%;
-    padding: 0;
-    cursor: pointer;
-    opacity: 1;
-    border: 0.06666em solid #fff;
-    background-color: #2B333F;
-    background-color: rgba(43, 51, 63, 0.7);
-    border-radius: 0.3em;
-    transition: all 0.4s;
-    /* As seguintes propriedades ajudam a ocultar o botão corretamente */
-    visibility: visible; /* Mantém o botão visível inicialmente */
-    z-index: 10; /* Mantenha o z-index, mas ajuste conforme necessário */
-}
-.vjs-rewind-button {
-    display: inline-block;
-    cursor: pointer;
-    margin-right: 10px;
-    padding: 5px;
-}
-
-.vjs-rewind-button .vjs-icon-placeholder {
-    background: url('../../../../style/components/rewind-icon.png') no-repeat center;
-    width: 24px;
-    height: 24px;
-}
-.video-js .vjs-big-play-button.vjs-hidden {
-    visibility: hidden; /* Oculta o botão quando o vídeo está reproduzindo */
-}
-.vjs-controls-disabled .vjs-big-play-button,
-.vjs-has-started .vjs-big-play-button,
-.vjs-using-native-controls .vjs-big-play-button,
-.vjs-error .vjs-big-play-button {
-  display: none;
-}
-
-.video-js .vjs-control-bar {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 3em;
-    background-color: #2B333F;
-    background-color: #000000a1;
-}
-.video-js .vjs-play-progress {
-    background-color: rgb(161, 62, 23);
-}
-.vjs-hover:hover{
-    color: rgb(198 73 22);
-}
-.vjs-icon-placeholder {
-    color: rgb(198 73 22);
-}
-.vjs-remaining-time-display{
-    color: white;
-}
-.video-js .vjs-play-control .vjs-icon-placeholder::before{
-    color: rgb(198 73 22);
-}
-.video-js .vjs-current-time, .vjs-no-flex .vjs-current-time {
-    display: block;
-    color: white;
-}
-/* Fluid icons */
-.fluid {
-    width: fit-content;
-    margin: auto;
-    margin-top: 20px;
-}
-span.fluid-icons {
-    font-size: 1.8em;
-    background-color: #343435c5;
-    color: white;
-    padding-right: 12px;
-    padding-left: 12px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    border-radius: 10px;
-    font-weight: 650;
-}
-/* Play/Pause/Mute/Pic/FScreen Buttons */
-.vjs-button > .vjs-icon-placeholder:before {
-    font-size: 2.3em;
-    line-height: 1.17;
-}
-
-/* Barra de Progresso */
-.video-js .vjs-progress-control {
-    cursor: pointer;
-    flex: auto;
-    display: flex;
-    align-items: center;
-    min-width: 4em;
-    touch-action: none;
-    position: absolute;
-    top: -31px;
-    width: 100%;
-}
-span.rewind10s {
-    font-size: 2.87em;
-    position: absolute;
-    top: -1px;
-    left: 25px;
-    color: rgb(198 73 22);
-    font-weight: bolder;
-}
-span.avance10s {
-    position: absolute;
-    top: -43px;
-    font-size: 2.87em;
-    left: 50px;
-    color: rgb(198 73 22);
-    font-weight: bolder;
-    cursor: pointer;
-}
-span.vjs-current-time-display {
-    position: absolute;
-    /* margin-right: 11px; */
-    top: 1px;
-    left: -1px;
-    cursor: pointer;
-}
-.vjs-current-time.vjs-time-control.vjs-control {
-    padding: 0;
-    margin-right: 75%;
-}
-@media (max-width: 500px){
     .video-js .vjs-big-play-button{
         top: 40%;
     left: 39%;
@@ -591,42 +644,7 @@ span.vjs-current-time-display {
     height: 1.7em;
     width: 3em;
     }}
-@media (max-width: 1439px) and (height: 899px) {
-    .vjs-current-time.vjs-time-control.vjs-control {
-        margin-right: 81%;
-    }
-}
-@media (max-width: 1440px) {
-    .vjs-current-time.vjs-time-control.vjs-control {
-        margin-right: 76%;
-    }
-}
-@media (max-width: 1366px) {
-    .vjs-current-time.vjs-time-control.vjs-control {
-        margin-right: 75%;
-    }
-}
-@media (max-width: 1130px) {
-    .vjs-current-time.vjs-time-control.vjs-control {
-        margin-right: 72%;
-    }
-}
-@media (max-width: 1025px) {
-    .vjs-current-time.vjs-time-control.vjs-control {
-        margin-right: 65%;
-    }
-}
-@media (max-width: 800px) {
-    .vjs-current-time.vjs-time-control.vjs-control {
-        margin-right: 62%;
-    }
-}
 
-@media (max-width:600px) {
-    .vjs-current-time.vjs-time-control.vjs-control {
-        margin-right: 50%;
-    }
-}
 @media (max-width:475px) {
     .anime-info h2
     {max-width: 240px;
