@@ -32,7 +32,6 @@ main {
     gap: 20px; /* Espaçamento entre a imagem e as informações */
     color: #afaaaaa6;
     border-bottom: 0.5px solid #df5505d0;  /* Borda inferior */
-
 }
 button:focus {
     outline: none; /* Remove o contorno de foco do botão */
@@ -75,13 +74,7 @@ button:focus {
     cursor: grab; /* Mantém o cursor como 'grab' */
 }
 
-.anime-details {
-    /* background-image: url(../background-black.jpg); */
-    background-size: cover; /* Garante que a imagem de fundo cubra a área sem distorcer */
-    background-position: center; /* Mantém a posição centralizada */
-    background-repeat: no-repeat; /* Impede a repetição da imagem */
-    padding-bottom: 10px;
-}
+
 .description{
     padding-top: 10px;
     color: rgb(194, 194, 194);
@@ -107,16 +100,20 @@ a:vise{
 }
 .anime-image{
     position: relative;
+    margin-bottom: 10px;
 }
+
 .anime-image img {
     max-width: 230px; /* Ajusta a largura máxima da imagem */
     border-radius: 8px;
 }
+
 .anime-img {
     display: block;
     transition: opacity 0.5s ease-in-out;
     opacity: 1; /* Opacidade total */
 }
+
 /* Classe para o efeito de fade-out */
 .fade-out {
     filter: blur(3px);
@@ -132,10 +129,9 @@ a:vise{
 .anime-info h2 {
     margin-bottom: 1px;
     color: #e9e4e4a6;
-        font-family: "Kanit", sans-serif;
-        font-weight: 600;
-        font-style: normal;
-
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 .sgenders{
     height: 19px;
@@ -385,7 +381,7 @@ picture.poster > img{
     }
     .description{
         font-size: 13px;
-        max-height: 130px;
+        height: 155px;
         overflow-y: scroll;
         
     }
@@ -431,6 +427,11 @@ picture.poster > img{
         top: 25%;
         left: 45%;
 
+    }
+
+    .anime-img{
+        height: 235px;
+        max-height: 235px;
     }
 }
 
@@ -625,6 +626,14 @@ span.vjs-current-time-display {
     .vjs-current-time.vjs-time-control.vjs-control {
         margin-right: 50%;
     }
+}
+@media (max-width:475px) {
+    .anime-info h2
+    {max-width: 240px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;}
+    
 }
 @media (max-width:411px) {
     .vjs-current-time.vjs-time-control.vjs-control {
