@@ -39,7 +39,7 @@ a{
     border-bottom: 1.7px solid #4e4e4ed0;  /* Borda inferior */
 }
 .anime-dragger{
-    width: 85vw;
+    width: 95vw;
     overflow: auto;
     cursor: grab;
 }
