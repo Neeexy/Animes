@@ -194,7 +194,10 @@ a:vise{
 .seasons-episodes >.temporada-selector {
     max-width: 600px;
 }
-
+@media (max-width:766px) {
+    .seasons-episodes >.temporada-selector {
+        max-width: 408px;
+}}
 .seasons-episodes > h4{
     font-size: 23px;
 }
