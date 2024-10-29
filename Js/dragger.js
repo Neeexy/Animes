@@ -15,7 +15,7 @@ function startAutoScroll() {
             animeDragger.scrollLeft += scrollDirection; // Controla a direção do scroll
 
             // Altera a direção ao atingir o final ou o início
-            if (animeDragger.scrollLeft >= animeDragger.scrollWidth - animeDragger.clientWidth) {
+            if (animeDragger.scrollLeft >= animeDragger.scrollWidth - animeDragger.clientWidth - 1) {
                 scrollDirection = -1; // Inverte a direção para a esquerda
             } else if (animeDragger.scrollLeft <= 0) {
                 scrollDirection = 1; // Inverte a direção para a direita
@@ -85,6 +85,14 @@ animeDragger.addEventListener('mousemove', (e) => {
 animeDragger.addEventListener('mouseenter', () => {
     isScrolling = false;
     stopAutoScroll();
+});
+
+// Evento de resize para garantir que o efeito seja reiniciado corretamente ao mudar o tamanho da tela
+window.addEventListener('resize', () => {
+    if (!isDragging) {
+        isScrolling = true;
+        startAutoScroll();
+    }
 });
 
 // Adicione o preventDefault para imagens dentro do animeDragger
