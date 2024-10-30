@@ -415,6 +415,10 @@ picture.poster > img{
     line-height: 1.17;
 }
 
+/* Center PLayer */
+.center_playbtt{
+    position: absolute;
+}
 /* Fluid icons */
 .fluid {
     width: fit-content;
