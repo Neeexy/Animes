@@ -19,7 +19,24 @@ a{
     color: white;
     font-weight: 500;
 }
-
+#pp-animation{
+    position: absolute;
+    z-index: 10;
+    right: 2rem;
+    top: 6.2rem;
+    font-size: 21px;
+}
+#play{
+    font-size: 24px;
+}#play:hover{
+    cursor: pointer;
+}
+#pause{
+    margin-left: 10px;
+}
+#pause:hover{
+cursor: pointer;
+}
 .anime-dragger::-webkit-scrollbar {
     display: none; /* Oculta a barra de rolagem no WebKit (Chrome, Safari, etc.) */
 }
@@ -37,6 +54,7 @@ a{
     height: 345px;
     overflow: hidden;
 }
+
 
 .anime-dragger .dragging{
     cursor: grabbing;
