@@ -741,7 +741,6 @@ div#topic{
     color: #c95715;
     font-size: 21px;
 }
-
 /* Back to Top */
 .btt {
     width: 50px;
@@ -762,6 +761,7 @@ div#topic{
     bottom: 2rem;
     right: 2rem;
 }
+
 .svgIcon {
     width: 12px;
     transition-duration: 0.3s;
@@ -771,7 +771,7 @@ div#topic{
     fill: white;
 }
 
-.btt:hover {
+.btt:hover, .btt.hover {
     /* width: 140px; */
     border-radius: 50px;
     transition-duration: 0.3s;
@@ -779,18 +779,19 @@ div#topic{
     align-items: center;
 }
 
-.btt:hover .svgIcon {
+.btt:hover .svgIcon, .btt.hover .svgIcon {
     /* width: 20px; */
     transition-duration: 0.3s;
     transform: translateY(-200%);
 }
+
 .btt:active .svgIcon {
     /* width: 20px; */
     transition-duration: 0.3s;
     transform: translateY(-200%);
 }
 
-.btt:hover::before {
+.btt:hover::before, .btt.hover::before {
     font-size: 15px;
     opacity: 1;
     bottom: unset;
