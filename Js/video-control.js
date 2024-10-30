@@ -322,7 +322,7 @@ let skippedOp = 0;
 // Adiciona o evento de clique ao botão
 skipOpButton.addEventListener('click', () => {
     const video = document.querySelector('video'); // Seleciona o elemento de vídeo
-    video.currentTime += 90; // Avança 90 segundos (1.5min) no vídeo
+    video.currentTime += 87; // Avança 87 segundos (1.5min) no vídeo
     skippedOp++;
 
     // Esconde o botão se já tiver sido clicado uma vez
