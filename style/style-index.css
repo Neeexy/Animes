@@ -373,7 +373,7 @@ button#back >a{
 }
 @media (max-width: 768px){
     .episodes-list{
-        margin-left: 15px;
+        margin-left: 28px;
     }
     .item-episode{
         width: 345px;
@@ -408,7 +408,7 @@ button#back >a{
 
 @media (max-width: 735px) {
     .episodes-list{
-        margin-left: 15px;
+        margin-left: 50px;
     }
     .item-episode{
         width: 310px;
@@ -421,7 +421,7 @@ button#back >a{
 }
 @media (max-width: 680px) {
     .episodes-list{
-        margin-left: 15px;
+        margin-left: 50px;
     }
     .item-episode{
         width: 280px;
@@ -447,6 +447,9 @@ button#back >a{
     }
 }
 @media (max-width: 596px) {
+    .episodes-list{
+        margin-left: 25px;
+    }
     .item-episode{
         width: 255px;
         height: 198px;
@@ -457,6 +460,9 @@ button#back >a{
     }
 }
 @media (max-width: 566px) {
+    .episodes-list{
+        margin-left: 28px;
+    }
     .item-episode{
         width: 237px;
         height: 185px;
@@ -467,6 +473,9 @@ button#back >a{
     }
 }
 @media (max-width: 528px) {
+    .episodes-list{
+        margin-left: 25px;
+    }
     .item-episode{
         width: 222px;
         height: 185px;
@@ -477,7 +486,9 @@ button#back >a{
     }
 }
 @media (max-width: 500px) {
-
+    .episodes-list{
+        margin-left: 27px;
+    }
     .item-episode{
 
         width: 210px;
@@ -489,7 +500,9 @@ button#back >a{
     }
 }
 @media (max-width: 470px) {
-
+    .episodes-list{
+        margin-left: 15px;
+    }
     .item-episode{
 
         width: 200px;
@@ -502,7 +515,7 @@ button#back >a{
 }
 @media (max-width: 459px) {
     .episodes-list{
-        margin-left: 5px;
+        margin-left: 15px;
     }
     .item-episode{
 
@@ -516,7 +529,7 @@ button#back >a{
 }
 @media (max-width: 448px) {
     .episodes-list{
-        margin-left: -5px;
+        margin-left: 10px;
     }
     .item-episode{
 
