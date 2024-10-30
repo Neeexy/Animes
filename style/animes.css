@@ -727,7 +727,7 @@ span.vjs-current-time-display {
 @media (max-width: 435px) {
     .skipOp {
         top: -55px;
-        left: -900px;
+        left: -90px;
         width: 106px;
         height: 32px;
         font-size: 14px;
