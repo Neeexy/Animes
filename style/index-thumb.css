@@ -145,6 +145,13 @@ a{
 
 }
 
+@keyframes autoRun {
+    from{
+        left: 100%;
+    }to{
+        left: -202px;
+    }
+}
 
 /* Grayscale effect */
 
@@ -195,13 +202,6 @@ a{
     filter: grayscale(85%) blur(2.5px);
 }
 
-@keyframes autoRun {
-    from{
-        left: 100%;
-    }to{
-        left: -202px;
-    }
-}
 /* Media Querys */
 @media  (max-width:1367px){
     .anime-dragger .animes-head{
