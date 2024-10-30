@@ -668,7 +668,14 @@ span.vjs-current-time-display {
     .vjs-current-time.vjs-time-control.vjs-control {
         margin-right: 50%;
     }
-    
+    button.vjs-control.vjs-button.vjs-play-control.center_playbtt {
+        position: absolute;
+        top: -26vw;
+        left: 44%;
+        width: 20px;
+        height: 20px;
+        font-size: 37px;
+    }
 }
 @media (max-width: 500px){
     .sgenders{
