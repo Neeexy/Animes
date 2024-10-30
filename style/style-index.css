@@ -769,35 +769,31 @@ div#topic{
 
 .svgIcon path {
     fill: white;
-  }
-  
-  .btt:hover {
-    width: 140px;
+}
+
+.btt:hover {
+    /* width: 140px; */
     border-radius: 50px;
     transition-duration: 0.3s;
     background-color: rgb(228, 123, 38);
     align-items: center;
-  }
-  
-  .btt:hover .svgIcon {
+}
+
+.btt:hover .svgIcon {
     /* width: 20px; */
     transition-duration: 0.3s;
     transform: translateY(-200%);
-  }
-  
-  .btt::before {
-    position: absolute;
-    bottom: -20px;
-    content: "Voltar ao topo";
-    color: white;
-    font-size: 0px;
-  }
-  
-  .btt:hover::before {
+}
+.btt:active .svgIcon {
+    /* width: 20px; */
+    transition-duration: 0.3s;
+    transform: translateY(-200%);
+}
+
+.btt:hover::before {
     font-size: 15px;
     opacity: 1;
     bottom: unset;
-    /* transform: translateY(-30px); */
+    transform: translateY(-30px);
     transition-duration: 0.3s;
-  }
-  
+}
