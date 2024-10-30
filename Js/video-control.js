@@ -332,10 +332,47 @@ skipOpButton.addEventListener('click', () => {
 });
 
 // Play/Pause Button
+// Criação do botão
 const center_playButton = document.createElement('button');
-center_playButton.classList.add('vjs-control', 'vjs-button', );
+center_playButton.classList.add('vjs-control', 'vjs-button', 'vjs-play-control', 'vjs-paused');
 center_playButton.setAttribute('type', 'button');
-center_playButton.setAttribute('title', 'center_plauButton');
-center_playButton.innerHTML = `<span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Play</span>`;
+center_playButton.setAttribute('title', 'center_playButton');
+center_playButton.innerHTML = `
+    <span class="vjs-icon-placeholder" aria-hidden="true"></span>
+    <span class="vjs-control-text" aria-live="polite">Play</span>
+`;
+
+// Adiciona o botão depois do 'skipOpContainer'
 skipOpContainer.insertAdjacentElement('afterend', center_playButton);
+
+// Seleciona o elemento de vídeo (substitua 'videoElement' pelo seletor do seu vídeo)
+const videoElement = document.querySelector('video');
+
+// Função para atualizar o estado do botão com base no estado do vídeo
+function updateButtonState() {
+    if (videoElement.paused) {
+        center_playButton.classList.add('vjs-paused');
+        center_playButton.classList.remove('vjs-playing');
+        center_playButton.querySelector('.vjs-control-text').textContent = 'Play';
+    } else {
+        center_playButton.classList.add('vjs-playing');
+        center_playButton.classList.remove('vjs-paused');
+        center_playButton.querySelector('.vjs-control-text').textContent = 'Pause';
+    }
+}
+
+// Adiciona um evento de clique ao botão para alternar o estado do vídeo
+center_playButton.addEventListener('click', () => {
+    if (videoElement.paused) {
+        videoElement.play();
+    } else {
+        videoElement.pause();
+    }
+    updateButtonState(); // Atualiza o estado do botão após a interação
+});
+
+// Atualiza o botão automaticamente quando o vídeo é pausado ou começa a tocar
+videoElement.addEventListener('play', updateButtonState);
+videoElement.addEventListener('pause', updateButtonState);
+
 });
