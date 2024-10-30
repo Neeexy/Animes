@@ -453,7 +453,7 @@ span.fluid-icons {
     color: rgb(252 250 250);
     position: absolute;
     top: -76px;
-    left: -132px;
+    left: -187px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -680,12 +680,12 @@ span.vjs-current-time-display {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;}
-    .skipOp{
-    top: -60px;
-    left: -152px;
-    width: 110px;
-    height: 36px;
-    font-size: 15px;
+    .skipOp {
+    top: -55px;
+    left: -199px;
+    width: 106px;
+    height: 32px;
+    font-size: 14px;
     }
 }
 @media (max-width:411px) {
