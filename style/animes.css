@@ -663,6 +663,14 @@ span.vjs-current-time-display {
         height: 36px;
         font-size: 15px;
         }
+        button.vjs-control.vjs-button.vjs-play-control.center_playbtt {
+            position: absolute;
+            top: -26vw;
+            left: 44%;
+            width: 20px;
+            height: 20px;
+            font-size: 37px;
+        }
 }
 @media (max-width:600px) {
     .vjs-current-time.vjs-time-control.vjs-control {
@@ -670,11 +678,11 @@ span.vjs-current-time-display {
     }
     button.vjs-control.vjs-button.vjs-play-control.center_playbtt {
         position: absolute;
-        top: -26vw;
-        left: 44%;
+        top: -30vw;
+        left: 41%;
         width: 20px;
         height: 20px;
-        font-size: 37px;
+        font-size: 30px;
     }
 }
 @media (max-width: 500px){
@@ -719,7 +727,7 @@ span.vjs-current-time-display {
 @media (max-width: 435px) {
     .skipOp {
         top: -55px;
-        left: -140px;
+        left: -90px;
         width: 106px;
         height: 32px;
         font-size: 14px;
