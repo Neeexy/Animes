@@ -331,9 +331,11 @@ skipOpButton.addEventListener('click', () => {
         skipOpContainer.style.display = 'none';
     }
 });
-
+function isMobile() {
+    return /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop|BlackBerry/i.test(navigator.userAgent);
+}
 // Play/Pause Button
-if(isMobile){
+if(isMobile()){
 const center_playButton = document.createElement('button');
 center_playButton.classList.add('vjs-control', 'vjs-button', 'vjs-play-control', 'vjs-paused','center_playbtt');
 center_playButton.setAttribute('type', 'button');
