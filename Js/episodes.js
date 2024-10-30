@@ -61,29 +61,3 @@ function displayEpisodes(animes) {
 document.addEventListener('DOMContentLoaded', loadAnimes);
 
 
-// back-to-top
-document.addEventListener('DOMContentLoaded', function () {
-    const backToTopButton = document.querySelector('.btt');
-    
-    // Função para rolar a página até o topo
-    function scrollToTop() {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-
-    // Função para adicionar o efeito de hover em dispositivos móveis
-    function addHoverEffect() {
-        backToTopButton.classList.add('hover');
-    }
-
-    // Função para remover o efeito de hover após o toque em dispositivos móveis
-    function removeHoverEffect() {
-        backToTopButton.classList.remove('hover');
-    }
-
-    // Eventos para clicar e rolar ao topo
-    backToTopButton.addEventListener('click', scrollToTop);
-
-    // Eventos para adicionar e remover o efeito de hover em dispositivos móveis
-    backToTopButton.addEventListener('touchstart', addHoverEffect);
-    backToTopButton.addEventListener('touchend', removeHoverEffect);
-});
