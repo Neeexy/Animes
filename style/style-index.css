@@ -148,7 +148,7 @@ button#botão{
     cursor: pointer;
     background: radial-gradient(#484848, #3a3a3a, #2b2b2b, #222121, #161616);
     box-shadow: rgba(0, 0, 0, 0.829) 5px 6px 3px;
-    padding: 14px 31px;
+    padding: 0px 31px;
     border-radius: 6px;
     color: #c2c1c1;
     height: 50px;

@@ -447,19 +447,30 @@ span.fluid-icons {
 }
 /* Skip Opening Button */
 .skipOp {
-    width: 120px; /* Ajuste o tamanho conforme necessário */
-    height: 40px; /* Ajuste o tamanho conforme necessário */
-    background-color: #1c1c1c;
-    color: rgb(198, 73, 22);
+    width: 150px;
+    height: 46px;
+    background-color: #00000052;
+    color: rgb(252 250 250);
     position: absolute;
-    top: 10px; /* Ajuste a posição */
-    left: 10px; /* Ajuste a posição */
+    top: -76px;
+    left: -132px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 5px; /* Cantos arredondados */
-    font-size: 16px; /* Tamanho da fonte */
-    z-index: 10; /* Certifique-se de que o botão esteja acima de outros elementos */
+    border-radius: 5px;
+    font-size: 17px;
+    z-index: 10;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.skipOp:active{
+    box-shadow:inset #000000a6 2px 2px 6px 4px; ;
+}
+.skipOp:hover{
+    transform: translateY(-3px) translatex(-2px) scale(1.02);
+    box-shadow: #00000091 3px 5px 5px 2px;
+    
 }
 
 span.rewind10s {
@@ -492,6 +503,13 @@ span.vjs-current-time-display {
 }
 
 /* Media querys */
+@media (max-width:1030px) and (max-height:769px) {
+    #video-frame {
+        width: 90%; /* O vídeo ocupará 100% da largura do contêiner */
+        height: 83.5%; /* O vídeo ocupará 100% da altura do contêiner */
+        object-fit: cover; /* Garante que o vídeo mantenha sua proporção */
+    }
+}
 
 @media (max-width: 1439px) and (height: 899px) {
     .vjs-current-time.vjs-time-control.vjs-control {
@@ -626,11 +644,19 @@ span.vjs-current-time-display {
     .sgenders{
         margin-bottom: 10px;
     }
+    .skipOp{
+        top: -60px;
+        left: -152px;
+        width: 110px;
+        height: 36px;
+        font-size: 15px;
+        }
 }
 @media (max-width:600px) {
     .vjs-current-time.vjs-time-control.vjs-control {
         margin-right: 50%;
     }
+    
 }
 @media (max-width: 500px){
     .sgenders{
@@ -651,7 +677,13 @@ span.vjs-current-time-display {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;}
-    
+    .skipOp{
+    top: -60px;
+    left: -152px;
+    width: 110px;
+    height: 36px;
+    font-size: 15px;
+    }
 }
 @media (max-width:411px) {
     .vjs-current-time.vjs-time-control.vjs-control {
