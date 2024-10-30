@@ -678,6 +678,18 @@ span.vjs-current-time-display {
     width: 3em;
     }}
 
+    @media (max-width:490px) {
+        .vjs-current-time.vjs-time-control.vjs-control {
+            margin-right: 45%;
+        }
+        .skipOp {
+            top: -55px;
+            left: -160px;
+            width: 106px;
+            height: 32px;
+            font-size: 14px;
+        }
+    }
 @media (max-width:475px) {
     .anime-info h2
     {max-width: 240px;
@@ -695,18 +707,6 @@ span.vjs-current-time-display {
 @media (max-width:411px) {
     .vjs-current-time.vjs-time-control.vjs-control {
         margin-right: 38%;
-    }
-}
-@media (max-width:490px) {
-    .vjs-current-time.vjs-time-control.vjs-control {
-        margin-right: 38%;
-    }
-    .skipOp {
-        top: -55px;
-        left: -160px;
-        width: 106px;
-        height: 32px;
-        font-size: 14px;
     }
 }
 /* Animações */
