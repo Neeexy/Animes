@@ -314,7 +314,7 @@ skipOpContainer.appendChild(skipOpButton);
 
 // Insere a nova div acima da barra de progresso
 const fullscreenctrl = controlBar.querySelector('.vjs-fullscreen-control');
-controlBar.insertBefore(skipOpContainer, fullscreenctrl);
+fullscreenctrl.insertAdjacentElement('afterend', skipOpContainer);
 
 // Variável para contar quantas vezes o botão foi clicado
 let skippedOp = 0;
