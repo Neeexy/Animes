@@ -94,6 +94,7 @@ btn_search.addEventListener('click', (e) =>{
         nav_flex.style.justifyContent = 'end';
         logo.style.display = 'none'
     };
+
     
     // Adiciona o evento de clique no documento para trazer a logo de volta ao clicar fora da aba de pesquisa
     document.addEventListener('click', function ClickOutSite(event){
