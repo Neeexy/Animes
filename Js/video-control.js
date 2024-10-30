@@ -287,44 +287,36 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 });
-// Skip Oppening
 
+// Skip Opening
 
-// Encontre o elemento da barra de controle onde será inserido o botão (dentro da .vjs-text-track-display)
-const displaytrack = document.querySelector('vjs-text-track-display');
+// Aguarda o carregamento do DOM
+document.addEventListener('DOMContentLoaded', () => {
+    // Encontre o elemento da barra de controle onde será inserido o botão (dentro da .vjs-text-track-display)
+    const displaytrack = document.querySelector('.vjs-text-track-display');
 
-// Cria um novo contêiner (div) para o botão de pular abertura
-const skipOpContainer = document.createElement('div');
-skipOpContainer.classList.add('vjs-control', 'skip-op-container');
+    // Verifica se o elemento foi encontrado
+    if (displaytrack) {
+        // Cria um novo contêiner (div) para o botão de pular abertura
+        const skipOpContainer = document.createElement('div');
+        skipOpContainer.classList.add('vjs-control', 'skip-op-container');
 
-// Cria um novo botão para pular abertura
-const skipOpButton = document.createElement('button');
-skipOpButton.classList.add('vjs-control', 'vjs-button', 'skip-op-button');
-skipOpButton.setAttribute('type', 'button');
-skipOpButton.setAttribute('title', 'Pular Abertura');
+        // Cria um novo botão para pular abertura
+        const skipOpButton = document.createElement('button');
+        skipOpButton.classList.add('vjs-control', 'vjs-button', 'skip-op-button');
+        skipOpButton.setAttribute('type', 'button');
+        skipOpButton.setAttribute('title', 'Pular Abertura');
 
-// Adiciona o texto ou ícone ao botão
-skipOpButton.innerHTML = `<span class="skipOp" aria-hidden="true">Pular Abertura⏭️</span>
-<span class="vjs-control-text" aria-live="polite">Pular Abertura</span>`;
+        // Adiciona o texto ou ícone ao botão
+        skipOpButton.innerHTML = `<span class="skipOp" aria-hidden="true">Pular Abertura⏭️</span>
+        <span class="vjs-control-text" aria-live="polite">Pular Abertura</span>`;
 
-// Adiciona o botão à nova div
-skipOpContainer.appendChild(skipOpButton);
+        // Adiciona o botão à nova div
+        skipOpContainer.appendChild(skipOpButton);
 
-// Insere a nova div no display track
-displaytrack.appendChild(skipOpContainer);
-
-// Variável para contar quantas vezes o botão foi clicado
-let skippedOp = 0;
-
-// Adiciona o evento de clique ao botão
-skipOpButton.addEventListener('click', () => {
-    const video = document.querySelector('video'); // Seleciona o elemento de vídeo
-    video.currentTime += 90; // Avança 90 segundos (1.5min) no vídeo
-    skippedOp++;
-
-    // Esconde o botão se já tiver sido clicado uma vez
-    if (skippedOp !== 0) {
-        skipOpContainer.style.display = 'none';
+        // Insere a nova div no display track
+        displaytrack.appendChild(skipOpContainer);
+    } else {
+        console.error('Elemento .vjs-text-track-display não encontrado');
     }
 });
-
