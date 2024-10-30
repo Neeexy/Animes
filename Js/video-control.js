@@ -334,7 +334,7 @@ skipOpButton.addEventListener('click', () => {
 // Play/Pause Button
 // Criação do botão
 const center_playButton = document.createElement('button');
-center_playButton.classList.add('vjs-control', 'vjs-button', 'vjs-play-control', 'vjs-paused','center-playbtt');
+center_playButton.classList.add('vjs-control', 'vjs-button', 'vjs-play-control', 'vjs-paused','center_playbtt');
 center_playButton.setAttribute('type', 'button');
 center_playButton.setAttribute('title', 'center_playButton');
 center_playButton.innerHTML = `

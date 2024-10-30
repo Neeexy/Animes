@@ -416,8 +416,13 @@ picture.poster > img{
 }
 
 /* Center PLayer */
-.center_playbtt{
+button.vjs-control.vjs-button.vjs-play-control.center_playbtt {
     position: absolute;
+    top: -30vw;
+    left: 41%;
+    width: 20px;
+    height: 20px;
+    font-size: 30px;
 }
 /* Fluid icons */
 .fluid {
