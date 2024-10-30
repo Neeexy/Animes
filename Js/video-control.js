@@ -306,7 +306,7 @@ skipOpButton.setAttribute('type', 'button');
 skipOpButton.setAttribute('title', 'Pular Abertura');
 
 // Adiciona o texto ou ícone ao botão
-skipOpButton.innerHTML = `<span class="skip-op-icon" aria-hidden="true">⏭️</span>
+skipOpButton.innerHTML = `<span class="skipOp" aria-hidden="true">Pular Abertura</span>
 <span class="vjs-control-text" aria-live="polite">Pular Abertura</span>`;
 
 // Adiciona o botão à nova div
