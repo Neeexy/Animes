@@ -509,6 +509,9 @@ span.vjs-current-time-display {
         height: 83.5%; /* O vídeo ocupará 100% da altura do contêiner */
         object-fit: cover; /* Garante que o vídeo mantenha sua proporção */
     }
+    main{
+        padding-top: 0px;
+    }
 }
 
 @media (max-width: 1439px) and (height: 899px) {
