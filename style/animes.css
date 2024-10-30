@@ -709,6 +709,15 @@ span.vjs-current-time-display {
     font-size: 14px;
     }
 }
+@media (max-width: 435px) {
+    .skipOp {
+        top: -55px;
+        left: -140px;
+        width: 106px;
+        height: 32px;
+        font-size: 14px;
+    }
+}
 @media (max-width:411px) {
     .vjs-current-time.vjs-time-control.vjs-control {
         margin-right: 38%;
