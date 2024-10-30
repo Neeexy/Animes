@@ -324,10 +324,18 @@ skipOpButton.addEventListener('click', () => {
     const video = document.querySelector('video'); // Seleciona o elemento de vídeo
     video.currentTime += 87; // Avança 87 segundos (1.5min) no vídeo
     skippedOp++;
-
+    
     // Esconde o botão se já tiver sido clicado uma vez
     if (skippedOp !== 0) {
         skipOpContainer.style.display = 'none';
     }
 });
+
+// Play/Pause Button
+const center_playButton = document.createElement('button');
+center_playButton.classList.add('vjs-control', 'vjs-button', );
+center_playButton.setAttribute('type', 'button');
+center_playButton.setAttribute('title', 'center_plauButton');
+center_playButton.innerHTML = `<span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Play</span>`;
+skipOpContainer.insertAdjacentElement('afterend', center_playButton);
 });
