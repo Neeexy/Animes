@@ -292,6 +292,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // Aguarda o carregamento do DOM
 document.addEventListener('DOMContentLoaded', () => {
+
     // Encontre o elemento da barra de controle onde será inserido o botão (dentro da .vjs-text-track-display)
 const controlBar = document.querySelector('.vjs-control-bar');
 
@@ -332,7 +333,7 @@ skipOpButton.addEventListener('click', () => {
 });
 
 // Play/Pause Button
-// Criação do botão
+if(isMobile){
 const center_playButton = document.createElement('button');
 center_playButton.classList.add('vjs-control', 'vjs-button', 'vjs-play-control', 'vjs-paused','center_playbtt');
 center_playButton.setAttribute('type', 'button');
@@ -374,5 +375,5 @@ center_playButton.addEventListener('click', () => {
 // Atualiza o botão automaticamente quando o vídeo é pausado ou começa a tocar
 videoElement.addEventListener('play', updateButtonState);
 videoElement.addEventListener('pause', updateButtonState);
-
+}
 });
