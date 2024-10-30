@@ -43,39 +43,48 @@ function resetCursor() {
     });
 }
 
-// Evento que inicia o arrasto quando o botão do mouse é pressionado
-animeDragger.addEventListener('mousedown', (e) => {
+// Função para iniciar o arrasto
+function startDrag(e) {
     isDragging = true;
     isScrolling = false; // Para o scroll automático ao iniciar o arrasto
     animeDragger.classList.add('dragging');
-    startX = e.pageX - animeDragger.offsetLeft;
+    startX = e.type === 'mousedown' ? e.pageX - animeDragger.offsetLeft : e.touches[0].pageX - animeDragger.offsetLeft;
     scrollLeft = animeDragger.scrollLeft;
     setGrabbingCursor();
-});
+}
+
+// Evento que inicia o arrasto quando o botão do mouse é pressionado ou toque começa
+animeDragger.addEventListener('mousedown', startDrag);
+animeDragger.addEventListener('touchstart', startDrag);
 
 // Evento que cancela o arrasto caso o mouse saia da área do container
-animeDragger.addEventListener('mouseleave', () => {
+function stopDrag() {
     isDragging = false;
     isScrolling = true; // Retoma o scroll automático ao sair da área
     animeDragger.classList.remove('dragging');
     resetCursor();
     startAutoScroll();
-});
+}
 
-// Evento que cancela o arrasto quando o botão do mouse é solto
-animeDragger.addEventListener('mouseup', () => {
-    isDragging = false;
-    isScrolling = true; // Retoma o scroll automático ao soltar o botão
-    animeDragger.classList.remove('dragging');
-    resetCursor();
-    startAutoScroll();
-});
+animeDragger.addEventListener('mouseleave', stopDrag);
+animeDragger.addEventListener('mouseup', stopDrag);
+animeDragger.addEventListener('touchend', stopDrag);
 
-// Evento que controla o movimento de arrasto enquanto o mouse é movido
+// Evento que controla o movimento de arrasto enquanto o mouse é movido ou toque se move
 animeDragger.addEventListener('mousemove', (e) => {
     if (!isDragging) return;
     e.preventDefault();
     const x = e.pageX - animeDragger.offsetLeft;
+    const walk = (x - startX) * 0.8;
+    animeDragger.scrollLeft = scrollLeft - walk;
+    setGrabbingCursor();
+});
+
+// Adicione o movimento de toque
+animeDragger.addEventListener('touchmove', (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+    const x = e.touches[0].pageX - animeDragger.offsetLeft;
     const walk = (x - startX) * 0.8;
     animeDragger.scrollLeft = scrollLeft - walk;
     setGrabbingCursor();
