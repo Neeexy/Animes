@@ -418,7 +418,7 @@ picture.poster > img{
 /* Center PLayer */
 button.vjs-control.vjs-button.vjs-play-control.center_playbtt {
     position: absolute;
-    top: -25vw;
+    top: -27vw;
     left: 44%;
     width: 20px;
     height: 20px;
