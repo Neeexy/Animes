@@ -692,13 +692,18 @@ span.vjs-current-time-display {
     .vjs-current-time.vjs-time-control.vjs-control {
         margin-right: 38%;
     }
-        .skipOp {
-            top: -55px;
-            left: -160px;
-            width: 106px;
-            height: 32px;
-            font-size: 14px;
-        }
+}
+@media (max-width:490px) {
+    .vjs-current-time.vjs-time-control.vjs-control {
+        margin-right: 38%;
+    }
+    .skipOp {
+        top: -55px;
+        left: -160px;
+        width: 106px;
+        height: 32px;
+        font-size: 14px;
+    }
 }
 /* Animações */
 
