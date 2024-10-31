@@ -337,6 +337,12 @@ video.addEventListener('timeupdate', () => {
     if(video.currentTime > 300){
         skipOpContainer.style.display = 'none';
     }
+    // Botão de Pular ending/término
+    else if(video.currentTime >= 1170){
+        skipOpButton.innerHTML = `<span class="skipOp" aria-hidden="true">Pular Término</span>
+<span class="vjs-control-text" aria-live="polite">Pular Abertura</span>`;
+        skipOpContainer.style.display = 'block';
+    }
 })
 function isMobile() {
     return /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop|BlackBerry/i.test(navigator.userAgent);
