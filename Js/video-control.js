@@ -327,13 +327,15 @@ skipOpButton.addEventListener('click', () => {
     skippedOp++;
     
     // Esconde o botão se já tiver sido clicado uma vez
-    if (skippedOp !== 0) {
+    if (skippedOp !== 0 || video.currentTime > 600) {
         skipOpContainer.style.display = 'none';
     }
-    // Esconde o botão SkipOp se a minutagem for maior que 10
-    if(video.currentTime > 600){
-        skipOpContainer.style.display = 'none';
-    }
+    // Esconde o botão SkipOp se a minutagem for maior que 7 minutos
+    video.addEventListener('timeupdate', () => {
+        if(video.currentTime > 420){
+            skipOpContainer.style.display = 'none';
+        }
+    })
 });
 function isMobile() {
     return /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop|BlackBerry/i.test(navigator.userAgent);
