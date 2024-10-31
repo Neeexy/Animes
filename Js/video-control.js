@@ -331,10 +331,9 @@ skipOpButton.addEventListener('click', () => {
         skipOpContainer.style.display = 'none';
     }
 });
-// Esconde o botão SkipOp se a minutagem for maior que 7 minutos
+// Esconde o botão SkipOp se a minutagem for maior que 5 minutos
 const video = document.querySelector('video'); // Seleciona o elemento de vídeo
 video.addEventListener('timeupdate', () => {
-    console.log('timeupdate')
     if(video.currentTime > 300){
         skipOpContainer.style.display = 'none';
     }
