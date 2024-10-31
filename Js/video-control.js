@@ -330,6 +330,10 @@ skipOpButton.addEventListener('click', () => {
     if (skippedOp !== 0) {
         skipOpContainer.style.display = 'none';
     }
+    // Esconde o botão SkipOp se a minutagem for maior que 10
+    if(video.currentTime > 600){
+        skipOpContainer.style.display = 'none';
+    }
 });
 function isMobile() {
     return /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop|BlackBerry/i.test(navigator.userAgent);
