@@ -327,7 +327,7 @@ skipOpButton.addEventListener('click', () => {
     skippedOp++;
     
     // Esconde o botão se já tiver sido clicado uma vez
-    if (skippedOp !== 0 || video.currentTime > 600) {
+    if (skippedOp !== 0) {
         skipOpContainer.style.display = 'none';
     }
 });
