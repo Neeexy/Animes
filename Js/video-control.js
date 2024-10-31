@@ -338,9 +338,9 @@ video.addEventListener('timeupdate', () => {
         skipOpContainer.style.display = 'none';
     }
     // Botão de Pular ending/término
-    else if(video.currentTime >= 1170){
+    if(video.currentTime > 1170){
         skipOpButton.innerHTML = `<span class="skipOp" aria-hidden="true">Pular Término</span>
-<span class="vjs-control-text" aria-live="polite">Pular Abertura</span>`;
+    <span class="vjs-control-text" aria-live="polite">Pular Abertura</span>`;
         skipOpContainer.style.display = 'block';
     }
 })
