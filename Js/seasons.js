@@ -121,3 +121,25 @@ SeasonSelector.addEventListener('mousemove', (e) => {
     SeasonSelector.scrollLeft = scrollLeft - walk;
     setGrabbingCursor();
 });
+
+
+// Reverter lista de episódios
+document.addEventListener('DOMContentLoaded', ()=>{
+    const seasons = document.querySelectorAll('.season');
+    seasons.forEach(season =>{
+        const episodes = Array.from(season.querySelectorAll('.episodes'));
+        episodes.reverse().forEach(episode => season.appendChild(episode))
+    })
+})
+
+// Alterar estilo dos números dos episódios
+document.addEventListener('DOMContentLoaded', ()=>{
+    const episodeNumbers = document.querySelectorAll('.episode-number');
+
+    episodeNumbers.forEach(episodeNumber =>{
+        const text = episodeNumber.textContent // Pega o texto completo
+        const episodeDigit = text.slice(9,11) // Pega os caracteres 10 e 11 (os números)
+        const newText = text.slice(0,9) + `<span class="episode-digit">${episodeDigit}</span>`; // Envolve os números em uma span
+        episodeNumber.innerHTML = newText
+    })
+})

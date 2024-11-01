@@ -205,7 +205,6 @@ a:vise{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
-
 .episodes {
     padding-bottom: 7px; 
     max-width: 190px;
@@ -236,10 +235,15 @@ a:vise{
 }
 .episode-number {
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    font-weight: 550;
     font-size: 14px; /* Ajuste o valor conforme necessário */
+    margin-left: 10px; /* Ajuste o valor conforme necessário */
+    color: #b1b1b1; /* Altere para a cor desejada */
+}
+.episode-digit {
+    font-size: 15px;
     color: #df5505d0;
-  margin-left: 10px; /* Ajuste o valor conforme necessário */
+    font-weight: 800; /* Altere para o peso desejado, se necessário */
 }
 .episode > .date{
     color: #666;

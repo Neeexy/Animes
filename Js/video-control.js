@@ -393,3 +393,29 @@ videoElement.addEventListener('play', updateButtonState);
 videoElement.addEventListener('pause', updateButtonState);
 }
 });
+
+// Video Progress Save
+document.addEventListener('DOMContentLoaded', ()=>{
+    const video = document.getElementById('video-frame')
+
+    // Gerar uma chave de progresso única com base no URL do vídeo
+    const playbackKey = `videoProgress_${window.location.pathname}`
+
+    // Salva o progresso a cada atualização de tempo
+    video.ontimeupdate = () =>{
+        localStorage.setItem(playbackKey, video.currentTime);
+    };
+
+    // Carrega a posição salva ao iniciar
+    window.onload = () =>{
+        const savedTime = localStorage.getItem(playbackKey);
+        if(savedTime){
+            video.currentTime = savedTime
+        }
+    }
+
+    // Limpa o progresso ao terminar o vídeo
+    video.onended = () =>{
+        localStorage.removeItem(playbackKey)
+    }
+})
