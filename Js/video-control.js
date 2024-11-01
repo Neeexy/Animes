@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const speed_ico = document.createElement('div')
     speed_ico.classList.add('fluid')
     speed_ico.innerHTML = `<span class='fluid-icons' aria-hidden="true">2x ‣‣</span>
-<span class="vjs-control-text"  aria-live="polite">Speed 2x-ico</span>`
+    <span class="vjs-control-text"  aria-live="polite">Speed 2x-ico</span>`
     // Alterar velocidade do vídeo enquando a tecla 'v' estiver pressionada
     document.addEventListener('keydown', function(speed){ 
         if (speed.key === 'v'){
@@ -292,107 +292,56 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // Aguarda o carregamento do DOM
 document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+        // Encontre o elemento da barra de controle onde será inserido o botão (dentro da .vjs-control-bar)
+        const controlBar = document.querySelector('.vjs-control-bar');
+        
+        if (controlBar) { // Verifica se a barra de controle foi encontrada
+            // Cria um novo contêiner (div) para o botão de pular abertura
+            const skipOpContainer = document.createElement('div');
+            skipOpContainer.classList.add('vjs-control', 'skip-op-container');
 
-    // Encontre o elemento da barra de controle onde será inserido o botão (dentro da .vjs-text-track-display)
-const controlBar = document.querySelector('.vjs-control-bar');
+            // Cria um novo botão para pular abertura
+            const skipOpButton = document.createElement('button');
+            skipOpButton.classList.add('vjs-control', 'vjs-button', 'skip-op-button');
+            skipOpButton.setAttribute('type', 'button');
+            skipOpButton.setAttribute('title', 'Pular Abertura');
 
-// Cria um novo contêiner (div) para o botão de pular abertura
-const skipOpContainer = document.createElement('div');
-skipOpContainer.classList.add('vjs-control', 'skip-op-container');
+            // Adiciona o texto ou ícone ao botão
+            skipOpButton.innerHTML = `<span class="skipOp" aria-hidden="true">Pular Abertura</span>
+            <span class="vjs-control-text" aria-live="polite">Pular Abertura</span>`;
 
-// Cria um novo botão para pular abertura
-const skipOpButton = document.createElement('button');
-skipOpButton.classList.add('vjs-control', 'vjs-button', 'skip-op-button');
-skipOpButton.setAttribute('type', 'button');
-skipOpButton.setAttribute('title', 'Pular Abertura');
+            // Adiciona o botão à nova div
+            skipOpContainer.appendChild(skipOpButton);
 
-// Adiciona o texto ou ícone ao botão
-skipOpButton.innerHTML = `<span class="skipOp" aria-hidden="true">Pular Abertura</span>
-<span class="vjs-control-text" aria-live="polite">Pular Abertura</span>`;
+            // Insere a nova div acima da barra de progresso
+            const fullscreenctrl = controlBar.querySelector('.vjs-fullscreen-control');
+            if (fullscreenctrl) {
+                fullscreenctrl.insertAdjacentElement('afterend', skipOpContainer);
+            }
 
-// Adiciona o botão à nova div
-skipOpContainer.appendChild(skipOpButton);
+            // Variável para contar quantas vezes o botão foi clicado
+            let skippedOp = 0;
 
-// Insere a nova div acima da barra de progresso
-const fullscreenctrl = controlBar.querySelector('.vjs-fullscreen-control');
-fullscreenctrl.insertAdjacentElement('afterend', skipOpContainer);
+            // Adiciona o evento de clique ao botão
+            skipOpButton.addEventListener('click', () => {
+                const video = document.querySelector('video'); // Seleciona o elemento de vídeo
+                if (video) {
+                    video.currentTime += 87; // Avança 87 segundos (1.5min) no vídeo
+                    skippedOp++;
 
-// Variável para contar quantas vezes o botão foi clicado
-let skippedOp = 0;
-
-// Adiciona o evento de clique ao botão
-skipOpButton.addEventListener('click', () => {
-    const video = document.querySelector('video'); // Seleciona o elemento de vídeo
-    video.currentTime += 87; // Avança 87 segundos (1.5min) no vídeo
-    skippedOp++;
-    
-    // Esconde o botão se já tiver sido clicado uma vez
-    if (skippedOp !== 0) {
-        skipOpContainer.style.display = 'none';
-    }
-});
-// Esconde o botão SkipOp se a minutagem for maior que 5 minutos
-const video = document.querySelector('video'); // Seleciona o elemento de vídeo
-video.addEventListener('timeupdate', () => {
-    if(video.currentTime > 300){
-        skipOpContainer.style.display = 'none';
-    }
-    // Botão de Pular ending/término
-    if(video.currentTime > 1090){
-        skipOpButton.innerHTML = `<span class="skipOp" aria-hidden="true">Pular Término</span>
-    <span class="vjs-control-text" aria-live="polite">Pular Abertura</span>`;
-        skipOpContainer.style.display = 'block';
-    skippedOp++;
-    }
-})
-function isMobile() {
-    return /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop|BlackBerry/i.test(navigator.userAgent);
-}
-// Play/Pause Button
-if(isMobile()){
-const center_playButton = document.createElement('button');
-center_playButton.classList.add('vjs-control', 'vjs-button', 'vjs-play-control', 'vjs-paused','center_playbtt');
-center_playButton.setAttribute('type', 'button');
-center_playButton.setAttribute('title', 'center_playButton');
-center_playButton.innerHTML = `
-    <span class="vjs-icon-placeholder" aria-hidden="true"></span>
-    <span class="vjs-control-text" aria-live="polite">Play</span>
-`;
-
-// Adiciona o botão depois do 'skipOpContainer'
-skipOpContainer.insertAdjacentElement('afterend', center_playButton);
-
-// Seleciona o elemento de vídeo (substitua 'videoElement' pelo seletor do seu vídeo)
-const videoElement = document.querySelector('video');
-
-// Função para atualizar o estado do botão com base no estado do vídeo
-function updateButtonState() {
-    if (videoElement.paused) {
-        center_playButton.classList.add('vjs-paused');
-        center_playButton.classList.remove('vjs-playing');
-        center_playButton.querySelector('.vjs-control-text').textContent = 'Play';
-    } else {
-        center_playButton.classList.add('vjs-playing');
-        center_playButton.classList.remove('vjs-paused');
-        center_playButton.querySelector('.vjs-control-text').textContent = 'Pause';
-    }
-}
-
-// Adiciona um evento de clique ao botão para alternar o estado do vídeo
-center_playButton.addEventListener('click', () => {
-    if (videoElement.paused) {
-        videoElement.play();
-    } else {
-        videoElement.pause();
-    }
-    updateButtonState(); // Atualiza o estado do botão após a interação
+                    // Esconde o botão se já tiver sido clicado uma vez
+                    if (skippedOp !== 0) {
+                        skipOpContainer.style.display = 'none';
+                    }
+                }
+            });
+        } else {
+            console.warn("A barra de controle não foi encontrada.");
+        }
+    }, 100); // Atraso de 100 ms para garantir o carregamento do DOM
 });
 
-// Atualiza o botão automaticamente quando o vídeo é pausado ou começa a tocar
-videoElement.addEventListener('play', updateButtonState);
-videoElement.addEventListener('pause', updateButtonState);
-}
-});
 
 // Video Progress Save
 document.addEventListener('DOMContentLoaded', ()=>{
