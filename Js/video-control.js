@@ -334,11 +334,26 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (skippedOp !== 0) {
                         skipOpContainer.style.display = 'none';
                     }
+                    
                 }
             });
         } else {
             console.warn("A barra de controle não foi encontrada.");
         }
+        // Esconde o botão SkipOp se a minutagem for maior que 5 minutos
+        const video = document.querySelector('video'); // Seleciona o elemento de vídeo
+        video.addEventListener('timeupdate', () => {
+        if(video.currentTime > 300){
+            skipOpContainer.style.display = 'none';
+        }})
+            // Botão de Pular ending/término
+        if(video.currentTime > 1090){
+            skipOpButton.innerHTML = `<span class="skipOp" aria-hidden="true">Pular Término</span>
+            <span class="vjs-control-text" aria-live="polite">Pular Término</span>`;
+            skipOpContainer.style.display = 'block';
+            skippedOp++;
+        }
+
     }, 100); // Atraso de 100 ms para garantir o carregamento do DOM
 });
 
