@@ -67,6 +67,7 @@ cursor: pointer;
     display: flex;
     flex-direction: column;
     position: relative;
+    transition: all 0.3s ease-in-out;
 }
 
 /* Anime card  style*/
@@ -171,54 +172,17 @@ cursor: pointer;
     }
 }
 
-/* Grayscale effect */
-
-
-.anime-dragger .animes-head:hover +*{
-    filter: grayscale(85%) blur(2.5px);
-}
-.anime-dragger .animes-head:hover +*+*{
-    filter: grayscale(85%) blur(2.5px);
-}
-.anime-dragger .animes-head:hover +*+*+*{
-    filter: grayscale(85%) blur(2.5px);
-}
-.anime-dragger .animes-head:hover +*+*+*+*{
-    filter: grayscale(85%) blur(2.5px);
-}
-.anime-dragger .animes-head:hover +*+*+*+*+*{
-    filter: grayscale(85%) blur(2.5px);
-}
-.anime-dragger .animes-head:hover +*+*+*+*+*+*{
-    filter: grayscale(85%) blur(2.5px);
-}
-.anime-dragger .animes-head:hover +*+*+*+*+*+*+*{
-    filter: grayscale(85%) blur(2.5px);
+/* Efeito de escala de cinza e opacidade nos elementos não selecionados */
+.anime-dragger:hover .animes-head {
+    filter: grayscale(100%) blur(3px);
 }
 
+/* Remover o efeito do item que está com hover */
+.anime-dragger .animes-head:hover {
+    filter: none;
+    opacity: 1;
+}
 
-/* Before */
-.anime-dragger .animes-head:has(+*:hover){
-    filter: grayscale(85%) blur(2.5px);
-}
-.anime-dragger .animes-head:has(+*+*:hover){
-    filter: grayscale(85%) blur(2.5px);
-}
-.anime-dragger .animes-head:has(+*+*+*:hover){
-    filter: grayscale(85%) blur(2.5px);
-}
-.anime-dragger .animes-head:has(+*+*+*+*:hover){
-    filter: grayscale(85%) blur(2.5px);
-}
-.anime-dragger .animes-head:has(+*+*+*+*+*:hover){
-    filter: grayscale(85%) blur(2.5px);
-}
-.anime-dragger .animes-head:has(+*+*+*+*+*+*:hover){
-    filter: grayscale(85%) blur(2.5px);
-}
-.anime-dragger .animes-head:has(+*+*+*+*+*+*+*:hover){
-    filter: grayscale(85%) blur(2.5px);
-}
 
 /* Media Querys */
 @media  (max-width:1367px){
