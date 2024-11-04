@@ -290,13 +290,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // Skip Opening
 
-// Aguarda o carregamento do DOM
 document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
         // Encontre o elemento da barra de controle onde será inserido o botão (dentro da .vjs-control-bar)
         const controlBar = document.querySelector('.vjs-control-bar');
+        const video = document.querySelector('video'); // Seleciona o elemento de vídeo
         
-        if (controlBar) { // Verifica se a barra de controle foi encontrada
+        if (controlBar && video) { // Verifica se a barra de controle e o vídeo foram encontrados
             // Cria um novo contêiner (div) para o botão de pular abertura
             const skipOpContainer = document.createElement('div');
             skipOpContainer.classList.add('vjs-control', 'skip-op-container');
@@ -311,10 +311,10 @@ document.addEventListener('DOMContentLoaded', () => {
             skipOpButton.innerHTML = `<span class="skipOp" aria-hidden="true">Pular Abertura</span>
             <span class="vjs-control-text" aria-live="polite">Pular Abertura</span>`;
 
-            // Adiciona o botão à nova div
+            // Adiciona o botão ao contêiner
             skipOpContainer.appendChild(skipOpButton);
 
-            // Insere a nova div acima da barra de progresso
+            // Insere o contêiner acima da barra de progresso
             const fullscreenctrl = controlBar.querySelector('.vjs-fullscreen-control');
             if (fullscreenctrl) {
                 fullscreenctrl.insertAdjacentElement('afterend', skipOpContainer);
@@ -325,35 +325,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Adiciona o evento de clique ao botão
             skipOpButton.addEventListener('click', () => {
-                const video = document.querySelector('video'); // Seleciona o elemento de vídeo
                 if (video) {
-                    video.currentTime += 87; // Avança 87 segundos (1.5min) no vídeo
+                    video.currentTime += 87; // Avança 87 segundos no vídeo
                     skippedOp++;
 
                     // Esconde o botão se já tiver sido clicado uma vez
                     if (skippedOp !== 0) {
                         skipOpContainer.style.display = 'none';
                     }
-                    
+                }
+            });
+
+            // Evento de atualização do tempo do vídeo
+            video.addEventListener('timeupdate', () => {
+                // Esconde o botão se a minutagem for maior que 5 minutos
+                if (video.currentTime > 300) {
+                    skipOpContainer.style.display = 'none';
+                }
+                
+                // Exibe o botão "Pular Término" ao final do vídeo
+                if (video.currentTime > 1090 && skippedOp === 0) {
+                    skipOpButton.innerHTML = `<span class="skipOp" aria-hidden="true">Pular Término</span>
+                    <span class="vjs-control-text" aria-live="polite">Pular Término</span>`;
+                    skipOpContainer.style.display = 'block';
                 }
             });
         } else {
-            console.warn("A barra de controle não foi encontrada.");
+            console.warn("A barra de controle ou o vídeo não foi encontrado.");
         }
-        // Esconde o botão SkipOp se a minutagem for maior que 5 minutos
-        const video = document.querySelector('video'); // Seleciona o elemento de vídeo
-        video.addEventListener('timeupdate', () => {
-        if(video.currentTime > 300){
-            skipOpContainer.style.display = 'none';
-        }})
-            // Botão de Pular ending/término
-        if(video.currentTime > 1090){
-            skipOpButton.innerHTML = `<span class="skipOp" aria-hidden="true">Pular Término</span>
-            <span class="vjs-control-text" aria-live="polite">Pular Término</span>`;
-            skipOpContainer.style.display = 'block';
-            skippedOp++;
-        }
-
     }, 100); // Atraso de 100 ms para garantir o carregamento do DOM
 });
 
