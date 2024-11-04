@@ -1,6 +1,18 @@
 {
     "animes": [
       {
+        "name": "Bleach-TBYW 3",
+        "year": "2024",
+        "episodes": [
+          {
+            "number": "05",
+            "title": "Episode 05",
+            "url": "https://nexyanimes.online/assistir-anime/bleach-tybw/leg/temp%20-%203/bleach-sennen%20kessen-hen%E2%80%93soukoku-tan-5",
+            "poster": "https://static.anroll.net/images/animes/screens/bleach-sennen-kessen-hen-soukoku-tan/005.jpg"
+          }
+        ]
+      },
+      {
         "name": "Dungeon Ni Deai V",
         "year": "2024",
         "episodes": [
