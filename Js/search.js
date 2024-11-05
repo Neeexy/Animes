@@ -24,47 +24,57 @@ searchInput.addEventListener('input', (e) => {
     const filteredAnimes = animes.filter(anime => anime.title.toLowerCase().includes(searchTerm));
 
     searchResults.innerHTML = ''; // Limpa os resultados anteriores
-    filteredAnimes.forEach(anime => {
-        const resultItem = document.createElement('div');
-        resultItem.classList.add('result-item');
-        resultItem.style.display = 'flex';
-        resultItem.style.alignItems = 'center';
-        resultItem.style.justifyContent = 'start';
 
-        const link = document.createElement('a');
-        link.href = anime.url;
-        link.target = "_self";
-        link.style.textDecoration = 'none';
-        link.style.display = 'flex';
-
-        const img = document.createElement('img');
-        img.src = anime.image;
-        img.alt = anime.title;
-
-        const titleText = document.createElement('span');
-        titleText.textContent = anime.title;
-        titleText.style.display = 'flex';
-        titleText.style.flexDirection = 'column';
-        titleText.style.gap = '5px';
-
-        const dateText = document.createElement('span');
-        dateText.classList.add('date');
-        dateText.textContent = anime.date;
-
-        link.appendChild(img);
-        link.appendChild(titleText);
-        titleText.appendChild(dateText);
-
-        resultItem.appendChild(link);
-        searchResults.appendChild(resultItem);
-    });
-
-    searchResults.style.display = filteredAnimes.length > 0 ? 'block' : 'none';
-
-    // Aplicar o efeito de blur ao conteúdo da página quando houver uma pesquisa ativa
     if (filteredAnimes.length > 0) {
+        // Se houver resultados, exibe os itens correspondentes
+        filteredAnimes.forEach(anime => {
+            const resultItem = document.createElement('div');
+            resultItem.classList.add('result-item');
+            resultItem.style.display = 'flex';
+            resultItem.style.alignItems = 'center';
+            resultItem.style.justifyContent = 'start';
+
+            const link = document.createElement('a');
+            link.href = anime.url;
+            link.target = "_self";
+            link.style.textDecoration = 'none';
+            link.style.display = 'flex';
+
+            const img = document.createElement('img');
+            img.src = anime.image;
+            img.alt = anime.title;
+
+            const titleText = document.createElement('span');
+            titleText.textContent = anime.title;
+            titleText.style.display = 'flex';
+            titleText.style.flexDirection = 'column';
+            titleText.style.gap = '5px';
+
+            const dateText = document.createElement('span');
+            dateText.classList.add('date');
+            dateText.textContent = anime.date;
+
+            link.appendChild(img);
+            link.appendChild(titleText);
+            titleText.appendChild(dateText);
+
+            resultItem.appendChild(link);
+            searchResults.appendChild(resultItem);
+        });
+
+        searchResults.style.display = 'block';
         pageContent.style.filter = 'blur(5px)'; // Aplica o blur ao conteúdo da página
+
     } else {
+        // Se não houver resultados, exibe a mensagem de indisponibilidade
+        const noResultsMessage = document.createElement('div');
+        noResultsMessage.textContent = 'Lamentamos, mas este anime está indisponível.';
+        noResultsMessage.style.color = 'gray';
+        noResultsMessage.style.textAlign = 'center';
+        noResultsMessage.style.padding = '10px';
+        searchResults.appendChild(noResultsMessage);
+
+        searchResults.style.display = 'block';
         pageContent.style.filter = 'none'; // Remove o blur se não houver resultados
     }
 });
