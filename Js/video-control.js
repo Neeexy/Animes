@@ -385,3 +385,17 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
 
 })
+// Aguarda o carregamento completo da página para garantir que Video.js esteja pronto
+document.addEventListener('DOMContentLoaded', () => {
+    // Verifica se o objeto de erros do Video.js existe
+    if (videojs && videojs.error && videojs.error.prototype) {
+        // Sobrescreve as mensagens de erro padrão diretamente
+        videojs.error.prototype.defaultMessages = {
+            MEDIA_ERR_ABORTED: "Você interrompeu a reprodução do vídeo.",
+            MEDIA_ERR_NETWORK: "Um erro de rede causou a falha no download do vídeo.",
+            MEDIA_ERR_DECODE: "A reprodução do vídeo foi interrompida devido a um problema de corrupção ou a um recurso não suportado.",
+            MEDIA_ERR_SRC_NOT_SUPPORTED: "Não foi possível carregar o vídeo. Verifique a conexão ou o formato do vídeo.",
+            MEDIA_ERR_ENCRYPTED: "O vídeo está criptografado e não temos as chaves para decifrá-lo."
+        };
+    }
+});
