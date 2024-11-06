@@ -103,7 +103,7 @@ nav {
     position: relative;
 }
 .seasons-episodes>h4{
-    border-bottom: 6.5px solid rgba(223, 85, 5, 0.816);  /* Borda inferior */
+    border-bottom: 6.5px solid #df5505d0;  /* Borda inferior */
     margin-bottom: 15px;
 }
 .logo {
@@ -812,4 +812,28 @@ div#topic{
     bottom: unset;
     transform: translateY(-30px);
     transition-duration: 0.3s;
+}
+
+
+
+/* Footer */
+footer{
+    position: relative;
+    width: 100%;
+    background-color: #0000005b;
+    height: 50px;
+    padding: 20px 50px;
+    text-align: center;
+    box-shadow:black -6px -12px 44px 1px;
+    display: flex;
+    justify-content: space-between;
+}
+footer > p{
+    color: #c95715;
+    font-weight: 650;
+}
+#visitas > p{
+    color: #c95715;
+    font-weight: 550;
+    
 }
