@@ -399,3 +399,23 @@ document.addEventListener('DOMContentLoaded', () => {
         };
     }
 });
+
+// Views counter
+const video_container = document.querySelector('.video-container')
+const views = document.createElement('div') // Criar uma div para as views
+views.classList.add('views')
+
+// Programa para contar e armazenar as vizualizações
+let views_number = localStorage.getItem('views_number')
+// Se for a primeira vizualização, inicializa o contador
+if(!views_number){
+    views_number = 1
+}else{
+    // Incrementa o número de views
+    views_number = parseInt(views_number) + 1
+}
+// Atualiza o contador no localStorage
+localStorage.setItem('views_number',views_number)
+// Exibe a quantidade de views
+views.innerHTML = `<p>Views: ${views_number}`
+video_container.appendChild(views)
