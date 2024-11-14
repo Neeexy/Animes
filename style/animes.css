@@ -778,3 +778,20 @@ span.vjs-current-time-display {
     font-weight: 650;
     text-shadow:black 4px 4px 4px;
 }
+
+    footer {
+        background-color: #0000005b;
+        height: 50px;
+        box-shadow: black -1px 1px 15px 4px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 1em;
+        font-size: 0.9em;
+        bottom: 0rem;
+        width: 100%;
+        flex-shrink: 0;
+        position: relative;
+        width: 100%;
+        top: 50px;
+}
