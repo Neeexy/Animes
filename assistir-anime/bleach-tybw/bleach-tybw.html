@@ -24,8 +24,8 @@
         <section class="anime-details">
             <div class="anime-image">
                 <picture>
-                    <source media="(min-width: 769px)" srcset="bleach-sennen-kessen-original.jpg" alt="BLEACH - THOUSAND YEAR BLOOD WAR">
-                    <source media="(max-width: 766px)" srcset="bleach-sennen-kessen-150x220.jpg" alt="BLEACH - THOUSAND YEAR BLOOD WAR">
+                    <source media="(min-width: 769px)" srcset="https://i.ibb.co/4dmdfFf/bleach-sennen-kessen-original.jpg" alt="BLEACH - THOUSAND YEAR BLOOD WAR">
+                    <source media="(max-width: 766px)" srcset="https://i.ibb.co/VvSDKLk/bleach-sennen-kessen-150x220.jpg" alt="BLEACH - THOUSAND YEAR BLOOD WAR">
                     <img class="anime-img" src="" alt="BLEACH - THOUSAND YEAR BLOOD WAR"> 
                 </picture>
             </div>
@@ -777,5 +777,65 @@
         </a>
 
 <script src="../../Js/seasons.js"></script>
+<script>
+    // Links de imagem, títulos e datas para cada temporada
+    const seasonDetails = {
+        "1": {
+            large: "https://i.ibb.co/4dmdfFf/bleach-sennen-kessen-original.jpg",  // Imagem para desktop
+            small: "https://i.ibb.co/VvSDKLk/bleach-sennen-kessen-150x220.jpg",   // Imagem para mobile
+            title: "BLEACH - SENNEN KESSEN-HEN",
+            releaseDate: "Oct. 11, 2022"
+        },
+        "2": {
+            large: "https://i.ibb.co/pjdGJwy/Bleach-Sennen-Kessen-hen-2-ful.jpg",
+            small: "https://i.ibb.co/XVBCVzx/Bleach-Sennen-Kessen-hen-2-250.jpg",
+            title: "BLEACH - KETSUBESU-TAN",
+            releaseDate: "Oct. 16, 2023"
+        },
+        "3": {
+            large: "https://i.ibb.co/xmVDHNj/BLEACH-Sennen-Kessen-hen-3-full.jpg",
+            small: "https://i.ibb.co/QXN1X3y/BLEACH-Sennen-Kessen-hen-3-250.jpg",
+            title: "BLEACH - SOUKOKU-TAN",
+            releaseDate: "Oct. 05, 2015"
+        }
+    };
+    
+    // Função para atualizar o pôster, título e data de lançamento
+    function updateSeasonDetails(season) {
+        const largeSource = document.querySelector('.anime-image source[media="(min-width: 769px)"]');
+        const smallSource = document.querySelector('.anime-image source[media="(max-width: 766px)"]');
+        const imageElement = document.querySelector('.anime-img');
+        const titleElement = document.querySelector('.anime-info h2');
+        const dateElement = document.querySelector('.anime-info .date');
+    
+        // Adiciona a classe de fade-out para iniciar o efeito
+        imageElement.classList.add('fade-out');
+    
+        // Atualiza a imagem, título e data após um pequeno atraso
+        setTimeout(() => {
+            // Atualiza as imagens
+            largeSource.srcset = seasonDetails[season].large;
+            smallSource.srcset = seasonDetails[season].small;
+            imageElement.src = seasonDetails[season].large;
+            imageElement.alt = `Imagem da temporada ${season}`;
+            
+            // Atualiza o título e a data
+            titleElement.textContent = seasonDetails[season].title;
+            dateElement.textContent = seasonDetails[season].releaseDate;
+            
+            // Remove a classe fade-out para mostrar o fade-in
+            imageElement.classList.remove('fade-out');
+        }, 400); // 400ms para o efeito de fade-out
+    }
+    
+    // Event Listener para os botões de temporada
+    const ButtonSeason = document.querySelectorAll('.temporada-selector button');
+    ButtonSeason.forEach(button => {
+        button.addEventListener('click', () => {
+            const season = button.dataset.temporada;
+            updateSeasonDetails(season);
+        });
+    });
+</script>
 </body>
 </html>
