@@ -819,16 +819,20 @@ div#topic{
 /* Footer */
 footer{
     margin-top: 40px;
-    position: relative;
-    width: 100%;
     background-color: #0000005b;
     height: 50px;
-    padding: 20px 50px;
-    text-align: center;
-    box-shadow:inset black -1px 1px 15px 4px;
+    box-shadow: black -1px 1px 15px 4px;
 
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
+    padding: 1em;
+    font-size: 0.9em;
+    bottom: 0rem;
+    width: 100%;
+    flex-shrink: 0; /* Impede o rodapé de encolher */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 footer > p{
     color: #c95715;
