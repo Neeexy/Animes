@@ -1,6 +1,30 @@
 {
     "animes": [
       {
+        "name": "Dandadan - Legendado",
+        "year": "2024",
+        "episodes": [
+          {
+            "number": "07",
+            "title": "Episode 7",
+            "url": "https://nexyanimes.online/assistir-anime/dandadan/legendado/dandadan-1x07",
+            "poster": "https://static.anroll.net/images/animes/screens/dandadan/007.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Dangeon ni Deai V",
+        "year": "2024",
+        "episodes": [
+          {
+            "number": "07",
+            "title": "Episode 7",
+            "url": "https://nexyanimes.online/assistir-anime/dungeon%20ni%20deai/legendado/05/dungeon-ni-deai-5x07",
+            "poster": "https://static.anroll.net/images/animes/screens/dungeon-ni-deai-wo-motomeru-no-wa-machigatteiru-darou-ka-v/007.jpg"
+          }
+        ]
+      },
+      {
         "name": "Re-Zero:3",
         "year": "2024",
         "episodes": [
@@ -43,7 +67,7 @@
           {
             "number": "06",
             "title": "Episode 06",
-            "url": "https://nexyanimes.online/assistir-anime/dungeon%20ni%20deai/legendado/06/dungeon-ni-deai-5x006",
+            "url": "https://nexyanimes.online/assistir-anime/dungeon%20ni%20deai/legendado/05/dungeon-ni-deai-5x06",
             "poster": "https://static.anroll.net/images/animes/screens/dungeon-ni-deai-wo-motomeru-no-wa-machigatteiru-darou-ka-v/006.jpg"
           }
         ]
@@ -74,7 +98,7 @@
           {
             "number": "05",
             "title": "Episode 05",
-            "url": "https://nexyanimes.online/assistir-anime/dungeon%20ni%20deai/legendado/05/dungeon-ni-deai-5x005",
+            "url": "https://nexyanimes.online/assistir-anime/dungeon%20ni%20deai/legendado/05/dungeon-ni-deai-5x05",
             "poster": "https://image.tmdb.org/t/p/original/rHae5eNycxyR6UbAxDIvc5dkt6r.jpg"
           }
         ]
