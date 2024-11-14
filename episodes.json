@@ -1,15 +1,70 @@
 {
     "animes": [
       {
+        "name": "Re-Zero:3",
+        "year": "2024",
+        "episodes": [
+          {
+            "number": "07",
+            "title": "Episode 7",
+            "url": "https://nexyanimes.online/assistir-anime/re-zero-3/legendado/re-zero-3x07",
+            "poster": "https://static.anroll.net/images/animes/screens/re-zero-kara-hajimeru-isekai-seikatsu-3/007.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Dandadan - Dublado",
+        "year": "2024",
+        "episodes": [
+          {
+            "number": "06",
+            "title": "Episode 6",
+            "url": "https://nexyanimes.online/assistir-anime/dandadan/dublado/dandadan-1x06",
+            "poster": "https://static.anroll.net/images/animes/screens/dandadan/006.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Dandadan - Legendado",
+        "year": "2024",
+        "episodes": [
+          {
+            "number": "06",
+            "title": "Episode 6",
+            "url": "https://nexyanimes.online/assistir-anime/dandadan/legendado/dandadan-1x06",
+            "poster": "https://static.anroll.net/images/animes/screens/dandadan/006.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Dungeon Ni Deai V",
+        "year": "2024",
+        "episodes": [
+          {
+            "number": "06",
+            "title": "Episode 06",
+            "url": "https://nexyanimes.online/assistir-anime/dungeon%20ni%20deai/legendado/06/dungeon-ni-deai-5x006",
+            "poster": "https://static.anroll.net/images/animes/screens/dungeon-ni-deai-wo-motomeru-no-wa-machigatteiru-darou-ka-v/006.jpg"
+          }
+        ]
+      },
+      {
         "name": "Bleach-TBYW 3",
         "year": "2024",
         "episodes": [
+          {
+            "number": "06",
+            "title": "Episode 06",
+            "url": "https://nexyanimes.online/assistir-anime/bleach-tybw/leg/temp%20-%203/bleach-sennen%20kessen-hen%E2%80%93soukoku-tan-6",
+            "poster": "https://static.anroll.net/images/animes/screens/bleach-sennen-kessen-hen-soukoku-tan/006.jpg"
+          },
           {
             "number": "05",
             "title": "Episode 05",
             "url": "https://nexyanimes.online/assistir-anime/bleach-tybw/leg/temp%20-%203/bleach-sennen%20kessen-hen%E2%80%93soukoku-tan-5",
             "poster": "https://static.anroll.net/images/animes/screens/bleach-sennen-kessen-hen-soukoku-tan/005.jpg"
           }
+          
         ]
       },
       {
