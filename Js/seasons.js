@@ -6,6 +6,8 @@ const languageButtons = document.querySelectorAll('.linguagem-selector button');
 const seasons = document.querySelectorAll('.temporada');
 const animeDetails = document.querySelector('.anime-details');
 const temp_ind = document.querySelector('.temp-indicator')
+const footer = document.getElementById('footer')
+
 
 // Inicialmente, esconde todos os botões de temporada
 seasonButtons.forEach(button =>{
@@ -60,8 +62,10 @@ languageButtons.forEach(button => {
 // Event listeners para botões de temporada
 seasonButtons.forEach(button => {
     button.addEventListener('click', () => {
+        footer.classList.add('relative')
         const seasonId = `temporada-${button.dataset.temporada}-${button.dataset.linguagem}`;
         showSeason(seasonId);
+
     });
 });
 
@@ -143,3 +147,14 @@ document.addEventListener('DOMContentLoaded', ()=>{
         episodeNumber.innerHTML = newText
     })
 })
+
+
+// Função para monitorar a rolagem e mostrar/ocultar o botão
+window.addEventListener("scroll", function () {
+    const backToTopButton = document.querySelector(".btt");
+    if (window.scrollY > 200) { // Mostra o botão após rolar 200 pixels
+        backToTopButton.classList.add("show");
+    } else {
+        backToTopButton.classList.remove("show");
+    }
+});

@@ -16,3 +16,13 @@ localStorage.setItem('contador_visitas', contador_visitas);
 
 // Exibe a quantidade de visitas no footer
 visitas.innerHTML = `<p> Acessos: ${contador_visitas}</p>`
+
+// Função para monitorar a rolagem e mostrar/ocultar o botão
+window.addEventListener("scroll", function () {
+    const backToTopButton = document.querySelector(".btt");
+    if (window.scrollY > 200) { // Mostra o botão após rolar 200 pixels
+        backToTopButton.classList.add("show");
+    } else {
+        backToTopButton.classList.remove("show");
+    }
+});
