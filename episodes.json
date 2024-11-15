@@ -1,6 +1,18 @@
 {
     "animes": [
       {
+        "name": "Kaijuu-N.8 - Dublaado",
+        "year": "2024",
+        "episodes": [
+          {
+            "number": "12",
+            "title": "Episode 12",
+            "url": "https://nexyanimes.online/assistir-anime/Kaijuu-N.8/dublado/Kaijuu-N.8-1x12",
+            "poster": "https://static.anroll.net/images/animes/screens/kaijuu-8-gou/012.jpg"
+          }
+        ]
+      },
+      {
         "name": "Dandadan - Legendado",
         "year": "2024",
         "episodes": [
