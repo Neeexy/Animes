@@ -1,6 +1,30 @@
 {
     "animes": [
       {
+        "name": "Bleach-TBYW 3",
+        "year": "2024",
+        "episodes": [
+          {
+            "number": "07",
+            "title": "Episode 7",
+            "url": "https://nexyanimes.online/assistir-anime/bleach-tybw/leg/temp%20-%203/bleach-sennen%20kessen-hen%E2%80%93soukoku-tan-7",
+            "poster": "https://static.anroll.net/images/animes/screens/bleach-sennen-kessen-hen-soukoku-tan/007.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Arcane 2 - Dublado",
+        "year": "2024",
+        "episodes": [
+          {
+            "number": "06",
+            "title": "Episode 06",
+            "url": "https://nexyanimes.online/assistir-anime/Arcane/dublado/Arcane-2x06",
+            "poster": "https://ia600700.us.archive.org/10/items/Nexy-Thumbs-ArcaneS2/Arcane-S2-Ep06-thumb.jpg"
+          }
+        ]
+      },
+      {
         "name": "Kaijuu-N.8 - Dublado",
         "year": "2024",
         "episodes": [
