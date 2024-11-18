@@ -338,8 +338,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Evento de atualização do tempo do vídeo
             video.addEventListener('timeupdate', () => {
-                // Esconde o botão se a minutagem for maior que 5 minutos
-                if (video.currentTime > 300) {
+                // Esconde o botão se a minutagem for maior que 10 minutos
+                if (video.currentTime > 600) {
                     skipOpContainer.style.display = 'none';
                 }
                 
