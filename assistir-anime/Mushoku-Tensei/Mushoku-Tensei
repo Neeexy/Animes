@@ -1,0 +1,1510 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mushoku Tensei  - Nexy Animes - Animes Br - Assistir Animes Online Grátis</title>
+    <link rel="shortcut icon" href="../../style/components/Nexy Animes - Logo.png" type="image/x-icon"> 
+    <link rel="stylesheet" href="../../style/style-index.css"> 
+    <link rel="stylesheet" href="../../style/animes.css"> 
+    <link rel="shortcut icon" href="../../style/components/Nexy Animes logo.png" type="image/x-icon">
+
+    <meta name="description" content="Um japonês NEET de 34 anos, sem nome, é despejado de sua casa após a morte de seus pais. Após alguma auto-introspecção, ele conclui que sua vida foi, em última análise, sem sentido. Ele intercepta um caminhão em alta velocidade indo em direção a um grupo de adolescentes em uma tentativa de fazer algo significativo pela primeira vez na vida e consegue tirar um deles do perigo antes de morrer">
+    <meta property="og:site_name" content="Nexy Animes - Animes Br - Assistir Animes Online Grátis - Nexy Animes - Animes Online, Assistir Animes Online. Assista Animes Dublados e Legendados, ou Faça downloads. Animes em Full HD e HD.">
+    <meta property="og:title" content="Mushoku Tensei  - Nexy Animes - Animes Br - Assistir Animes Online Grátis">
+    <meta property="og:url" content="https://nexyanimes.online/assistir-anime/Mushoku-Tensei/Mushoku-Tensei.html">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../../style/components/Nexy Animes nav.png"  alt=""></div>
+            <button id="botão" id="back"><a href="https://nexyanimes.online/">Início</a></button>
+        </nav> 
+    </header>
+
+    <main>
+        <section class="anime-details">
+            <div class="anime-image">
+                <picture>
+                    <source media="(min-width: 769px)" srcset="https://i.ibb.co/WvPQtGC/Mushoku-2-Full.webp" alt="Mushoku-Tensei-full">
+                    <source media="(max-width: 766px)" srcset="https://i.ibb.co/RcCXG4T/Mushoku-2-250.webp" alt="Mushoku Tensei-150">
+                    <img class="anime-img" src="" alt=""> 
+                </picture>
+            </div>
+            <div class="anime-info">
+                <h2>Mushoku Tensei</h2>
+                <div class="wp-content">
+                <span class="date" itemprop="dateCreated">Jan 10, 2021</span>
+                    <p class="description">
+                        Um japonês NEET de 34 anos, sem nome, é despejado de sua casa após a morte de seus pais. Após alguma auto-introspecção, ele conclui que sua vida foi, em última análise, sem sentido. Ele intercepta um caminhão em alta velocidade indo em direção a um grupo de adolescentes em uma tentativa de fazer algo significativo pela primeira vez na vida e consegue tirar um deles do perigo antes de morrer
+                    </p>
+                    <div class="sgenders">
+                        <a href="https://nexyanimes.online/" rel="tag">Ação & Aventura</a>
+                        <a href="https://nexyanimes.online/" rel="tag">Comédia</a>
+                        <a href="https://nexyanimes.online/" rel="tag">Demônios</a>
+                        <a href="https://nexyanimes.online/" rel="tag">Ecchi</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<section class="seasons-episodes">
+    <div class="linguagem-selector">
+        <h2 style="text-align: left; ">▾ Idioma ▾</h2>
+        <button id="botão"data-linguagem="legendado">LEGENDADO</button>
+        <button id="botão"data-linguagem="dublado">DUBLADO</button>
+    </div>
+
+    <h2 class="temp-indicator" style="text-align: left; margin-top:5px; display: none;">▾ Temporadas ▾ </h2>
+    <div class="temporada-selector">
+        <button id="botão" data-temporada="1" data-linguagem="legendado">1ª</button>
+        <button id="botão" data-temporada="2" data-linguagem="legendado">2ª</button>
+        <button id="botão" data-temporada="1" data-linguagem="dublado">1ª</button>
+        <button id="botão" data-temporada="2" data-linguagem="dublado">2ª</button>
+    </div>
+
+    <!-- Legendado -->
+
+<!-- Temporada 1 -->
+<div class="temporada" id="temporada-1-legendado" data-linguagem="legendado" style="display: none;">
+    <h4 class="sea-name">Mushoku Tensei</h4>
+
+<div class="season">
+
+
+<div class="episodes">
+<a href="legendado/Mushoku-Tensei-1x01.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-isekai-ittara-honki-dasu/001.jpg" alt="Mushoku-Tensei-Ep-01-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 01</span>
+    <span class="episode-title">Reencarnação de um Nem-Nem
+    </span>
+    <span class="date">Jan 10, 2021</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="legendado/Mushoku-Tensei-1x02.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-isekai-ittara-honki-dasu/002.jpg" alt="Mushoku-Tensei-Ep-02-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 02</span>
+    <span class="episode-title">Mestra
+    </span>
+    <span class="date">Jan 17, 2021</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="legendado/Mushoku-Tensei-1x03.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-isekai-ittara-honki-dasu/003.jpg" alt="Mushoku-Tensei-Ep-03-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 03</span>
+    <span class="episode-title">A Amiga
+    </span>
+    <span class="date">Jan 24, 2021</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="legendado/Mushoku-Tensei-1x04.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-isekai-ittara-honki-dasu/004.jpg" alt="Mushoku-Tensei-Ep-04-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 04</span>
+    <span class="episode-title">Reunião Familiar de Emergência
+    </span>
+    <span class="date">Jan 31, 2021</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="legendado/Mushoku-Tensei-1x05.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-isekai-ittara-honki-dasu/005.jpg" alt="Mushoku-Tensei-Ep-05-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 05</span>
+    <span class="episode-title">uma Dama e a Violência
+    </span>
+    <span class="date">Fev 07, 2021</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="legendado/Mushoku-Tensei-1x06.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-isekai-ittara-honki-dasu/006.jpg" alt="Mushoku-Tensei-Ep-06-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 06</span>
+    <span class="episode-title">Um Dia de Folga em Roa
+    </span>
+    <span class="date">Fev 14, 2021</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="legendado/Mushoku-Tensei-1x07.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-isekai-ittara-honki-dasu/007.jpg" alt="Mushoku-Tensei-Ep-07-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 07</span>
+    <span class="episode-title">Além do Esforço
+    </span>
+    <span class="date">Fev 21, 2021</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="legendado/Mushoku-Tensei-1x08.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-isekai-ittara-honki-dasu/008.jpg" alt="Mushoku-Tensei-Ep-08-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 08</span>
+    <span class="episode-title">Ponto de Inflexão 1
+    </span>
+    <span class="date">Fev 28, 2021</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="legendado/Mushoku-Tensei-1x09.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-isekai-ittara-honki-dasu/009.jpg" alt="Mushoku-Tensei-Ep-09-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 09</span>
+    <span class="episode-title">Um Encontro Ao Acaso
+    </span>
+    <span class="date">Mar 07, 2021</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="legendado/Mushoku-Tensei-1x10.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-isekai-ittara-honki-dasu/010.jpg" alt="Mushoku-Tensei-Ep-10-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 10</span>
+    <span class="episode-title">O Valor de uma Vida e o Primeiro Trabalho
+    </span>
+    <span class="date">Mar 14, 2021</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="legendado/Mushoku-Tensei-1x11.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-isekai-ittara-honki-dasu/011.jpg" alt="Mushoku-Tensei-Ep-11-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 11</span>
+    <span class="episode-title">Crianças e Guerreiros
+    </span>
+    <span class="date">Mar 21, 2021</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="legendado/Mushoku-Tensei-1x12.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-isekai-ittara-honki-dasu/012.jpg" alt="Mushoku-Tensei-Ep-12-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 12</span>
+    <span class="episode-title">A Mulher com Olhos Demoníacos
+    </span>
+    <span class="date">Oct 03, 2021</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="legendado/Mushoku-Tensei-1x13.html">
+    <div class="episode">
+    <img class="ep-img" src="https://m.media-amazon.com/images/S/pv-target-images/17b9480e64ca673881a09e596b3eb2dbb439451fe8db4c18f1e2fe046cc297ea._BR-6_AC_SX1440_FMjpg_.jpg" alt="Mushoku-Tensei-Ep-13-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 13</span>
+    <span class="episode-title">Conexões Perdidas
+    </span>
+    <span class="date">Oct 10, 2021</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="legendado/Mushoku-Tensei-1x14.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-isekai-ittara-honki-dasu-2/001.jpg" alt="Mushoku-Tensei-Ep-14-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 14</span>
+    <span class="episode-title">Não Existe Almoço Grátis
+    </span>
+    <span class="date">Oct 17, 2021</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="legendado/Mushoku-Tensei-1x15.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-isekai-ittara-honki-dasu-2/002.jpg" alt="Mushoku-Tensei-Ep-15-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 15</span>
+    <span class="episode-title">Vida Lenta na Aldeia Doldia
+    </span>
+    <span class="date">Oct 24, 2021</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="legendado/Mushoku-Tensei-1x16.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-isekai-ittara-honki-dasu-2/003.jpg" alt="Mushoku-Tensei-Ep-16-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 16</span>
+    <span class="episode-title">Briga de Família
+    </span>
+    <span class="date">Oct 31, 2021</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="legendado/Mushoku-Tensei-1x17.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-isekai-ittara-honki-dasu-2/004.jpg" alt="Mushoku-Tensei-Ep-17-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 17</span>
+    <span class="episode-title">Runião
+    </span>
+    <span class="date">Nov 07, 2021</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="legendado/Mushoku-Tensei-1x18.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-isekai-ittara-honki-dasu-2/005.jpg" alt="Mushoku-Tensei-Ep-18-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 18</span>
+    <span class="episode-title">Jornadas Separadas
+    </span>
+    <span class="date">Nov 14, 2021</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="legendado/Mushoku-Tensei-1x19.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-isekai-ittara-honki-dasu-2/006.jpg" alt="Mushoku-Tensei-Ep-19-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 19</span>
+    <span class="episode-title">Seleção de Rota
+    </span>
+    <span class="date">Nov 21, 2021</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="legendado/Mushoku-Tensei-1x20.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-isekai-ittara-honki-dasu-2/007.jpg" alt="Mushoku-Tensei-Ep-20-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 20</span>
+    <span class="episode-title">O Nascimento Da Minha Irmãzinha, a Empregada Doméstica
+    </span>
+    <span class="date">Nov 28, 2021</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="legendado/Mushoku-Tensei-1x21.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-isekai-ittara-honki-dasu-2/008.jpg" alt="Mushoku-Tensei-Ep-21-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 21</span>
+    <span class="episode-title">Ponto de Inflexão 2
+    </span>
+    <span class="date">Dec 05, 2021</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="legendado/Mushoku-Tensei-1x22.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-isekai-ittara-honki-dasu-2/009.jpg" alt="Mushoku-Tensei-Ep-22-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 22</span>
+    <span class="episode-title">Sonho e Realidade
+    </span>
+    <span class="date">Dec 12, 2021</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="legendado/Mushoku-Tensei-1x23.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-isekai-ittara-honki-dasu-2/010.jpg" alt="Mushoku-Tensei-Ep-23-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 23</span>
+    <span class="episode-title">Acorde e Dê um Passo
+    </span>
+    <span class="date">Dec 19, 2021</span>
+    </div>
+</a>
+</div>
+
+</div>
+
+<div class="end-of-season">
+<h3>Fim da Temporada</h3>
+</div>
+</div>
+
+<!-- Temporada 2 -->
+<div class="temporada" id="temporada-2-legendado" data-linguagem="legendado" style="display: none;">
+    <h4 class="sea-name">Mushoku Tensei</h4>
+
+<div class="season">
+
+
+<div class="episodes">
+<a href="legendado/Mushoku-Tensei-2x01.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-ii-isekai-ittara-honki-dasu/001.jpg" alt="Mushoku-Tensei-Ep-01-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 01</span>
+    <span class="episode-title">O Mago Frustrado
+    </span>
+    <span class="date">Jan 10, 2023</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="legendado/Mushoku-Tensei-2x02.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-ii-isekai-ittara-honki-dasu/002.jpg" alt="Mushoku-Tensei-Ep-02-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 02</span>
+    <span class="episode-title">A Floresta da Profunda Noite
+    </span>
+    <span class="date">Jul 16, 2023</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="legendado/Mushoku-Tensei-2x03.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-ii-isekai-ittara-honki-dasu/003.jpg" alt="Mushoku-Tensei-Ep-03-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 03</span>
+    <span class="episode-title">Abordagem Repentina
+    </span>
+    <span class="date">Jul 23, 2023</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="legendado/Mushoku-Tensei-2x04.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-ii-isekai-ittara-honki-dasu/004.jpg" alt="Mushoku-Tensei-Ep-04-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 04</span>
+    <span class="episode-title">Carta de Recomendação
+    </span>
+    <span class="date">Jul 30, 2023</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="legendado/Mushoku-Tensei-2x05.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-ii-isekai-ittara-honki-dasu/005.jpg" alt="Mushoku-Tensei-Ep-05-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 05</span>
+    <span class="episode-title">Universidade de Magia de Ranoa
+    </span>
+    <span class="date">Ago 06, 2023</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="legendado/Mushoku-Tensei-2x06.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-ii-isekai-ittara-honki-dasu/006.jpg" alt="Mushoku-Tensei-Ep-06-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 06</span>
+    <span class="episode-title">Não Quero Morrer
+    </span>
+    <span class="date">Ago 13, 2023</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="legendado/Mushoku-Tensei-2x07.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-ii-isekai-ittara-honki-dasu/007.jpg" alt="Mushoku-Tensei-Ep-07-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 07</span>
+    <span class="episode-title">O Sequestro e Confinamento de Garotas Besta
+    </span>
+    <span class="date">Ago 20, 2023</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="legendado/Mushoku-Tensei-2x08.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-ii-isekai-ittara-honki-dasu/008.jpg" alt="Mushoku-Tensei-Ep-08-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 08</span>
+    <span class="episode-title">Noivado do Desespero
+    </span>
+    <span class="date">Ago 27, 2023</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="legendado/Mushoku-Tensei-2x09.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-ii-isekai-ittara-honki-dasu/009.jpg" alt="Mushoku-Tensei-Ep-09-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 09</span>
+    <span class="episode-title">A Mascara Branca
+    </span>
+    <span class="date">Set 03, 2023</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="legendado/Mushoku-Tensei-2x10.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-ii-isekai-ittara-honki-dasu/010.jpg" alt="Mushoku-Tensei-Ep-10-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 10</span>
+    <span class="episode-title">Esse Sentimento
+    </span>
+    <span class="date">Set 10, 2023</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="legendado/Mushoku-Tensei-2x11.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-ii-isekai-ittara-honki-dasu/011.jpg" alt="Mushoku-Tensei-Ep-11-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 11</span>
+    <span class="episode-title">Para Você
+    </span>
+    <span class="date">Set 17, 2023</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="legendado/Mushoku-Tensei-2x12.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-ii-isekai-ittara-honki-dasu/012.jpg" alt="Mushoku-Tensei-Ep-12-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 12</span>
+    <span class="episode-title">Eu Quero Dizer
+    </span>
+    <span class="date">Set 24, 2023</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="legendado/Mushoku-Tensei-2x13.html">
+    <div class="episode">
+    <img class="ep-img" src="https://m.media-amazon.com/images/S/pv-target-images/17b9480e64ca673881a09e596b3eb2dbb439451fe8db4c18f1e2fe046cc297ea._BR-6_AC_SX1440_FMjpg_.jpg" alt="Mushoku-Tensei-Ep-13-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 13</span>
+    <span class="episode-title">Minha Casa dos Sonhos
+    </span>
+    <span class="date">Abr 07, 2024</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="legendado/Mushoku-Tensei-2x14.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-ii-isekai-ittara-honki-dasu-2/001.jpg" alt="Mushoku-Tensei-Ep-14-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 14</span>
+    <span class="episode-title">Recepção de Casamento
+    </span>
+    <span class="date">Abr 14, 2024</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="legendado/Mushoku-Tensei-2x15.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-ii-isekai-ittara-honki-dasu-2/002.jpg" alt="Mushoku-Tensei-Ep-15-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 15</span>
+    <span class="episode-title">Distante
+    </span>
+    <span class="date">Abr 21, 2024</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="legendado/Mushoku-Tensei-2x16.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-ii-isekai-ittara-honki-dasu-2/003.jpg" alt="Mushoku-Tensei-Ep-16-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 16</span>
+    <span class="episode-title">Norn e Aisha
+    </span>
+    <span class="date">Abr 28, 2024</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="legendado/Mushoku-Tensei-2x17.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-ii-isekai-ittara-honki-dasu-2/004.jpg" alt="Mushoku-Tensei-Ep-17-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 17</span>
+    <span class="episode-title">Os Sentimentos de um Irmão Mais Velho
+    </span>
+    <span class="date">Mai 05, 2024</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="legendado/Mushoku-Tensei-2x18.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-ii-isekai-ittara-honki-dasu-2/005.jpg" alt="Mushoku-Tensei-Ep-18-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 18</span>
+    <span class="episode-title">Ponto de Inflexão 3
+    </span>
+    <span class="date">Mai 12, 2024</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="legendado/Mushoku-Tensei-2x19.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-ii-isekai-ittara-honki-dasu-2/006.jpg" alt="Mushoku-Tensei-Ep-19-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 19</span>
+    <span class="episode-title">Jornada no Deserto
+    </span>
+    <span class="date">Mai 26, 2024</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="legendado/Mushoku-Tensei-2x20.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-ii-isekai-ittara-honki-dasu-2/007.jpg" alt="Mushoku-Tensei-Ep-20-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 20</span>
+    <span class="episode-title">Entrando no Labirinto
+    </span>
+    <span class="date">Jun 02, 2024</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="legendado/Mushoku-Tensei-2x21.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-ii-isekai-ittara-honki-dasu-2/008.jpg" alt="Mushoku-Tensei-Ep-21-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 21</span>
+    <span class="episode-title">Círculos Mágicos do Sexto Andar
+    </span>
+    <span class="date">Jun 08, 2024</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="legendado/Mushoku-Tensei-2x22.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-ii-isekai-ittara-honki-dasu-2/009.jpg" alt="Mushoku-Tensei-Ep-22-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 22</span>
+    <span class="episode-title">Pais
+    </span>
+    <span class="date">Jun 15, 2024</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="legendado/Mushoku-Tensei-2x23.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-ii-isekai-ittara-honki-dasu-2/010.jpg" alt="Mushoku-Tensei-Ep-23-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 23</span>
+    <span class="episode-title">Vamos pra Casa
+    </span>
+    <span class="date">Jun 22, 2024</span>
+    </div>
+</a>
+</div>
+
+<div class="episodes">
+    <a href="legendado/Mushoku-Tensei-2x24.html">
+        <div class="episode">
+        <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-ii-isekai-ittara-honki-dasu-2/011.jpg" alt="Mushoku-Tensei-Ep-24-Thumb">
+        <span class="line"></span>
+        <span class="episode-number">EPISÓDIO 24</span>
+        <span class="episode-title">Sucessão
+        </span>
+        <span class="date">Jun 29, 2024</span>
+        </div>
+    </a>
+</div>
+</div>
+
+<div class="end-of-season">
+<h3>Fim da Temporada</h3>
+</div>
+</div>
+</div>
+
+<!-- Dublado -->
+<div class="temporada" id="temporada-1-dublado" data-linguagem="dublado" style="display: none;">
+    <h4 class="sea-name">Mushoku Tensei - Dub</h4>
+
+<div class="season">
+
+
+<div class="episodes">
+<a href="dublado/Mushoku-Tensei-1x01.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-isekai-ittara-honki-dasu/001.jpg" alt="Mushoku-Tensei-Ep-01-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 01</span>
+    <span class="episode-title">Reencarnação de um Nem-Nem
+    </span>
+    <span class="date">Jan 10, 2021</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="dublado/Mushoku-Tensei-1x02.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-isekai-ittara-honki-dasu/002.jpg" alt="Mushoku-Tensei-Ep-02-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 02</span>
+    <span class="episode-title">Mestra
+    </span>
+    <span class="date">Jan 17, 2021</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="dublado/Mushoku-Tensei-1x03.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-isekai-ittara-honki-dasu/003.jpg" alt="Mushoku-Tensei-Ep-03-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 03</span>
+    <span class="episode-title">A Amiga
+    </span>
+    <span class="date">Jan 24, 2021</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="dublado/Mushoku-Tensei-1x04.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-isekai-ittara-honki-dasu/004.jpg" alt="Mushoku-Tensei-Ep-04-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 04</span>
+    <span class="episode-title">Reunião Familiar de Emergência
+    </span>
+    <span class="date">Jan 31, 2021</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="dublado/Mushoku-Tensei-1x05.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-isekai-ittara-honki-dasu/005.jpg" alt="Mushoku-Tensei-Ep-05-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 05</span>
+    <span class="episode-title">uma Dama e a Violência
+    </span>
+    <span class="date">Fev 07, 2021</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="dublado/Mushoku-Tensei-1x06.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-isekai-ittara-honki-dasu/006.jpg" alt="Mushoku-Tensei-Ep-06-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 06</span>
+    <span class="episode-title">Um Dia de Folga em Roa
+    </span>
+    <span class="date">Fev 14, 2021</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="dublado/Mushoku-Tensei-1x07.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-isekai-ittara-honki-dasu/007.jpg" alt="Mushoku-Tensei-Ep-07-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 07</span>
+    <span class="episode-title">Além do Esforço
+    </span>
+    <span class="date">Fev 21, 2021</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="dublado/Mushoku-Tensei-1x08.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-isekai-ittara-honki-dasu/008.jpg" alt="Mushoku-Tensei-Ep-08-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 08</span>
+    <span class="episode-title">Ponto de Inflexão 1
+    </span>
+    <span class="date">Fev 28, 2021</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="dublado/Mushoku-Tensei-1x09.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-isekai-ittara-honki-dasu/009.jpg" alt="Mushoku-Tensei-Ep-09-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 09</span>
+    <span class="episode-title">Um Encontro Ao Acaso
+    </span>
+    <span class="date">Mar 07, 2021</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="dublado/Mushoku-Tensei-1x10.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-isekai-ittara-honki-dasu/010.jpg" alt="Mushoku-Tensei-Ep-10-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 10</span>
+    <span class="episode-title">O Valor de uma Vida e o Primeiro Trabalho
+    </span>
+    <span class="date">Mar 14, 2021</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="dublado/Mushoku-Tensei-1x11.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-isekai-ittara-honki-dasu/011.jpg" alt="Mushoku-Tensei-Ep-11-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 11</span>
+    <span class="episode-title">Crianças e Guerreiros
+    </span>
+    <span class="date">Mar 21, 2021</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="dublado/Mushoku-Tensei-1x12.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-isekai-ittara-honki-dasu/012.jpg" alt="Mushoku-Tensei-Ep-12-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 12</span>
+    <span class="episode-title">A Mulher com Olhos Demoníacos
+    </span>
+    <span class="date">Oct 03, 2021</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="dublado/Mushoku-Tensei-1x13.html">
+    <div class="episode">
+    <img class="ep-img" src="https://m.media-amazon.com/images/S/pv-target-images/17b9480e64ca673881a09e596b3eb2dbb439451fe8db4c18f1e2fe046cc297ea._BR-6_AC_SX1440_FMjpg_.jpg" alt="Mushoku-Tensei-Ep-13-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 13</span>
+    <span class="episode-title">Conexões Perdidas
+    </span>
+    <span class="date">Oct 10, 2021</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="dublado/Mushoku-Tensei-1x14.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-isekai-ittara-honki-dasu-2/001.jpg" alt="Mushoku-Tensei-Ep-14-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 14</span>
+    <span class="episode-title">Não Existe Almoço Grátis
+    </span>
+    <span class="date">Oct 17, 2021</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="dublado/Mushoku-Tensei-1x15.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-isekai-ittara-honki-dasu-2/002.jpg" alt="Mushoku-Tensei-Ep-15-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 15</span>
+    <span class="episode-title">Vida Lenta na Aldeia Doldia
+    </span>
+    <span class="date">Oct 24, 2021</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="dublado/Mushoku-Tensei-1x16.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-isekai-ittara-honki-dasu-2/003.jpg" alt="Mushoku-Tensei-Ep-16-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 16</span>
+    <span class="episode-title">Briga de Família
+    </span>
+    <span class="date">Oct 31, 2021</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="dublado/Mushoku-Tensei-1x17.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-isekai-ittara-honki-dasu-2/004.jpg" alt="Mushoku-Tensei-Ep-17-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 17</span>
+    <span class="episode-title">Runião
+    </span>
+    <span class="date">Nov 07, 2021</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="dublado/Mushoku-Tensei-1x18.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-isekai-ittara-honki-dasu-2/005.jpg" alt="Mushoku-Tensei-Ep-18-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 18</span>
+    <span class="episode-title">Jornadas Separadas
+    </span>
+    <span class="date">Nov 14, 2021</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="dublado/Mushoku-Tensei-1x19.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-isekai-ittara-honki-dasu-2/006.jpg" alt="Mushoku-Tensei-Ep-19-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 19</span>
+    <span class="episode-title">Seleção de Rota
+    </span>
+    <span class="date">Nov 21, 2021</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="dublado/Mushoku-Tensei-1x20.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-isekai-ittara-honki-dasu-2/007.jpg" alt="Mushoku-Tensei-Ep-20-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 20</span>
+    <span class="episode-title">O Nascimento Da Minha Irmãzinha, a Empregada Doméstica
+    </span>
+    <span class="date">Nov 28, 2021</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="dublado/Mushoku-Tensei-1x21.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-isekai-ittara-honki-dasu-2/008.jpg" alt="Mushoku-Tensei-Ep-21-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 21</span>
+    <span class="episode-title">Ponto de Inflexão 2
+    </span>
+    <span class="date">Dec 05, 2021</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="dublado/Mushoku-Tensei-1x22.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-isekai-ittara-honki-dasu-2/009.jpg" alt="Mushoku-Tensei-Ep-22-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 22</span>
+    <span class="episode-title">Sonho e Realidade
+    </span>
+    <span class="date">Dec 12, 2021</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="dublado/Mushoku-Tensei-1x23.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-isekai-ittara-honki-dasu-2/010.jpg" alt="Mushoku-Tensei-Ep-23-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 23</span>
+    <span class="episode-title">Acorde e Dê um Passo
+    </span>
+    <span class="date">Dec 19, 2021</span>
+    </div>
+</a>
+</div>
+
+
+</div>
+
+<div class="end-of-season">
+<h3>Fim da Temporada</h3>
+</div>
+</div>
+
+<!-- Temporada 2 -->
+<div class="temporada" id="temporada-2-dublado" data-linguagem="dublado" style="display: none;">
+    <h4 class="sea-name">Mushoku Tensei II</h4>
+
+<div class="season">
+
+
+<div class="episodes">
+<a href="dublado/Mushoku-Tensei-2x01.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-ii-isekai-ittara-honki-dasu/001.jpg" alt="Mushoku-Tensei-Ep-01-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 01</span>
+    <span class="episode-title">O Mago Frustrado
+    </span>
+    <span class="date">Jan 10, 2023</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="dublado/Mushoku-Tensei-2x02.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-ii-isekai-ittara-honki-dasu/002.jpg" alt="Mushoku-Tensei-Ep-02-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 02</span>
+    <span class="episode-title">A Floresta da Profunda Noite
+    </span>
+    <span class="date">Jul 16, 2023</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="dublado/Mushoku-Tensei-2x03.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-ii-isekai-ittara-honki-dasu/003.jpg" alt="Mushoku-Tensei-Ep-03-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 03</span>
+    <span class="episode-title">Abordagem Repentina
+    </span>
+    <span class="date">Jul 23, 2023</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="dublado/Mushoku-Tensei-2x04.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-ii-isekai-ittara-honki-dasu/004.jpg" alt="Mushoku-Tensei-Ep-04-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 04</span>
+    <span class="episode-title">Carta de Recomendação
+    </span>
+    <span class="date">Jul 30, 2023</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="dublado/Mushoku-Tensei-2x05.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-ii-isekai-ittara-honki-dasu/005.jpg" alt="Mushoku-Tensei-Ep-05-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 05</span>
+    <span class="episode-title">Universidade de Magia de Ranoa
+    </span>
+    <span class="date">Ago 06, 2023</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="dublado/Mushoku-Tensei-2x06.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-ii-isekai-ittara-honki-dasu/006.jpg" alt="Mushoku-Tensei-Ep-06-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 06</span>
+    <span class="episode-title">Não Quero Morrer
+    </span>
+    <span class="date">Ago 13, 2023</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="dublado/Mushoku-Tensei-2x07.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-ii-isekai-ittara-honki-dasu/007.jpg" alt="Mushoku-Tensei-Ep-07-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 07</span>
+    <span class="episode-title">O Sequestro e Confinamento de Garotas Besta
+    </span>
+    <span class="date">Ago 20, 2023</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="dublado/Mushoku-Tensei-2x08.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-ii-isekai-ittara-honki-dasu/008.jpg" alt="Mushoku-Tensei-Ep-08-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 08</span>
+    <span class="episode-title">Noivado do Desespero
+    </span>
+    <span class="date">Ago 27, 2023</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="dublado/Mushoku-Tensei-2x09.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-ii-isekai-ittara-honki-dasu/009.jpg" alt="Mushoku-Tensei-Ep-09-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 09</span>
+    <span class="episode-title">A Mascara Branca
+    </span>
+    <span class="date">Set 03, 2023</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="dublado/Mushoku-Tensei-2x10.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-ii-isekai-ittara-honki-dasu/010.jpg" alt="Mushoku-Tensei-Ep-10-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 10</span>
+    <span class="episode-title">Esse Sentimento
+    </span>
+    <span class="date">Set 10, 2023</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="dublado/Mushoku-Tensei-2x11.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-ii-isekai-ittara-honki-dasu/011.jpg" alt="Mushoku-Tensei-Ep-11-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 11</span>
+    <span class="episode-title">Para Você
+    </span>
+    <span class="date">Set 17, 2023</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="dublado/Mushoku-Tensei-2x12.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-ii-isekai-ittara-honki-dasu/012.jpg" alt="Mushoku-Tensei-Ep-12-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 12</span>
+    <span class="episode-title">Eu Quero Dizer
+    </span>
+    <span class="date">Set 24, 2023</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="dublado/Mushoku-Tensei-2x13.html">
+    <div class="episode">
+    <img class="ep-img" src="https://m.media-amazon.com/images/S/pv-target-images/17b9480e64ca673881a09e596b3eb2dbb439451fe8db4c18f1e2fe046cc297ea._BR-6_AC_SX1440_FMjpg_.jpg" alt="Mushoku-Tensei-Ep-13-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 13</span>
+    <span class="episode-title">Minha Casa dos Sonhos
+    </span>
+    <span class="date">Abr 07, 2024</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="dublado/Mushoku-Tensei-2x14.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-ii-isekai-ittara-honki-dasu-2/001.jpg" alt="Mushoku-Tensei-Ep-14-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 14</span>
+    <span class="episode-title">Recepção de Casamento
+    </span>
+    <span class="date">Abr 14, 2024</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="dublado/Mushoku-Tensei-2x15.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-ii-isekai-ittara-honki-dasu-2/002.jpg" alt="Mushoku-Tensei-Ep-15-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 15</span>
+    <span class="episode-title">Distante
+    </span>
+    <span class="date">Abr 21, 2024</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="dublado/Mushoku-Tensei-2x16.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-ii-isekai-ittara-honki-dasu-2/003.jpg" alt="Mushoku-Tensei-Ep-16-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 16</span>
+    <span class="episode-title">Norn e Aisha
+    </span>
+    <span class="date">Abr 28, 2024</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="dublado/Mushoku-Tensei-2x17.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-ii-isekai-ittara-honki-dasu-2/004.jpg" alt="Mushoku-Tensei-Ep-17-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 17</span>
+    <span class="episode-title">Os Sentimentos de um Irmão Mais Velho
+    </span>
+    <span class="date">Mai 05, 2024</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="dublado/Mushoku-Tensei-2x18.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-ii-isekai-ittara-honki-dasu-2/005.jpg" alt="Mushoku-Tensei-Ep-18-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 18</span>
+    <span class="episode-title">Ponto de Inflexão 3
+    </span>
+    <span class="date">Mai 12, 2024</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="dublado/Mushoku-Tensei-2x19.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-ii-isekai-ittara-honki-dasu-2/006.jpg" alt="Mushoku-Tensei-Ep-19-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 19</span>
+    <span class="episode-title">Jornada no Deserto
+    </span>
+    <span class="date">Mai 26, 2024</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="dublado/Mushoku-Tensei-2x20.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-ii-isekai-ittara-honki-dasu-2/007.jpg" alt="Mushoku-Tensei-Ep-20-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 20</span>
+    <span class="episode-title">Entrando no Labirinto
+    </span>
+    <span class="date">Jun 02, 2024</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="dublado/Mushoku-Tensei-2x21.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-ii-isekai-ittara-honki-dasu-2/008.jpg" alt="Mushoku-Tensei-Ep-21-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 21</span>
+    <span class="episode-title">Círculos Mágicos do Sexto Andar
+    </span>
+    <span class="date">Jun 08, 2024</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="dublado/Mushoku-Tensei-2x22.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-ii-isekai-ittara-honki-dasu-2/009.jpg" alt="Mushoku-Tensei-Ep-22-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 22</span>
+    <span class="episode-title">Pais
+    </span>
+    <span class="date">Jun 15, 2024</span>
+    </div>
+</a>
+</div>
+
+
+<div class="episodes">
+<a href="dublado/Mushoku-Tensei-2x23.html">
+    <div class="episode">
+    <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-ii-isekai-ittara-honki-dasu-2/010.jpg" alt="Mushoku-Tensei-Ep-23-Thumb">
+    <span class="line"></span>
+    <span class="episode-number">EPISÓDIO 23</span>
+    <span class="episode-title">Vamos pra Casa
+    </span>
+    <span class="date">Jun 22, 2024</span>
+    </div>
+</a>
+</div>
+
+<div class="episodes">
+    <a href="dublado/Mushoku-Tensei-2x24.html">
+        <div class="episode">
+        <img class="ep-img" src="https://static.anroll.net/images/animes/screens/mushoku-tensei-ii-isekai-ittara-honki-dasu-2/011.jpg" alt="Mushoku-Tensei-Ep-24-Thumb">
+        <span class="line"></span>
+        <span class="episode-number">EPISÓDIO 24</span>
+        <span class="episode-title">Sucessão
+        </span>
+        <span class="date">Jun 29, 2024</span>
+        </div>
+    </a>
+</div>
+</div>
+
+
+<div class="end-of-season">
+<h3>Fim da Temporada</h3>
+</div>
+</div>
+</div>
+
+</section>
+<footer id="footer">
+    <p>&copy;Nexy Animes 2024 | Todos os direitos reservados</p>
+    <div id="visitas">
+    </div>
+</footer>
+    </main>
+    <!-- Back To Top -->
+    <a href="#">
+        <button class="btt">
+            <svg class="svgIcon" viewBox="0 0 384 512">
+            <path
+                d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+            ></path>
+            </svg>
+        </button>
+    </a>
+<script src="../../Js/seasons.js"></script>
+<script>
+    // Links de imagem, títulos e datas para cada temporada
+    const seasonDetails = {
+        "1": {
+            large: "https://i.ibb.co/W36PNzG/Mushoku-1-Full.webp",  // Imagem para desktop
+            small: "https://i.ibb.co/bmr7G3f/Mushoku-1-250.webp",   // Imagem para mobile
+            title: "Mushoku Tensei",
+            releaseDate: "Jan 10, 2012"
+        },
+        "2": {
+            large: "https://i.ibb.co/WvPQtGC/Mushoku-2-Full.webp",
+            small: "https://i.ibb.co/RcCXG4T/Mushoku-2-250.webp",
+            title: "Mushoku Tensei II",
+            releaseDate: "Jul 09, 2023"
+        }
+    };
+    
+    // Função para atualizar o pôster, título e data de lançamento
+    function updateSeasonDetails(season) {
+        const largeSource = document.querySelector('.anime-image source[media="(min-width: 769px)"]');
+        const smallSource = document.querySelector('.anime-image source[media="(max-width: 766px)"]');
+        const imageElement = document.querySelector('.anime-img');
+        const titleElement = document.querySelector('.anime-info h2');
+        const dateElement = document.querySelector('.anime-info .date');
+    
+        // Adiciona a classe de fade-out para iniciar o efeito
+        imageElement.classList.add('fade-out');
+    
+        // Atualiza a imagem, título e data após um pequeno atraso
+        setTimeout(() => {
+            // Atualiza as imagens
+            largeSource.srcset = seasonDetails[season].large;
+            smallSource.srcset = seasonDetails[season].small;
+            imageElement.src = seasonDetails[season].large;
+            imageElement.alt = `Imagem da temporada ${season}`;
+            
+            // Atualiza o título e a data
+            titleElement.textContent = seasonDetails[season].title;
+            dateElement.textContent = seasonDetails[season].releaseDate;
+            
+            // Remove a classe fade-out para mostrar o fade-in
+            imageElement.classList.remove('fade-out');
+        }, 400); // 400ms para o efeito de fade-out
+    }
+    
+    // Event Listener para os botões de temporada
+    const ButtonSeason = document.querySelectorAll('.temporada-selector button');
+    ButtonSeason.forEach(button => {
+        button.addEventListener('click', () => {
+            const season = button.dataset.temporada;
+            updateSeasonDetails(season);
+        });
+    });
+</script>
+</body>
+</html>

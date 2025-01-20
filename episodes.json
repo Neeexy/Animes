@@ -1,6 +1,18 @@
 {
     "animes": [
       {
+        "name": "Mushoku Tensei",
+        "year": "2021",
+        "episodes": [
+          {
+            "number": "01",
+            "title": "Episode 1",
+            "url": "https://nexyanimes.online/assistir-anime/bleach-tybw/leg/temp%20-%203/bleach-sennen%20kessen-hen%E2%80%93soukoku-tan-7",
+            "poster": "https://static.anroll.net/images/animes/screens/bleach-sennen-kessen-hen-soukoku-tan/007.jpg"
+          }
+        ]
+      },
+      {
         "name": "Bleach-TBYW 3",
         "year": "2024",
         "episodes": [
