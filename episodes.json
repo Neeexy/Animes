@@ -1,6 +1,18 @@
 {
     "animes": [
       {
+        "name": "Bunny Girl Senpai",
+        "year": "2018",
+        "episodes": [
+          {
+            "number": "13",
+            "title": "Episode 13",
+            "url": "https://nexyanimes.online/assistir-anime/Bunny-Girl-Senpai/legendado/Bunny-Girl-Senpai-1x01.html",
+            "poster": "https://static.anroll.net/images/animes/screens/seishun-buta-yarou-wa-bunny-girl-senpai-no-yume-wo-minai/013.jpg"
+          }
+        ]
+      },
+      {
         "name": "Mushoku Tensei",
         "year": "2021",
         "episodes": [
