@@ -413,9 +413,10 @@ if(!views_number){
 }else{
     // Incrementa o número de views
     views_number = parseInt(views_number) + 1
-}
+}   
 // Atualiza o contador no localStorage
 localStorage.setItem('views_number',views_number)
 // Exibe a quantidade de views
 views.innerHTML = `<p>Views: ${views_number}`
 video_container.appendChild(views)
+
